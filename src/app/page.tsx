@@ -2,6 +2,7 @@ import Image from "next/image";
 import Positions from "./components/positions";
 import NavigationBar from "./components/navigationBar";
 import Footer from "./components/footer";
+import MiniProjectCard from "./components/miniProjectCard"
 
 export default function Home() {
   return (
@@ -41,6 +42,35 @@ export default function Home() {
           </a>
         </div>
       </main>
+
+
+      <div className="flex flex-rows sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <MiniProjectCard
+          project="Zotgle"
+          imageSrc="/zotgle.png"
+          link="https://github.com/lanaramadan/zotgle"
+          desktop={true}
+        />
+        <MiniProjectCard
+          project="Zotgle"
+          imageSrc="/zotgle.png"
+          link="https://github.com/lanaramadan/zotgle"
+          desktop={true}
+        />
+        <MiniProjectCard
+          project="Zotgle"
+          imageSrc="/zotgle.png"
+          link="https://github.com/lanaramadan/zotgle"
+          desktop={true}
+        />
+        <MiniProjectCard
+          project="Zotgle"
+          imageSrc="/zotgle.png"
+          link="https://github.com/lanaramadan/zotgle"
+          desktop={true}
+        />
+      </div>
+
       
       <Footer />
 

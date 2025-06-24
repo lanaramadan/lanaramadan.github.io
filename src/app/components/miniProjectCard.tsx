@@ -40,7 +40,7 @@ export default function MiniProjectCard({ project, imageSrc, link, desktop }: Mi
           />
         </div>
 
-        <p className="text-xl font-bold text-center mb-2">{project}</p>
+        <p className="text-3xl font-medium text-center mb-2 font-[family-name:var(--font-new-spirit-condensed)]">{project.toUpperCase()}</p>
       </div>
     </a>
   );

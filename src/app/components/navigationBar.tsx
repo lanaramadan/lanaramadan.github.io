@@ -9,7 +9,6 @@ export default function NavigationBar() {
         justify-between 
         items-center
         pb-2
-        text-[#946968]
       "
     >
       

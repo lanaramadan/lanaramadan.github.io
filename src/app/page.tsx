@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Positions from "./components/positions";
 import NavigationBar from "./components/navigationBar";
 import Footer from "./components/footer";
 import MiniProjectCard from "./components/miniProjectCard"

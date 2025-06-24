@@ -16,7 +16,7 @@ export default function NavigationBar() {
       <Link
         href=""
         className="
-          hover:italic
+          hover:drop-shadow-[0_0_8px_#946968]
           font-medium
           text-2xl
           sm:text-6xl
@@ -39,25 +39,25 @@ export default function NavigationBar() {
       >
         <Link
           href="#work"
-          className="hover:italic"
+          className="hover:drop-shadow-[0_0_8px_#946968]"
         >
           work
         </Link>
         <Link
           href="#play"
-          className="hover:italic"
+          className="hover:drop-shadow-[0_0_8px_#946968]"
         >
           play
         </Link>
         <Link
           href="#about"
-          className="hover:italic"
+          className="hover:drop-shadow-[0_0_8px_#946968]"
         >
           about
         </Link>
         <Link
           href="#contact"
-          className="hover:italic"
+          className="hover:drop-shadow-[0_0_8px_#946968]"
         >
           contact
         </Link>

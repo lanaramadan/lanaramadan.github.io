@@ -2,37 +2,66 @@ import Link from 'next/link';
 
 export default function NavigationBar() {
   return (
-    <nav className="w-full flex justify-center pt-6 pb-2 text-[14px] sm:text-[16px] font-[family-name:var(--font-geist-mono)] font-medium text-[#946968] tracking-wide space-x-6 sm:space-x-12">
+    <nav 
+      className="
+        w-full 
+        flex 
+        justify-between 
+        items-center
+        pb-2
+        text-[#946968]
+      "
+    >
+      
       <Link
         href=""
-        className="hover:underline hover:underline-offset-4 transition-all duration-200"
+        className="
+          hover:italic
+          font-medium
+          text-2xl
+          sm:text-6xl
+          font-[family-name:var(--font-new-spirit-condensed)]
+        "
       >
-        Laa Ramadan
+        LANA RAMADAN
       </Link>
-      <Link
-        href="#work"
-        className="hover:underline hover:underline-offset-4 transition-all duration-200"
+
+      <div 
+        className="
+          tracking-wide 
+          font-medium 
+          space-x-10
+          text-sm
+          sm:space-x-20
+          sm:text-xl
+          font-[family-name:var(--font-geist-mono)]
+        "
       >
-        work
-      </Link>
-      <Link
-        href="#play"
-        className="hover:underline hover:underline-offset-4 transition-all duration-200"
-      >
-        play
-      </Link>
-      <Link
-        href="#about"
-        className="hover:underline hover:underline-offset-4 transition-all duration-200"
-      >
-        about
-      </Link>
-      <Link
-        href="#contact"
-        className="hover:underline hover:underline-offset-4 transition-all duration-200"
-      >
-        contact
-      </Link>
+        <Link
+          href="#work"
+          className="hover:italic"
+        >
+          work
+        </Link>
+        <Link
+          href="#play"
+          className="hover:italic"
+        >
+          play
+        </Link>
+        <Link
+          href="#about"
+          className="hover:italic"
+        >
+          about
+        </Link>
+        <Link
+          href="#contact"
+          className="hover:italic"
+        >
+          contact
+        </Link>
+      </div>
     </nav>
   );
 }

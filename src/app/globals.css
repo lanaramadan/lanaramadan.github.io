@@ -11,7 +11,8 @@
   --background: #FCFBF7;
 
   /* fonts */
-  /* --font-geist-sans: 'Geist Sans', sans-serif; */
+  --font-geist-sans: 'Geist Sans', sans-serif;
+  --font-new-spirit-condensed: "new-spirit-condensed", serif;
 }
 
 @media (prefers-color-scheme: dark) {

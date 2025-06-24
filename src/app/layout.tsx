@@ -32,6 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Adobe Fonts: New Spirit */}
+        <link rel="stylesheet" href="https://use.typekit.net/slk1ndk.css" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

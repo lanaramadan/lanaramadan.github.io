@@ -8,6 +8,8 @@ type MiniProjectCardProps = {
 };
 
 export default function MiniProjectCard({ project, imageSrc, link, desktop }: MiniProjectCardProps) {
+  console.log(desktop)
+  
   return (
     <a
       href={link}

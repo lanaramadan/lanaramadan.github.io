@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GithubIcon from "./icons/githubIcon";
 import LinkedinIcon from "./icons/linkedinIcon";
 import MailIcon from "./icons/mailIcon";

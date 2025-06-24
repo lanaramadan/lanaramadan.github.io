@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavigationBar from "./components/navigationBar";
 import Footer from "./components/footer";
-import MiniProjectCard from "./components/miniProjectCard"
+import FeaturedProjects from "./components/featuredProjects"
 
 export default function Home() {
   return (
@@ -9,34 +9,9 @@ export default function Home() {
       <NavigationBar/>
 
       <main className="flex-grow flex items-center justify-center">  
-      {/* <div className="flex flex-rows sm:grid-cols-2 lg:grid-cols-3 gap-8"> */}
-        <MiniProjectCard
-          project="Zotgle"
-          imageSrc="/zotgle.png"
-          link="https://github.com/lanaramadan/zotgle"
-          desktop={true}
-        />
-        <MiniProjectCard
-          project="Zotgle"
-          imageSrc="/zotgle.png"
-          link="https://github.com/lanaramadan/zotgle"
-          desktop={true}
-        />
-        <MiniProjectCard
-          project="Zotgle"
-          imageSrc="/zotgle.png"
-          link="https://github.com/lanaramadan/zotgle"
-          desktop={true}
-        />
-        <MiniProjectCard
-          project="Zotgle"
-          imageSrc="/zotgle.png"
-          link="https://github.com/lanaramadan/zotgle"
-          desktop={true}
-        />
-      {/* </div> */}
+        <FeaturedProjects />
 
-</main>
+      </main>
 
       
       <Footer />

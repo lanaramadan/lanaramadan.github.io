@@ -76,3 +76,16 @@ body {
   opacity: 0;
   animation: bgFade 10s infinite ease-in-out;
 }
+
+
+
+/* position scroll animation */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}

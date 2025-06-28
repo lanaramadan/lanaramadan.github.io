@@ -1,7 +1,7 @@
-import NavigationBar from "./components/navigationBar";
-import Footer from "./components/footer";
-import FeaturedProjects from "./components/featuredProjects"
-import HomeTitle from "./components/homeTitle";
+import NavigationBar from "./components/navigation/navigationBar";
+import Footer from "./components/navigation/footer";
+import FeaturedProjects from "./components/home-page/featuredProjects"
+import HomeTitle from "./components/home-page/homeTitle";
 
 // export default function Home() {
 //   return (
@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* content */}
-      <section className="relative h-screen z-20 section-bg border-t-4 border-current outline-offset-5">
+      <section className="relative h-screen z-10 section-bg border-t-4 border-current outline-offset-5">
         <NavigationBar/>
         <FeaturedProjects />
         <Footer />

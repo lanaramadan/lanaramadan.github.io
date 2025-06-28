@@ -1,6 +1,6 @@
-import GithubIcon from "./icons/githubIcon";
-import LinkedinIcon from "./icons/linkedinIcon";
-import MailIcon from "./icons/mailIcon";
+import GithubIcon from "../icons/githubIcon";
+import LinkedinIcon from "../icons/linkedinIcon";
+import MailIcon from "../icons/mailIcon";
 
 export default function Footer() {
   return (

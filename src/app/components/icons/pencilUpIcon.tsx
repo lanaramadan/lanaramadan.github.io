@@ -3,13 +3,11 @@ import React from "react";
 type PencilUpIconProps = {
   width?: number | string;
   height?: number | string;
-  className?: string;
 };
 
 const PencilUpIcon: React.FC<PencilUpIconProps> = ({
   width = 35,
   height = 26,
-  className = "",
 }) => {
   return (
     <span className="w-6 h-6 flex items-center justify-center shrink-0">

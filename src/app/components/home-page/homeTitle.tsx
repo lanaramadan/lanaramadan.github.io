@@ -1,6 +1,6 @@
-import Polaroid from "./polaroid";
+import Polaroid from "../polaroid";
 import Positions from "./positions";
-import DownArrowIcon from "./icons/downArrowIcon";
+import DownArrowIcon from "../icons/downArrowIcon";
 
 export default function HomeTitle() {
   return (

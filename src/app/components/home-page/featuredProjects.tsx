@@ -1,5 +1,5 @@
-import MiniProjectCard from "./miniProjectCard"
-import CurvedLine from "./curvedLine";
+import MiniProjectCard from "../miniProjectCard"
+import CurvedLine from "../curvedLine";
 
 export default function FeaturedProjects() {
   return (

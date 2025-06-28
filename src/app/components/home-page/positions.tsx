@@ -1,6 +1,6 @@
 
-import PencilUpIcon from "./icons/pencilUpIcon";
-import PencilDownIcon from "./icons/pencilDownIcon";
+import PencilUpIcon from "../icons/pencilUpIcon";
+import PencilDownIcon from "../icons/pencilDownIcon";
 
 export default function Positions() {
   return (

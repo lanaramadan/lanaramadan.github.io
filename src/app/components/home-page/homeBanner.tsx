@@ -1,4 +1,4 @@
-import Polaroid from "./polaroid";
+import Polaroid from "../polaroid";
 
 export default function HomeBanner() {
   const currentDate: Date = new Date();

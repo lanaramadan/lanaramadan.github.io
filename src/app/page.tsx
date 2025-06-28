@@ -28,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* content */}
-      <section className="relative h-screen z-20 section-bg">
+      <section className="relative h-screen z-20 section-bg border-t-4 border-current outline-offset-5">
         <NavigationBar/>
         <FeaturedProjects />
         <Footer />

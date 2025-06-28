@@ -8,7 +8,9 @@ export default function NavigationBar() {
         flex 
         justify-between 
         items-center
-        pb-2
+        pt-8
+        pb-10
+        px-12
       "
     >
       

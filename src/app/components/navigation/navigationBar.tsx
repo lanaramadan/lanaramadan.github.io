@@ -17,7 +17,7 @@ export default function NavigationBar() {
       <Link
         href="/"
         className="
-          hover:drop-shadow-[0_0_8px_#946968]
+          hover:drop-shadow-[0_0_8px_currentColor]
           font-medium
           text-2xl
           sm:text-6xl
@@ -40,25 +40,25 @@ export default function NavigationBar() {
       >
         <Link
           href="/work"
-          className="hover:drop-shadow-[0_0_8px_#946968]"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           work
         </Link>
         {/* <Link
           href="#play"
-          className="hover:drop-shadow-[0_0_8px_#946968]"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           play
         </Link> */}
         <Link
           href="/about"
-          className="hover:drop-shadow-[0_0_8px_#946968]"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           about
         </Link>
         <Link
           href="/contact"
-          className="hover:drop-shadow-[0_0_8px_#946968]"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           contact
         </Link>

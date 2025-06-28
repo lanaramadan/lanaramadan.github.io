@@ -11,7 +11,7 @@ export default function Footer() {
         href="https://www.linkedin.com/in/lanamramadan" 
         target="_blank"
         aria-label="LinkedIn"
-        className="hover:drop-shadow-[0_0_8px_#946968]"
+        className="hover:drop-shadow-[0_0_8px_currentColor]"
       >
         <LinkedinIcon className="w-[50px] h-[50px]" />
       </a>
@@ -21,7 +21,7 @@ export default function Footer() {
         href="https://github.com/lanaramadan" 
         target="_blank"
         aria-label="GitHub"
-        className="hover:drop-shadow-[0_0_8px_#946968]"
+        className="hover:drop-shadow-[0_0_8px_currentColor]"
       >
         <GithubIcon className="w-[50px] h-[50px]" />
       </a>
@@ -30,7 +30,7 @@ export default function Footer() {
       <a 
         href="mailto:lanamramadan@gmail.com"
         aria-label="Email"
-        className="hover:drop-shadow-[0_0_8px_#946968]"
+        className="hover:drop-shadow-[0_0_8px_currentColor]"
       >
         <MailIcon className="w-[50px] h-[50px]" />
       </a>

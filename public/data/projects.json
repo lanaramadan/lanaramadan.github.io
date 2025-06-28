@@ -1,0 +1,146 @@
+{
+    "programmingProjects": [
+        {
+            "name": "Zotgle",
+            "overview": "Developed a high-performance search engine, processing 55,000+ webpages with sub-100ms response times. Enhanced search relevance using TF-IDF scoring and PageRank, enabling more accurate and meaningful result ranking. Integrated GroqAI API for webpage summarization; implemented multithreaded retrieval for fast, scalable query handling.",
+            "tools": [
+                "Python",
+                "Flask",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "AWS EC2",
+                "Git"
+            ],
+            "links": [
+                "https://github.com/lanaramadan/zotgle-search-engine"
+            ],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/zotgle.png"]
+        },
+        {
+            "name": "Movie Mania",
+            "overview": "",
+            "tools": [
+                "Java", 
+                "JDBC", 
+                "jQuery", 
+                "AJAX", 
+                "Tomcat", 
+                "JavaScript", 
+                "HTML", 
+                "CSS", 
+                "MySQL", 
+                "JMeter", 
+                "Git"
+            ],
+            "links": [
+                "https://github.com/lanaramadan/movie-mania"
+            ],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/movie-mania.png"]
+        },
+        {
+            "name": "ADMAP",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/admap.png"]
+        },
+        {
+            "name": "La Peña",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/la-pena.png"]
+        },
+        {
+            "name": "AISS",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/aiss.png"]
+        },
+        {
+            "name": "Cafe Diary",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/cafe-diary.png"]
+        }
+    ],
+    "designProjects": [
+        {
+            "name": "GEM",
+            "overview": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
+            "tools": [
+                "Figma",
+                "Jira"
+            ],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/gem-1.png", "/images/gem-2.png", "/images/gem-3.png"]
+        },
+        {
+            "name": "AnyWear",
+            "overview": "",
+            "tools": [
+                "Figma",
+                "Figjam"
+            ],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/anywear-1.png", "/images/anywear-2.png", "/images/anywear-3.png"]
+        },
+        {
+            "name": "Dino Docs",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/dino-docs-1.png", "/images/dino-docs-2.png", "/images/dino-docs-3.png"]
+        },
+        {
+            "name": "Crowdy!",
+            "overview": "",
+            "tools": [],
+            "links": [],
+            "duration": {
+                "start": null,
+                "end": null
+            },
+            "images": ["/images/crowdy-1.png", "/images/crowdy-2.png", "/images/crowdy-3.png"]
+        }
+    ]
+}

@@ -1,3 +1,6 @@
+"use client"
+import React, { useState } from "react";
+
 import Image from "next/image";
 
 type PolaroidProps = {
@@ -7,6 +10,7 @@ type PolaroidProps = {
   width?: number;
   height?: number;
   rotation?: string;
+  className?: string;
 };
 
 export default function Polaroid({
@@ -16,32 +20,55 @@ export default function Polaroid({
   width = 200,
   height = 200,
   rotation = "-10",
+  className = ""
 }: PolaroidProps) {
+  const [hovered, setHovered] = useState(false);
+
+  const numericRotation = parseInt(rotation);
+  const hoverRotation = (-1 * numericRotation).toString();
+  
   return (
     <div
-      className="
-        bg-[#D0C0BE] 
+      className={`
+        bg-current
         p-3 
         pb-4
         w-fit 
         border-2
         border-current
-        transform 
-        hover:rotate-2
-        hover:scale-[1.1]
-        -mr-5
-      "
-      style={{ transform: `rotate(${rotation}deg)` }}
+        transition-transform duration-500 ease-in-out
+        hover:scale-[1.05]
+        ${className}
+      `}
+      style={{
+        backgroundColor: "#FCFBF7",
+        transform: `rotate(${hovered ? hoverRotation : rotation}deg)`
+      }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
-      <div className="overflow-hidden border-2 border-current">
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-        />
+      {/* translucent overlay using currentColor */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundColor: "currentColor",
+          opacity: 0.4,
+        }}
+      />
+
+      <div className="relative z-10">
+        <div className="overflow-hidden border-2 border-current">
+          <Image src={src} alt={alt} width={width} height={height} className="block" />
+        </div>
+        <p className="mt-3 text-2xl">{caption}</p>
       </div>
-      <p className="mt-3 text-2xl ">{caption}</p>
     </div>
   );
 }
+
+
+
+
+
+
+

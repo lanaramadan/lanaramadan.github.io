@@ -32,17 +32,21 @@ export default function Work() {
             font-[family-name:var(--font-new-spirit-condensed)]
           ">Programming</h2>
           
-          <div className="flex gap-5 w-[88vw] overflow-x-auto">
+          <div className="flex gap-3 w-[88vw] overflow-x-auto mt-5">
             {programmingProjects.map((project, index) => (
-              <MiniProjectCard
-                key={index}
-                project={project.name}
-                imageSrc="/placeholder.png"
-                link={project.links[0]}
-                desktop={true}
-              />
+              <div 
+                key={index} 
+                className="flex-shrink-0 pr-3 last:pr-0 last:border-none dash-line"
+              >
+                <MiniProjectCard
+                  project={project}
+                  workPage={true}
+                  index={index}
+                />
+              </div>
             ))}
           </div>
+
         </section>
 
         <hr className="border-t border-2 border-current w-[88vw]" />
@@ -55,17 +59,21 @@ export default function Work() {
             font-[family-name:var(--font-new-spirit-condensed)]
           ">Product Design</h2>
           
-          <div className="flex gap-5 w-[88vw] overflow-x-auto">
+          <div className="flex gap-5 w-[88vw] overflow-x-auto mt-5">
             {designProjects.map((project, index) => (
-              <MiniProjectCard
-                key={index}
-                project={project.name}
-                imageSrc="/placeholder.png"
-                link={project.links[0]}
-                desktop={true}
-              />
+              <div 
+                key={index} 
+                className="flex-shrink-0 pr-3 last:pr-0 last:border-none dash-line"
+              >
+                <MiniProjectCard
+                  project={project}
+                  workPage={true}
+                  index={index}
+                />
+              </div>
             ))}
           </div>
+
         </section>
 
 

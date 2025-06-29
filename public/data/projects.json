@@ -2,7 +2,8 @@
     "programmingProjects": [
         {
             "name": "Zotgle",
-            "overview": "Developed a high-performance search engine, processing 55,000+ webpages with sub-100ms response times. Enhanced search relevance using TF-IDF scoring and PageRank, enabling more accurate and meaningful result ranking. Integrated GroqAI API for webpage summarization; implemented multithreaded retrieval for fast, scalable query handling.",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+            "description": "Developed a high-performance search engine, processing 55,000+ webpages with sub-100ms response times. Enhanced search relevance using TF-IDF scoring and PageRank, enabling more accurate and meaningful result ranking. Integrated GroqAI API for webpage summarization; implemented multithreaded retrieval for fast, scalable query handling.",
             "tools": [
                 "Python",
                 "Flask",
@@ -16,14 +17,15 @@
                 "https://github.com/lanaramadan/zotgle-search-engine"
             ],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/zotgle.png"]
+            "images": ["zotgle.png"],
+            "desktop": true
         },
         {
             "name": "Movie Mania",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [
                 "Java", 
                 "JDBC", 
@@ -41,54 +43,59 @@
                 "https://github.com/lanaramadan/movie-mania"
             ],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/movie-mania.png"]
+            "images": ["movie-mania.png"],
+            "desktop": true
         },
         {
             "name": "ADMAP",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/admap.png"]
+            "images": ["admap.png"],
+            "desktop": true
         },
         {
             "name": "La Peña",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/la-pena.png"]
+            "images": ["la-pena.png"],
+            "desktop": true
         },
         {
             "name": "AISS",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/aiss.png"]
+            "images": ["aiss.png"],
+            "desktop": true
         },
         {
             "name": "Cafe Diary",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/cafe-diary.png"]
+            "images": ["cafe-diary.png"],
+            "desktop": false
         }
     ],
     "designProjects": [
@@ -101,46 +108,50 @@
             ],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/gem-1.png", "/images/gem-2.png", "/images/gem-3.png"]
+            "images": ["gem-1.png", "gem-2.png", "gem-3.png"],
+            "desktop": false
         },
         {
             "name": "AnyWear",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [
                 "Figma",
                 "Figjam"
             ],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/anywear-1.png", "/images/anywear-2.png", "/images/anywear-3.png"]
+            "images": ["anywear-1.png", "anywear-2.png", "anywear-3.png"],
+            "desktop": true
         },
         {
             "name": "Dino Docs",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/dino-docs-1.png", "/images/dino-docs-2.png", "/images/dino-docs-3.png"]
+            "images": ["dino-docs-1.png", "dino-docs-2.png", "dino-docs-3.png"],
+            "desktop": true
         },
         {
             "name": "Crowdy!",
-            "overview": "",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
             "duration": {
-                "start": null,
-                "end": null
+                "start": "Jan 2024",
+                "end": "March 2024"
             },
-            "images": ["/images/crowdy-1.png", "/images/crowdy-2.png", "/images/crowdy-3.png"]
+            "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png"],
+            "desktop": false
         }
     ]
 }

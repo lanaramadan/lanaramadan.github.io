@@ -9,10 +9,12 @@
   --primary-start-transparent: rgba(115, 132, 111, .3);
   --primary-end-transparent: rgba(148, 105, 104, .3);
   --background: #FCFBF7;
+  --foreground: #261817;
 
   /* fonts */
   --font-geist-sans: 'Geist Sans', sans-serif;
   --font-new-spirit-condensed: "new-spirit-condensed", serif;
+  --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -88,4 +90,18 @@ body {
 .animate-scroll {
   display: flex;
   animation: scroll 30s linear infinite;
+}
+
+
+/* dash line */
+.dash-line {
+  border-right-width: 2px;
+  border-style: solid;
+  border-image: repeating-linear-gradient(
+    to bottom,
+    currentColor 0,
+    currentColor 23px,
+    transparent 23px,
+    transparent 30px
+  ) 1 stretch;
 }

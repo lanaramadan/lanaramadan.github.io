@@ -20,7 +20,7 @@ export default function FeaturedProjects() {
       </div>
 
       <div className="flex-grow flex items-center justify-center gap-10">  
-          <MiniProjectCard
+          {/* <MiniProjectCard
             project="Zotgle"
             imageSrc="/zotgle.png"
             link="https://github.com/lanaramadan/zotgle"
@@ -45,7 +45,7 @@ export default function FeaturedProjects() {
             imageSrc="/zotgle.png"
             link="https://github.com/lanaramadan/zotgle"
             desktop={true}
-          />
+          /> */}
         </div>
       </div>
   );

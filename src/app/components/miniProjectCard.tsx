@@ -1,50 +1,60 @@
 import Image from "next/image";
 
+import ProjectThumbnail from "./projectThumbnail";
+
 type MiniProjectCardProps = {
-  project: string;
-  imageSrc: string;
-  link: string;
-  desktop: boolean
+  project: {
+    name: string;
+    overview: string;
+    description?: string;
+    tools: string[];
+    links: string[];
+    duration: {
+      start: string;
+      end: string;
+    };
+    images: string[];
+    desktop: boolean;
+  };
+  workPage?: boolean;
+  index?: number;
 };
 
-export default function MiniProjectCard({ project, imageSrc, link, desktop }: MiniProjectCardProps) {
-  console.log(desktop)
+
+export default function MiniProjectCard({ project, workPage = false, index = 0 }: MiniProjectCardProps) {
+  const { name, overview, tools, links, images, desktop} = project;
+  const { start, end } = project.duration;
   
   return (
-    <a
-      href={link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-[#946968] underline underline-offset-2 hover:text-[#946968] no-underline"
-    >
-      <div 
-        className="pt-6 pl-6 pr-6 font-serif"
-        style={{
-          paddingBottom: '0.5px',
-          backgroundImage: 'repeating-linear-gradient(0deg, #946968, #946968 16px, transparent 16px, transparent 23px, #946968 23px), repeating-linear-gradient(90deg, #946968, #946968 16px, transparent 16px, transparent 23px, #946968 23px), repeating-linear-gradient(180deg, #946968, #946968 16px, transparent 16px, transparent 23px, #946968 23px), repeating-linear-gradient(270deg, #946968, #946968 16px, transparent 16px, transparent 23px, #946968 23px)',
-          backgroundSize: '2px 100%, 100% 2px, 2px 100% , 100% 2px',
-          backgroundPosition: '0 0, 0 0, 100% 0, 0 100%',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+    <div className="h-64 flex gap-6">
+        <ProjectThumbnail desktop={desktop} images={images}/>
         
-        <div className="relative flex justify-center mb-3 h-36"> {/* Adjust height as needed */}
-          {/* Background rectangle */}
-          <div className="absolute bg-[#D0C0BE] rounded-2xl w-[240px] h-[120px] top-1/2 -translate-y-[70%]"></div>
+        {/* text content */}
+        { workPage && 
+          <div className="w-72">
+            {/* project name */}
+            <h3 className="text-2xl font-medium font-[family-name:var(--font-geist-mono)]">
+              {String(index + 1).padStart(2, "0")} {name}
+            </h3>
+            
+            {/* duration */}
+            <h4 className="text-sm font-medium font-[family-name:var(--font-geist-mono)]">
+              {start} - {end}
+            </h4>
+            
+            {/* overview */}
+            <p className="text-sm font-[family-name:var(--font-ibm-plex-sans)] text-[#261817]">
+              {overview}
+            </p>
 
-          {/* Image */}
-          <Image
-            src={imageSrc}
-            alt={`${project} screenshot`}
-            width={220}
-            height={140}
-            className="relative z-10 rounded-md"
-          />
-        </div>
+            {/* btn */}
+            <button className="bg-current mt-5 px-7 py-1">
+              <p className="text-sm font-medium font-[family-name:var(--font-geist-mono)] text-[#FCFBF7]">read more</p>
+            </button>
 
-        <p className="text-3xl font-medium text-center mb-2 font-[family-name:var(--font-new-spirit-condensed)]">{project.toUpperCase()}</p>
-      </div>
-    </a>
+          </div>
+        }
+    </div>
   );
 }
 

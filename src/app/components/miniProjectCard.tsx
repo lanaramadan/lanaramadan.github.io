@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import ProjectThumbnail from "./projectThumbnail";
 
 type MiniProjectCardProps = {
@@ -22,7 +20,7 @@ type MiniProjectCardProps = {
 
 
 export default function MiniProjectCard({ project, workPage = false, index = 0 }: MiniProjectCardProps) {
-  const { name, overview, tools, links, images, desktop} = project;
+  const { name, overview, images, desktop} = project;
   const { start, end } = project.duration;
   
   return (

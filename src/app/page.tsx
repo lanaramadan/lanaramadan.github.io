@@ -22,13 +22,13 @@ export default function Home() {
   return (
     <main>
       {/* top banner */}
-      <section className="sticky top-0 h-screen section-bg  flex flex-col">
+      <section className="sticky top-0 h-screen section-bg flex flex-col">
         <div className="z-10"><HomeTitle/></div>
         
       </section>
 
       {/* content */}
-      <section className="relative h-screen z-10 section-bg border-t-4 border-current outline-offset-5">
+      <section className="sticky h-screen z-10 section-bg border-t-4 border-current">
         <NavigationBar/>
         <FeaturedProjects />
         <Footer />

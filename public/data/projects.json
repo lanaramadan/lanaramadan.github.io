@@ -101,7 +101,8 @@
     "designProjects": [
         {
             "name": "GEM",
-            "overview": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
+            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+            "description": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
             "tools": [
                 "Figma",
                 "Jira"
@@ -126,7 +127,7 @@
                 "start": "Jan 2024",
                 "end": "March 2024"
             },
-            "images": ["anywear-1.png", "anywear-2.png", "anywear-3.png"],
+            "images": ["anywear.png", "anywear.png", "anywear.png"],
             "desktop": true
         },
         {
@@ -138,7 +139,7 @@
                 "start": "Jan 2024",
                 "end": "March 2024"
             },
-            "images": ["dino-docs-1.png", "dino-docs-2.png", "dino-docs-3.png"],
+            "images": ["dino-docs.png"],
             "desktop": true
         },
         {

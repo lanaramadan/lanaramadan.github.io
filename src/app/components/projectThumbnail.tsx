@@ -7,7 +7,6 @@ export default function ProjectThumbnail({
   desktop: boolean;
   images: string[];
 }) {
-  images = ["zotgle.png", "gem-1.png"]
   return (
     <>
       {desktop ? (
@@ -61,7 +60,7 @@ export default function ProjectThumbnail({
                 className="z-10"
               />
               <Image
-                src={`/project-images/${images[1]}`}
+                src={`/project-images/${images[0]}`}
                 alt="Overlay 1"
                 width={70}
                 height={70}
@@ -101,7 +100,7 @@ export default function ProjectThumbnail({
                 className="z-10"
               />
               <Image
-                src={`/project-images/${images[1]}`}
+                src={`/project-images/${images[2]}`}
                 alt="Overlay 2"
                 width={70}
                 height={70}

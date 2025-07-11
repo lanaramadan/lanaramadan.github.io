@@ -7,6 +7,11 @@ import DesktopThumbnail from "@/app/components/desktopThumbnail";
 import PhoneThumbnail from "@/app/components/phoneThumbnail";
 // import { FaArrowLeft } from "react-icons/fa";
 
+
+type Props = {
+  params: { slug: string } | Promise<{ slug: string }>;
+};
+
 // render webpages
 export async function generateStaticParams() {
   const slugs = [
@@ -17,7 +22,7 @@ export async function generateStaticParams() {
   return slugs;
 }
 
-export default function ProjectPage({ params }: { params: { slug: string } }) {
+export default function ProjectPage({ params }: Props) {
   // function goBack() {
   //   if (typeof window !== "undefined") {
   //     window.history.back();

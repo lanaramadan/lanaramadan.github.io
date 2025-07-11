@@ -35,7 +35,7 @@ export default function NavigationBar() {
           text-sm
           sm:space-x-20
           sm:text-xl
-          font-[family-name:var(--font-geist-mono)]
+          font-geist-mono
         "
       >
         <Link

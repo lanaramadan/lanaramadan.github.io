@@ -36,14 +36,14 @@ export default function HomeBanner() {
                 <h3 className="text-3xl font-[family-name:var(--font-new-spirit-condensed)]">Based in...</h3>
                 <div className="flex flex-col items-end">
                     <p className="text-5xl font-[family-name:var(--font-new-spirit-condensed)]">📍 Orange County, California</p>
-                    <p className="text-lg font-[family-name:var(--font-geist-mono)]">[ {weekdayAbbreviation} | {monthAbbreviation} {currentDate.getDate()} {currentDate.getFullYear()} | 14:51 | 76°F ]</p>
+                    <p className="text-lg font-geist-mono">[ {weekdayAbbreviation} | {monthAbbreviation} {currentDate.getDate()} {currentDate.getFullYear()} | 14:51 | 76°F ]</p>
                 </div>
             </div>
 
             <div className="font-medium">
                 <h3 className="text-3xl font-[family-name:var(--font-new-spirit-condensed)]">Currently...</h3>
-                <p className="text-lg font-[family-name:var(--font-geist-mono)]">📚 Computer Science & Informatics @ UCI </p>
-                <p className="text-lg font-[family-name:var(--font-geist-mono)]">💻 Application Developer Intern @ Esri</p>
+                <p className="text-lg font-geist-mono">📚 Computer Science & Informatics @ UCI </p>
+                <p className="text-lg font-geist-mono">💻 Application Developer Intern @ Esri</p>
             </div>
         </div>
     </div>

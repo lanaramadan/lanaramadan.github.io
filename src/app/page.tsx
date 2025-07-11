@@ -3,21 +3,6 @@ import Footer from "./components/navigation/footer";
 import FeaturedProjects from "./components/home-page/featuredProjects"
 import HomeTitle from "./components/home-page/homeTitle";
 
-// export default function Home() {
-//   return (
-//     <div className="flex flex-col min-h-screen py-8 px-12 gap-16 font-[family-name:var(--font-geist-sans)]">
-//       <NavigationBar/>
-
-//       <main className="flex-grow flex flex-col items-center justify-center">  
-//         <HomeBanner />
-//         <FeaturedProjects />
-//       </main>
-
-//       <Footer />
-//     </div>
-//   );
-// }
-
 export default function Home() {
   return (
     <main>

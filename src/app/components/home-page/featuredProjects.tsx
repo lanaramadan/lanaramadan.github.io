@@ -75,7 +75,7 @@ export default function FeaturedProjects() {
         <CurvedLine />
       </div>
 
-      <p className="font-[family-name:var(--font-geist-mono)] text-lg font-bold">programming</p>
+      <p className="font-geist-mono text-lg font-bold">programming</p>
       <div className="flex gap-1 px-12">
         {featuredProjects.slice(0, 3).map((project, index) => (
           <div
@@ -87,7 +87,7 @@ export default function FeaturedProjects() {
         ))}
       </div>
 
-      <p className="font-[family-name:var(--font-geist-mono)] text-lg font-bold">product design</p>
+      <p className="font-geist-mono text-lg font-bold">product design</p>
       <div className="flex gap-1 px-12">
         {featuredProjects.slice(3, 6).map((project, index) => (
           <div

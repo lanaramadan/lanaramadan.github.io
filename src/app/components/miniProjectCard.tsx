@@ -31,23 +31,23 @@ export default function MiniProjectCard({ project, workPage = false, index = 0 }
         { workPage && 
           <div className="w-72">
             {/* project name */}
-            <h3 className="text-2xl font-medium font-[family-name:var(--font-geist-mono)]">
+            <h3 className="text-2xl font-medium font-geist-mono">
               {String(index + 1).padStart(2, "0")} {name}
             </h3>
             
             {/* duration */}
-            <h4 className="text-sm font-medium font-[family-name:var(--font-geist-mono)]">
+            <h4 className="text-sm font-medium font-geist-mono">
               {start} - {end}
             </h4>
             
             {/* overview */}
-            <p className="text-sm font-[family-name:var(--font-ibm-plex-sans)] text-[#261817]">
+            <p className="text-sm font-ibm-plex-sans text-[#261817]">
               {overview}
             </p>
 
             {/* btn */}
             <button className="bg-current mt-5 px-7 py-1">
-              <p className="text-sm font-medium font-[family-name:var(--font-geist-mono)] text-[#FCFBF7]">read more</p>
+              <p className="text-sm font-medium font-geist-mono text-[#FCFBF7]">read more</p>
             </button>
 
           </div>

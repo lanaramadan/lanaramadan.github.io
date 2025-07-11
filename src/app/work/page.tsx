@@ -1,12 +1,19 @@
+"use client";
+import { useState } from "react";
 import NavigationBar from "../components/navigation/navigationBar";
 import Footer from "../components/navigation/footer";
 import MiniProjectCard from "../components/miniProjectCard";
+import ProjectCardBanner from "../components/projectCardBanner"
 
 import projectData from "../../../public/data/projects.json";
 
 export default function Work() {
   const programmingProjects = projectData.programmingProjects;
   const designProjects = projectData.designProjects;
+
+  const [activeCategory, setActiveCategory] = useState<"programming" | "design">("programming");
+  const displayedProjects = activeCategory === "programming" ? programmingProjects : designProjects;
+
 
   return (
     <div className="min-h-screen py-8 px-12">
@@ -25,49 +32,47 @@ export default function Work() {
         "
       >
         <section>
-          <h2 className="
-            font-medium
-            text-xl
-            sm:text-4xl
-            font-[family-name:var(--font-new-spirit-condensed)]
-          ">Programming</h2>
           
-          <div className="flex gap-3 w-[88vw] overflow-x-auto mt-5">
-            {programmingProjects.map((project, index) => (
-              <div 
-                key={index} 
-                className="flex-shrink-0 pr-3 last:pr-0 last:border-none dash-line"
+          <section className="flex gap-8 justify-center">
+            <button 
+              className={`hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl ${
+                activeCategory === "programming" ? "bg-current" : "bg-transparent"
+              }`}
+              style={{ boxShadow: "inset 0 0 0 3px currentColor" }}
+              onClick={() => setActiveCategory("programming")}
+            >
+              <p 
+                className={`text-2xl font-medium font-geist-mono text-[#FCFBF7] ${
+                  activeCategory === "programming" ? "text-[#FCFBF7]" : "text-current"
+                }`}
               >
-                <MiniProjectCard
-                  project={project}
-                  workPage={true}
-                  index={index}
-                />
-              </div>
-            ))}
-          </div>
-
-        </section>
-
-        <hr className="border-t border-2 border-current w-[88vw]" />
+                Programming</p>
+            </button>
+            <button 
+              className={`hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl ${
+                activeCategory === "design" ? "bg-current" : "bg-transparent"
+              }`}
+              style={{ boxShadow: "inset 0 0 0 3px currentColor" }}
+              onClick={() => setActiveCategory("design")}
+            >
+              <p 
+                className={`text-2xl font-medium font-geist-mono text-[#FCFBF7] ${
+                  activeCategory === "design" ? "text-[#FCFBF7]" : "text-current"
+                }`}
+              >
+                Product Design</p>
+            </button>
+          </section>
         
-        <section>
-          <h2 className="
-            font-medium
-            text-xl
-            sm:text-4xl
-            font-[family-name:var(--font-new-spirit-condensed)]
-          ">Product Design</h2>
-          
-          <div className="flex gap-5 w-[88vw] overflow-x-auto mt-5">
-            {designProjects.map((project, index) => (
+
+          <div className="flex flex-col gap-8 w-[88vw] overflow-x-auto mt-5">
+            {displayedProjects.map((project, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0 pr-3 last:pr-0 last:border-none dash-line"
+                className=""
               >
-                <MiniProjectCard
+                <ProjectCardBanner
                   project={project}
-                  workPage={true}
                   index={index}
                 />
               </div>
@@ -75,11 +80,7 @@ export default function Work() {
           </div>
 
         </section>
-
-
-
       </div>
-
       <Footer />
     </div>
   );

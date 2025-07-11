@@ -4,15 +4,16 @@ import Image from "next/image";
 
 type PhoneThumbnailProps = {
   images: string[];
-  width?: number;
-  height?: number;
+  scale?: number;
 };
 
 export default function PhoneThumbnail({
   images,
-  width = 300,
-  height = 240,
+  scale = 1
 }: PhoneThumbnailProps) {
+  const width = 100;
+  const height = 200;
+
   const mobileProjects: (string | null)[] = [...images.slice(0, 3)];
   while (mobileProjects.length < 3) mobileProjects.push(null);
 
@@ -29,8 +30,8 @@ export default function PhoneThumbnail({
   return (
 
       <div 
-        className="flex justify-between z-10 px-4 gap-2"
-        style={{ width: `${width + 104}px` }}
+        className="flex justify-between z-10 px-4 gap-1 width-fit"
+        // style={{ width: `${(width * 3)}px` }}
       >
         {mobileProjects.map((img, idx) => {
           const src = `/project-images/${img}`;
@@ -38,7 +39,7 @@ export default function PhoneThumbnail({
             <div 
               key={idx}
               className="relative"
-              style={{ width: `${width}px`, height: `${height }px` }}
+              style={{ width: `${(width + 20) * scale}px`, height: `${(height + 20) * scale}px` }}
             >
               {/* phone image */}
               <Image 
@@ -54,18 +55,21 @@ export default function PhoneThumbnail({
                 <Image
                   src={src}
                   alt={`Overlay ${idx + 1}`}
-                  width={105}
-                  height={105}
-                  className="absolute top-2 left-2 rounded-lg z-0"
+                  width={(width * scale)}
+                  height={(height * scale)}
+                  className="absolute rounded-3xl z-0"
+                  style={{ top: 3 * scale, left: 10 * scale }}
                   priority
                   onError={() => handleError(idx)}
                 />
               ) : (
                 <div
-                  className="absolute top-2 left-2 rounded-lg z-0"
+                  className="absolute rounded-2xl z-0"
                   style={{
-                    width: 105,
-                    height: 225,
+                    top: 3 * scale,
+                    left: 10 * scale,
+                    width: (width) * scale,
+                    height: (height + 15) * scale,
                     backgroundColor: "currentColor",
                   }}
                 />

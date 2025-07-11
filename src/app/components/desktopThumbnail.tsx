@@ -4,25 +4,25 @@ import Image from "next/image";
 
 type DesktopThumbnailProps = {
   image: string;
-  width?: number;
-  height?: number;
+  scale?: number;
 };
 
 export default function DesktopThumbnail({
   image,
-  width = 300,
-  height = 200,
+  scale = 1
 }: DesktopThumbnailProps) {
   const [hasError, setHasError] = useState(false);
+  const width = 300;
+  const height = 200
 
   return (
     <div 
-      className="flex justify-between z-10 px-4"
-      style={{ width: `${width + 104}px` }}
+      className="flex justify-between z-10 px-4 width-fit"
+      // style={{ width: `${(width + 104) * scale}px` }}
     >
       <div 
         className="relative"
-        style={{ width: `${width + 80}px`, height: `${height + 40}px` }}
+        style={{ width: `${(width + 70) * scale}px`, height: `${(height + 40) * scale}px` }}
       >
         {/* laptop image */}
         <Image
@@ -38,20 +38,23 @@ export default function DesktopThumbnail({
           <Image
             src={`/project-images/${image}`}
             alt="Overlay"
-            width={width}
-            height={height}
-            className="absolute top-3 left-9 rounded-sm z-0"
+            width={width * scale}
+            height={height * scale}
+            className="absolute rounded-sm z-0"
+            style={{ top: 12 * scale, left: 36 * scale }}
             priority
             onError={() => setHasError(true)}
           />
         ) : (
           <div
-            className="absolute top-3 left-9 rounded-md z-0"
+            className="absolute rounded-md z-0"
             style={{
-              width,
-              height,
+              top: 12 * scale,
+              left: 36 * scale,
+              width: width * scale,
+              height: height * scale,
               backgroundColor: "currentColor",
-            }}
+            }}            
           />
         )}
       </div>

@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import NavigationBar from "../components/navigation/navigationBar";
-import Footer from "../components/navigation/footer";
-import ProjectCardBanner from "../components/projectCardBanner"
+import NavigationBar from "@/app/components/navigation/navigationBar";
+import Footer from "@/app/components/navigation/footer";
+import ProjectCardBanner from "@/app/components/projectCardBanner"
 import projectData from "@/data/projects.json";
 
 export default function Work() {
@@ -14,7 +14,7 @@ export default function Work() {
 
 
   return (
-    <div className="min-h-screen py-8 px-12">
+    <div className="min-h-screen py-2 px-12">
         <NavigationBar/>
 
       <div

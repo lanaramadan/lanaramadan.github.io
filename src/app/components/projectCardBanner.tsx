@@ -1,6 +1,6 @@
 import Link from "next/link";
-import DesktopThumbnail from "./desktopThumbnail";
-import PhoneThumbnail from "./phoneThumbnail";
+import DesktopThumbnail from "@/app/components/desktopThumbnail";
+import PhoneThumbnail from "@/app/components/phoneThumbnail";
 import { Project } from "@/types/project";
 
 type ProjectCardBannerProps = {
@@ -12,6 +12,12 @@ type ProjectCardBannerProps = {
 export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBannerProps) {
   const { name, webpage, overview, images, desktop} = project;
   const { start, end } = project.duration;
+
+  function formatDate(dateStr: string) {
+    const [month, year] = dateStr.split(" ");
+    const shortMonth = month.slice(0, 3)
+    return `${shortMonth} ${year}`;
+  }
   
   return (
     <div className="relative w-fit h-[35vh] flex items-center py-4">
@@ -38,7 +44,7 @@ export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBan
             
         {/* duration */}
         <h4 className="text-lg font-medium font-geist-mono">
-          {start} - {end}
+          {formatDate(start)} - {formatDate(end)}
         </h4>
           
            {/* overview */}

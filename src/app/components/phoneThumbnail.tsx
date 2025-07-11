@@ -16,6 +16,16 @@ export default function PhoneThumbnail({
   const mobileProjects: (string | null)[] = [...images.slice(0, 3)];
   while (mobileProjects.length < 3) mobileProjects.push(null);
 
+  const [imageErrors, setImageErrors] = useState<boolean[]>([false, false, false]);
+
+  function handleError(index: number) {
+    setImageErrors((prev) => {
+      const newErrors = [...prev];
+      newErrors[index] = true;
+      return newErrors;
+    });
+  }
+
   return (
 
       <div 
@@ -23,7 +33,6 @@ export default function PhoneThumbnail({
         style={{ width: `${width + 104}px` }}
       >
         {mobileProjects.map((img, idx) => {
-          const [hasError, setHasError] = useState(false);
           const src = `/project-images/${img}`;
           return (
             <div 
@@ -41,7 +50,7 @@ export default function PhoneThumbnail({
                 className="z-10"
               />
               {/* project image */}
-              {!hasError ? (
+              {!imageErrors[idx] && src ? (
                 <Image
                   src={src}
                   alt={`Overlay ${idx + 1}`}
@@ -49,7 +58,7 @@ export default function PhoneThumbnail({
                   height={105}
                   className="absolute top-2 left-2 rounded-lg z-0"
                   priority
-                  onError={() => setHasError(true)}
+                  onError={() => handleError(idx)}
                 />
               ) : (
                 <div

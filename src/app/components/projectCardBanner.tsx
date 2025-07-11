@@ -1,3 +1,4 @@
+import Link from "next/link";
 import DesktopThumbnail from "./desktopThumbnail";
 import PhoneThumbnail from "./phoneThumbnail";
 import { Project } from "@/types/project";
@@ -9,11 +10,10 @@ type ProjectCardBannerProps = {
 
 
 export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBannerProps) {
-  const { name, overview, images, desktop} = project;
+  const { name, webpage, overview, images, desktop} = project;
   const { start, end } = project.duration;
   
   return (
-    // <div className="relative w-fit flex items-center py-4 mt-6"></div>
     <div className="relative w-fit h-[35vh] flex items-center py-4">
       {/* bg */}
       <div 
@@ -30,7 +30,7 @@ export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBan
       )}
 
       {/* text content */}
-      <div className="ml-5 w-fit">
+      <div className="ml-5 w-fit z-10">
         {/* project name */}
         <h3 className="text-4xl font-medium font-geist-mono">
           {String(index + 1).padStart(2, "0")} {name}
@@ -47,9 +47,12 @@ export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBan
         </p>
 
         {/* btn */}
-        <button className="bg-current mt-10 px-7 py-1 rounded-lg">
-          <p className="text-lg font-medium font-geist-mono text-[#FCFBF7]">read more</p>
-        </button>
+        <Link href={`/work/${webpage}`}>
+          <button className="hover:drop-shadow-[0_0_8px_currentColor] bg-current mt-10 px-7 py-1 rounded-lg">
+            <p className="text-lg font-medium font-geist-mono text-[#FCFBF7]">read more</p>
+          </button>
+        </Link>
+
       </div>
     </div>
   );

@@ -56,12 +56,12 @@ export default function NavigationBar() {
         >
           about
         </Link>
-        <Link
+        {/* <Link
           href="/contact"
           className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           contact
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

@@ -2,10 +2,8 @@
 import { useState } from "react";
 import NavigationBar from "../components/navigation/navigationBar";
 import Footer from "../components/navigation/footer";
-import MiniProjectCard from "../components/miniProjectCard";
 import ProjectCardBanner from "../components/projectCardBanner"
-
-import projectData from "../../../public/data/projects.json";
+import projectData from "@/data/projects.json";
 
 export default function Work() {
   const programmingProjects = projectData.programmingProjects;

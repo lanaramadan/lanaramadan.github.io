@@ -1,21 +1,9 @@
-import ProjectThumbnail from "./projectThumbnail";
 import DesktopThumbnail from "./desktopThumbnail";
 import PhoneThumbnail from "./phoneThumbnail";
+import { Project } from "@/types/project";
 
 type ProjectCardBannerProps = {
-  project: {
-    name: string;
-    overview: string;
-    description?: string;
-    tools: string[];
-    links: string[];
-    duration: {
-      start: string;
-      end: string;
-    };
-    images: string[];
-    desktop: boolean;
-  };
+  project: Project;
   index?: number;
 };
 

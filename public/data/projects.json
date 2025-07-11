@@ -2,6 +2,7 @@
     "programmingProjects": [
         {
             "name": "Zotgle",
+            "webpage": "zotgle",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "description": "Developed a high-performance search engine, processing 55,000+ webpages with sub-100ms response times. Enhanced search relevance using TF-IDF scoring and PageRank, enabling more accurate and meaningful result ranking. Integrated GroqAI API for webpage summarization; implemented multithreaded retrieval for fast, scalable query handling.",
             "tools": [
@@ -25,6 +26,7 @@
         },
         {
             "name": "Movie Mania",
+            "webpage": "movie-mania",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [
                 "Java", 
@@ -51,6 +53,7 @@
         },
         {
             "name": "ADMAP",
+            "webpage": "admap",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
@@ -63,6 +66,7 @@
         },
         {
             "name": "La Peña",
+            "webpage": "la-pena",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
@@ -75,6 +79,7 @@
         },
         {
             "name": "AISS",
+            "webpage": "aiss",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
@@ -87,6 +92,7 @@
         },
         {
             "name": "Cafe Diary",
+            "webpage": "cafe-diary",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
@@ -101,6 +107,7 @@
     "designProjects": [
         {
             "name": "GEM",
+            "webpage": "gem",
             "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
             "description": "GEM is an app concept that I worked on as part of a fellowship program through Product Association @ UCI. The program involved collaborating with a cross-functional team of engineers, a manager, and a marketer to design and develop a solution that streamlines the travel discovery process. The goal for this project was to create an app that inspires users to step out of their comfort zones and explore unique hidden gems, while simultaneously honing my skills in a diverse and cross-functional environment.",
             "tools": [
@@ -117,6 +124,7 @@
         },
         {
             "name": "AnyWear",
+            "webpage": "anywear",
             "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
             "description": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
             "tools": [
@@ -133,6 +141,7 @@
         },
         {
             "name": "Dino Docs",
+            "webpage": "dino-docs",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],
@@ -145,6 +154,7 @@
         },
         {
             "name": "Crowdy!",
+            "webpage": "crowdy",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
             "links": [],

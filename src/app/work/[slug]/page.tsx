@@ -5,7 +5,7 @@ import NavigationBar from "@/app/components/navigation/navigationBar";
 import Footer from "@/app/components/navigation/footer";
 import DesktopThumbnail from "@/app/components/desktopThumbnail";
 import PhoneThumbnail from "@/app/components/phoneThumbnail";
-import { FaArrowLeft } from "react-icons/fa";
+// import { FaArrowLeft } from "react-icons/fa";
 
 // render webpages
 export async function generateStaticParams() {
@@ -18,11 +18,11 @@ export async function generateStaticParams() {
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
-  function goBack() {
-    if (typeof window !== "undefined") {
-      window.history.back();
-    }
-  }
+  // function goBack() {
+  //   if (typeof window !== "undefined") {
+  //     window.history.back();
+  //   }
+  // }
 
   const allProjects = [
     ...projectData.programmingProjects,
@@ -35,7 +35,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   if (!project) return notFound();
 
-  const { name, webpage, overview, images, desktop} = project;
+  const { name, images, desktop} = project;
   const { start, end } = project.duration;
 
   return (

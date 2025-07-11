@@ -17,8 +17,8 @@
                 "https://github.com/lanaramadan/zotgle-search-engine"
             ],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Jan 2025",
+                "end": "Mar 2025"
             },
             "images": ["zotgle.png"],
             "desktop": true
@@ -43,8 +43,8 @@
                 "https://github.com/lanaramadan/movie-mania"
             ],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Mar 2024",
+                "end": "Jun 2024"
             },
             "images": ["movie-mania.png"],
             "desktop": true
@@ -55,8 +55,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Oct 2024",
+                "end": "Jun 2025"
             },
             "images": ["admap.png"],
             "desktop": true
@@ -67,8 +67,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Oct 2024",
+                "end": "Jun 2025"
             },
             "images": ["la-pena.png"],
             "desktop": true
@@ -79,8 +79,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Oct 2023",
+                "end": "Jun 2024"
             },
             "images": ["aiss.png"],
             "desktop": true
@@ -91,8 +91,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Jun 2025",
+                "end": "Aug 2025"
             },
             "images": ["cafe-diary.png"],
             "desktop": false
@@ -101,31 +101,32 @@
     "designProjects": [
         {
             "name": "GEM",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "description": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
+            "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
+            "description": "GEM is an app concept that I worked on as part of a fellowship program through Product Association @ UCI. The program involved collaborating with a cross-functional team of engineers, a manager, and a marketer to design and develop a solution that streamlines the travel discovery process. The goal for this project was to create an app that inspires users to step out of their comfort zones and explore unique hidden gems, while simultaneously honing my skills in a diverse and cross-functional environment.",
             "tools": [
                 "Figma",
                 "Jira"
             ],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Jan 2023",
+                "end": "Apr 2023"
             },
             "images": ["gem-1.png", "gem-2.png", "gem-3.png"],
             "desktop": false
         },
         {
             "name": "AnyWear",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
+            "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
+            "description": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
             "tools": [
                 "Figma",
                 "Figjam"
             ],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Mar 2023",
+                "end": "Jun 2023"
             },
             "images": ["anywear.png", "anywear.png", "anywear.png"],
             "desktop": true
@@ -136,8 +137,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Sep 2024",
+                "end": "Dec 2024"
             },
             "images": ["dino-docs.png"],
             "desktop": true
@@ -148,8 +149,8 @@
             "tools": [],
             "links": [],
             "duration": {
-                "start": "Jan 2024",
-                "end": "March 2024"
+                "start": "Mar 2025",
+                "end": "Jun 2025"
             },
             "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png"],
             "desktop": false

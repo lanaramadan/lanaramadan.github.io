@@ -10,7 +10,7 @@ import CurvedLine from "@/app/components/curvedLine";
 
 
 type Props = {
-  params: { slug: string } | Promise<{ slug: string }>;
+  params: { slug: string };
 };
 
 // render webpages

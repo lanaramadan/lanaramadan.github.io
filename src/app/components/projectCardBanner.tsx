@@ -33,11 +33,14 @@ export default function ProjectCardBanner({
       />
 
       <div className="flex items-center ml-4">
-        {desktop ? (
-          <DesktopThumbnail image={images[0]} />
-        ) : (
-          <PhoneThumbnail images={images} width={100} height={200} />
-        )}
+        {/* image */}
+        <div className="w-[25em] flex justify-center items-center">
+          {desktop ? (
+            <DesktopThumbnail image={images[0]} />
+          ) : (
+            <PhoneThumbnail images={images} width={100} height={200} />
+          )}
+        </div>
 
         {/* text content */}
         <div className="ml-5 w-fit z-10">

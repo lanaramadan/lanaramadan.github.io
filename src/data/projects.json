@@ -1,171 +1,233 @@
 {
-    "programmingProjects": [
-        {
-            "name": "Zotgle",
-            "webpage": "zotgle",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "description": "Developed a high-performance search engine, processing 55,000+ webpages with sub-100ms response times. Enhanced search relevance using TF-IDF scoring and PageRank, enabling more accurate and meaningful result ranking. Integrated GroqAI API for webpage summarization; implemented multithreaded retrieval for fast, scalable query handling.",
-            "tools": [
-                "Python",
-                "Flask",
-                "JavaScript",
-                "HTML",
-                "CSS",
-                "AWS EC2",
-                "Git"
-            ],
-            "links": {
-                "github": "https://github.com/lanaramadan/zotgle-search-engine"
-            },
-            "duration": {
-                "start": "Jan 2025",
-                "end": "Mar 2025"
-            },
-            "images": ["zotgle.png"],
-            "color": "#383663",
-            "desktop": true
-        },
-        {
-            "name": "Movie Mania",
-            "webpage": "movie-mania",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [
-                "Java", 
-                "JDBC", 
-                "jQuery", 
-                "AJAX", 
-                "Tomcat", 
-                "JavaScript", 
-                "HTML", 
-                "CSS", 
-                "MySQL", 
-                "JMeter", 
-                "Git"
-            ],
-            "links": {
-                "github": "https://github.com/lanaramadan/movie-mania"
-            },
-            "duration": {
-                "start": "Mar 2024",
-                "end": "Jun 2024"
-            },
-            "images": ["movie-mania.png"],
-            "color": "#807490",
-            "desktop": true
-        },
-        {
-            "name": "ADMAP",
-            "webpage": "admap",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},
-            "duration": {
-                "start": "Oct 2024",
-                "end": "Jun 2025"
-            },
-            "images": ["admap.png"],
-            "desktop": true
-        },
-        {
-            "name": "La Peña",
-            "webpage": "la-pena",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},
-            "duration": {
-                "start": "Oct 2024",
-                "end": "Jun 2025"
-            },
-            "images": ["la-pena.png"],
-            "desktop": true
-        },
-        {
-            "name": "AISS",
-            "webpage": "aiss",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},
-            "duration": {
-                "start": "Oct 2023",
-                "end": "Jun 2024"
-            },
-            "images": ["aiss.png"],
-            "desktop": true
-        },
-        {
-            "name": "Cafe Diary",
-            "webpage": "cafe-diary",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},
-            "duration": {
-                "start": "Jun 2025",
-                "end": "Aug 2025"
-            },
-            "images": ["cafe-diary.png"],
-            "desktop": false
-        }
-    ],
-    "designProjects": [
-        {
-            "name": "GEM",
-            "webpage": "gem",
-            "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
-            "description": "GEM is an app concept that I worked on as part of a fellowship program through Product Association @ UCI. The program involved collaborating with a cross-functional team of engineers, a manager, and a marketer to design and develop a solution that streamlines the travel discovery process. The goal for this project was to create an app that inspires users to step out of their comfort zones and explore unique hidden gems, while simultaneously honing my skills in a diverse and cross-functional environment.",
-            "tools": [
-                "Figma",
-                "Jira"
-            ],
-            "links": {},
-            "duration": {
-                "start": "Jan 2023",
-                "end": "Apr 2023"
-            },
-            "images": ["gem-1.png", "gem-2.png", "gem-3.png"],
-            "desktop": false
-        },
-        {
-            "name": "AnyWear",
-            "webpage": "anywear",
-            "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
-            "description": "Prototyped a mobile app using Figma, employing design principles and user research to ensure user satisfaction. Collaborated closely with engineers, prioritized seamless integration of design and functionality of app features. Iterated through cross-functional teamwork and beta testing insights, engaged in mock pitching for valuable feedback Achieved 1st place in the fellowship program, garnering the top spot through the endorsement of industry experts.",
-            "tools": [
-                "Figma",
-                "Figjam"
-            ],
-            "links": {},           
-             "duration": {
-                "start": "Mar 2023",
-                "end": "Jun 2023"
-            },
-            "images": ["anywear.png", "anywear.png", "anywear.png"],
-            "desktop": true
-        },
-        {
-            "name": "Dino Docs",
-            "webpage": "dino-docs",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},            
-            "duration": {
-                "start": "Sep 2024",
-                "end": "Dec 2024"
-            },
-            "images": ["dino-docs.png"],
-            "desktop": true
-        },
-        {
-            "name": "Crowdy!",
-            "webpage": "crowdy",
-            "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
-            "tools": [],
-            "links": {},            
-            "duration": {
-                "start": "Mar 2025",
-                "end": "Jun 2025"
-            },
-            "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png"],
-            "desktop": false
-        }
-    ]
+  "programmingProjects": [
+    {
+      "name": "Zotgle",
+      "webpage": "zotgle",
+      "overview": "Search engine with intelligent ranking and AI-powered summarization",
+      "description": "Zotgle is a high-performance search engine designed to process and rank over 55,000 webpages with sub-100ms query responses. Leveraging TF-IDF and PageRank algorithms, it improves search relevance and accuracy. The system incorporates GroqAI API to generate webpage summaries and supports multithreaded query processing for scalability and efficiency.",
+      "tools": [
+        "Python",
+        "Flask",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "AWS EC2",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/lanaramadan/zotgle-search-engine"
+      },
+      "duration": {
+        "start": "Jan 2025",
+        "end": "Mar 2025"
+      },
+      "images": ["zotgle.png"],
+      "color": "#383663",
+      "desktop": true
+    },
+    {
+      "name": "Movie Mania",
+      "webpage": "movie-mania",
+      "overview": "Full-stack movie platform with real-time search, analytics, and admin controls.",
+      "description": "Movie Mania is a web application for exploring, searching, and analyzing movie data. Built using Java with JDBC and Tomcat, it incorporates jQuery and AJAX for interactivity and MySQL for persistent storage. Load testing was conducted with JMeter, and the app was deployed on AWS EC2. Includes admin features, search functionality, and performance optimizations.",
+      "tools": [
+        "Java",
+        "JDBC",
+        "jQuery",
+        "AJAX",
+        "Tomcat",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "MySQL",
+        "JMeter",
+        "AWS EC2",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/lanaramadan/movie-mania"
+      },
+      "duration": {
+        "start": "Mar 2024",
+        "end": "Jun 2024"
+      },
+      "images": ["movie-mania.png"],
+      "color": "#807490",
+      "desktop": true
+    },
+    {
+      "name": "ADMAP",
+      "webpage": "admap",
+      "overview": "Web platform for secure, user-specific access to Alzheimer's research data.",
+      "description": "ADMAP is an ongoing research-driven project aimed at helping Alzheimer's researchers manage and view large datasets. Built using Scala, Jooq, and PostgreSQL on the backend and Angular on the frontend, it enforces data privacy through user-specific access control. Hosted on AWS EC2 with S3 integration, the platform enables researchers to upload, browse, and manage data securely and efficiently.",
+      "tools": [
+        "Scala",
+        "Jooq",
+        "PostgreSQL",
+        "Angular",
+        "AWS EC2",
+        "AWS S3",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/chenlica/ADMAP"
+      },
+      "duration": {
+        "start": "Oct 2024",
+        "end": "Jun 2025"
+      },
+      "images": ["admap.png"],
+      "color": "#245799",
+      "desktop": true
+    },
+    {
+      "name": "La Peña",
+      "webpage": "la-pena",
+      "overview": "Cultural event platform built for a nonprofit organization",
+      "description": " La Peña is a community-focused platform developed for a nonprofit to promote and manage cultural events. Built with React, Express, and Node.js, it includes Firebase authentication and PostgreSQL for data management. The platform supports user roles, event creation, and media uploads via AWS S3. It emphasizes accessibility and seamless user experience.",
+      "tools": [
+        "React",
+        "Express",
+        "Node",
+        "Javascript",
+        "Firebase",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "AWS S3",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/ctc-uci/lpa"
+      },
+      "duration": {
+        "start": "Oct 2024",
+        "end": "Jun 2025"
+      },
+      "images": ["la-pena.png"],
+      "desktop": true
+    },
+    {
+      "name": "AISS",
+      "webpage": "aiss",
+      "overview": "Event planning and curriculum tracking tool for a STEM scholarship program.",
+      "description": "AISS is a comprehensive web platform built to streamline curriculum planning and event management for the Achievement Institute for STEM Scholars. Developed using React, Express, and PostgreSQL, it features robust routing, form validation, and a clean UI. It enables educators and program coordinators to efficiently track student involvement and resources.",
+      "tools": [
+        "React",
+        "Express",
+        "Node",
+        "Javascript",
+        "PostgreSQL",
+        "HTML",
+        "CSS",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/ctc-uci/aiss-backend"
+      },
+      "duration": {
+        "start": "Oct 2023",
+        "end": "Jun 2024"
+      },
+      "images": ["aiss.png"],
+      "desktop": true
+    },
+    {
+      "name": "Cafe Diary",
+      "webpage": "cafe-diary",
+      "overview": "Mobile app to log cafes visited and drinks ordered with location tagging.",
+      "description": "Cafe Diary is a mobile journaling app for coffee lovers to record their café visits and drink experiences. Built with React Native, Expo, and TypeScript, it allows users to search for cafes, add notes, and view statistics. The backend is powered by Node.js, Express.js, and PostgreSQL, and integrates real-time location data for enhanced user context.",
+      "tools": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Tailwind",
+        "CSS",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/lanaramadan/cafe-diary"
+      },
+      "duration": {
+        "start": "Jun 2025",
+        "end": "Aug 2025"
+      },
+      "images": ["cafe-diary.png"],
+      "desktop": false
+    }
+  ],
+  "designProjects": [
+    {
+      "name": "GEM",
+      "webpage": "gem",
+      "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
+      "description": " GEM is a travel discovery app concept created during a Product Association fellowship. Designed with a cross-functional team, it focuses on helping users find unique destinations based on personal interests. The project emphasized collaborative problem-solving, user-centered design, and cross-team communication using tools like Figma and Jira.",
+      "tools": ["Figma", "Jira"],
+      "links": {},
+      "duration": {
+        "start": "Jan 2023",
+        "end": "Apr 2023"
+      },
+      "images": ["gem-1.png", "gem-2.png", "gem-3.png", "gem-4.png"],
+      "color": "#065143",
+      "desktop": false
+    },
+    {
+      "name": "AnyWear",
+      "webpage": "anywear",
+      "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
+      "description": "AnyWear is a mobile app designed to assist users in packing outfits based on destination and weather. Developed during a design fellowship, it incorporated user research, rapid prototyping, and beta testing. The final prototype was presented to industry professionals and won first place in the program for its design clarity and utility.",
+      "tools": ["Figma", "Figjam"],
+      "links": {},
+      "duration": {
+        "start": "Mar 2023",
+        "end": "Jun 2023"
+      },
+      "images": ["anywear.png"],
+      "color": "#7E5443",
+      "desktop": true
+    },
+    {
+      "name": "Dino Docs",
+      "webpage": "dino-docs",
+      "overview": "A collaborative document editor designed to be safe and fun for kids.",
+      "description": "Dino Docs is a Google Docs-inspired platform tailored for children, blending collaborative writing with a playful, kid-friendly interface. Designed in Figma, it emphasizes simplicity, safety, and creativity—featuring colorful UI, helpful dinosaur mascots, and easy-to-use editing tools. The project explores how digital collaboration can be made engaging and accessible for younger users.",
+      "tools": ["Figma"],
+      "links": {},
+      "duration": {
+        "start": "Sep 2024",
+        "end": "Dec 2024"
+      },
+      "images": ["dino-docs.png"],
+      "color": "#77B0F7",
+      "desktop": true
+    },
+    {
+      "name": "Crowdy!",
+      "webpage": "crowdy",
+      "overview": "A mobile app to help students check campus crowd levels in real time.",
+      "description": "Crowdy! is a student-centered app that helps users navigate their campus by showing real-time crowd data across libraries, study spots, dining areas, and gyms. Designed in Figma, the app provides live updates to help students find the best times and places to go. The interface prioritizes clarity, speed, and usability to reduce stress and save time during busy day.",
+      "tools": [
+        "Figma",
+        "React Native",
+        "TypeScript",
+        "Tailwind",
+        "CSS",
+        "Node.js",
+        "Express.js",
+        "Git"
+      ],
+      "links": {},
+      "duration": {
+        "start": "Mar 2025",
+        "end": "Jun 2025"
+      },
+      "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png"],
+      "color": "#E06666",
+      "desktop": false
+    }
+  ]
 }

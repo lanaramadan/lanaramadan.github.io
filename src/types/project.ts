@@ -4,11 +4,14 @@ export type Project = {
     overview: string;
     description?: string;
     tools: string[];
-    links: string[];
+    links?: {
+        github?: string;
+    }
     duration: {
         start: string;
         end: string;
     };
     images: string[];
+    color?: string,
     desktop: boolean;
 };

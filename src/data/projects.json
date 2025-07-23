@@ -14,14 +14,15 @@
                 "AWS EC2",
                 "Git"
             ],
-            "links": [
-                "https://github.com/lanaramadan/zotgle-search-engine"
-            ],
+            "links": {
+                "github": "https://github.com/lanaramadan/zotgle-search-engine"
+            },
             "duration": {
                 "start": "Jan 2025",
                 "end": "Mar 2025"
             },
             "images": ["zotgle.png"],
+            "color": "#383663",
             "desktop": true
         },
         {
@@ -41,14 +42,15 @@
                 "JMeter", 
                 "Git"
             ],
-            "links": [
-                "https://github.com/lanaramadan/movie-mania"
-            ],
+            "links": {
+                "github": "https://github.com/lanaramadan/movie-mania"
+            },
             "duration": {
                 "start": "Mar 2024",
                 "end": "Jun 2024"
             },
             "images": ["movie-mania.png"],
+            "color": "#807490",
             "desktop": true
         },
         {
@@ -56,7 +58,7 @@
             "webpage": "admap",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},
             "duration": {
                 "start": "Oct 2024",
                 "end": "Jun 2025"
@@ -69,7 +71,7 @@
             "webpage": "la-pena",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},
             "duration": {
                 "start": "Oct 2024",
                 "end": "Jun 2025"
@@ -82,7 +84,7 @@
             "webpage": "aiss",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},
             "duration": {
                 "start": "Oct 2023",
                 "end": "Jun 2024"
@@ -95,7 +97,7 @@
             "webpage": "cafe-diary",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},
             "duration": {
                 "start": "Jun 2025",
                 "end": "Aug 2025"
@@ -114,7 +116,7 @@
                 "Figma",
                 "Jira"
             ],
-            "links": [],
+            "links": {},
             "duration": {
                 "start": "Jan 2023",
                 "end": "Apr 2023"
@@ -131,8 +133,8 @@
                 "Figma",
                 "Figjam"
             ],
-            "links": [],
-            "duration": {
+            "links": {},           
+             "duration": {
                 "start": "Mar 2023",
                 "end": "Jun 2023"
             },
@@ -144,7 +146,7 @@
             "webpage": "dino-docs",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},            
             "duration": {
                 "start": "Sep 2024",
                 "end": "Dec 2024"
@@ -157,7 +159,7 @@
             "webpage": "crowdy",
             "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
             "tools": [],
-            "links": [],
+            "links": {},            
             "duration": {
                 "start": "Mar 2025",
                 "end": "Jun 2025"

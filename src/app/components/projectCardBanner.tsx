@@ -8,7 +8,6 @@ type ProjectCardBannerProps = {
   index?: number;
 };
 
-
 export default function ProjectCardBanner({ project, index = 0 }: ProjectCardBannerProps) {
   const { name, webpage, overview, images, desktop} = project;
   const { start, end } = project.duration;

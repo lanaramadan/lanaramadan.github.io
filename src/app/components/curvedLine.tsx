@@ -3,13 +3,14 @@ import React from "react";
 type CurvedLineProps = {
   width?: number | string;
   height?: number | string;
-  stroke?: string;
+  stroke?: number | string;
   className?: string;
 };
 
 const CurvedLine: React.FC<CurvedLineProps> = ({
   width = 348,
   height = 16,
+  stroke = 5.5,
   className = "",
 }) => {
   return (
@@ -24,7 +25,7 @@ const CurvedLine: React.FC<CurvedLineProps> = ({
       <path
         d="M3.03683 7.64984C128 0.695915 216.336 3.23492 344.96 12.332"
         stroke="currentColor"
-        strokeWidth="5.5"
+        strokeWidth={stroke}
         strokeLinecap="round"
       />
     </svg>

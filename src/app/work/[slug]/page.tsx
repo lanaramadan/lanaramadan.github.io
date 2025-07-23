@@ -6,8 +6,7 @@ import Footer from "@/app/components/navigation/footer";
 import DesktopThumbnail from "@/app/components/desktopThumbnail";
 import PhoneThumbnail from "@/app/components/phoneThumbnail";
 import CurvedLine from "@/app/components/curvedLine";
-// import { FaArrowLeft } from "react-icons/fa";
-
+import BackButton from "@/app/components/backButton";
 
 type Props = {
   params: { slug: string };
@@ -24,12 +23,6 @@ export async function generateStaticParams() {
 }
 
 export default function ProjectPage({ params }: Props) {
-  // function goBack() {
-  //   if (typeof window !== "undefined") {
-  //     window.history.back();
-  //   }
-  // }
-
   const allProjects = [
     ...projectData.programmingProjects,
     ...projectData.designProjects,
@@ -43,65 +36,76 @@ export default function ProjectPage({ params }: Props) {
 
   const { name, images, description, tools, links, color, desktop } = project;
   const { start, end } = project.duration;
-  
-  return (
-    <div className="min-h-screen py-2 px-12 w-full flex flex-col items-center" style={{ color: color }}>
-        <NavigationBar/>
 
-        {/* banner */}
-        <div className="relative w-[88vw] rounded-3xl overflow-visible">
-          {/* bg */}
+  return (
+    <div
+      className="min-h-screen py-2 px-12 w-full flex flex-col items-center"
+      style={{ color: color }}
+    >
+      <NavigationBar />
+
+      {/* banner */}
+      <div className="relative w-[88vw] rounded-3xl overflow-visible">
+        {/* bg */}
+        {desktop ? (
           <div
             className="absolute top-0 left-0 w-full h-[75vh] rounded-3xl bg-current opacity-40"
             style={{
               zIndex: 0,
             }}
           />
+        ) : (
+          <div
+            className="absolute top-0 left-0 w-full h-[60vh] rounded-3xl bg-current opacity-40"
+            style={{
+              zIndex: 0,
+            }}
+          />
+        )}
 
-          {/* back arrow top-left */}
-          {/* <button
-            aria-label="Go back"
-            onClick={}
-            className="absolute top-4 left-4 z-10 p-2 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 transition"
-          >
-            <CurvedLine width={175} stroke={7}/>
-          </button> */}
-          
+        <div className="relative w-full flex justify-center pt-5 px-5">
+          {/* back arrow */}
+          <BackButton />
 
           {/* banner text */}
-          <div className="relative flex flex-col items-center z-20 pt-8">
-            <h2 className="text-lg font-geist-mono">{start} - {end}</h2>
-            <h1 className="text-8xl font-[family-name:var(--font-new-spirit-condensed)] mb-2">{name.toUpperCase()}</h1>
+          <div className="flex flex-col items-center z-20">
+            <h2 className="text-lg font-geist-mono">
+              {start} - {end}
+            </h2>
+            <h1 className="text-8xl font-[family-name:var(--font-new-spirit-condensed)] mb-2">
+              {name.toUpperCase()}
+            </h1>
             {desktop ? (
-              <DesktopThumbnail image={images[0]} scale={3}/>
+              <DesktopThumbnail image={images[0]} scale={3} />
             ) : (
-              <PhoneThumbnail images={images} scale={3}/>
+              <PhoneThumbnail images={images} scale={3} count={4} />
             )}
           </div>
-      
+        </div>
       </div>
 
       {/* overview, tools, links */}
       <div className="flex flex-col md:flex-row justify-between w-[68vw] pt-12 text-xl font-ibm-plex-sans">
-        
         {/* overview */}
         <div className="flex flex-col items-start w-[60%]">
           <div className="flex flex-col items-center">
-            <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">Overview</h2>
-            <CurvedLine width={175} stroke={7}/>
+            <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+              Overview
+            </h2>
+            <CurvedLine width={175} stroke={7} />
           </div>
-          
-          <div className="text-[#261817]">
-            {description}
-          </div>
+
+          <div className="text-[#261817]">{description}</div>
         </div>
 
         <div className="flex flex-col items-center">
           {/* tools */}
           <div>
             <div className="flex flex-col items-center">
-              <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">Tools</h2>
-              <CurvedLine width={175} stroke={7}/>
+              <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+                Tools
+              </h2>
+              <CurvedLine width={175} stroke={7} />
             </div>
             <ul className="text-[#261817]">
               {tools.map((tool, idx) => (
@@ -114,8 +118,10 @@ export default function ProjectPage({ params }: Props) {
           {links?.github && (
             <div className="flex flex-col items-center">
               <div className="flex flex-col items-center">
-                <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">Links</h2>
-                <CurvedLine width={175} stroke={7}/>
+                <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+                  Links
+                </h2>
+                <CurvedLine width={175} stroke={7} />
               </div>
               <a
                 href={links.github}
@@ -128,7 +134,6 @@ export default function ProjectPage({ params }: Props) {
             </div>
           )}
         </div>
-
       </div>
 
       <Footer />

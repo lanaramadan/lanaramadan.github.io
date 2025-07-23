@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 import Image from "next/image";
@@ -20,13 +20,13 @@ export default function Polaroid({
   width = 200,
   height = 200,
   rotation = "-10",
-  className = ""
+  className = "",
 }: PolaroidProps) {
   const [hovered, setHovered] = useState(false);
 
   const numericRotation = parseInt(rotation);
   const hoverRotation = (-1 * numericRotation).toString();
-  
+
   return (
     <div
       className={`
@@ -42,7 +42,7 @@ export default function Polaroid({
       `}
       style={{
         backgroundColor: "#FCFBF7",
-        transform: `rotate(${hovered ? hoverRotation : rotation}deg)`
+        transform: `rotate(${hovered ? hoverRotation : rotation}deg)`,
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -58,17 +58,16 @@ export default function Polaroid({
 
       <div className="relative z-10">
         <div className="overflow-hidden border-2 border-current">
-          <Image src={src} alt={alt} width={width} height={height} className="block" />
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className="block"
+          />
         </div>
         <p className="mt-3 text-2xl">{caption}</p>
       </div>
     </div>
   );
 }
-
-
-
-
-
-
-

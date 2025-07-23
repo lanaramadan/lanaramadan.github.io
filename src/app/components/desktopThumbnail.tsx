@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -9,20 +9,23 @@ type DesktopThumbnailProps = {
 
 export default function DesktopThumbnail({
   image,
-  scale = 1
+  scale = 1,
 }: DesktopThumbnailProps) {
   const [hasError, setHasError] = useState(false);
   const width = 300;
-  const height = 200
+  const height = 200;
 
   return (
-    <div 
+    <div
       className="flex justify-between z-10 px-4 width-fit"
       // style={{ width: `${(width + 104) * scale}px` }}
     >
-      <div 
+      <div
         className="relative"
-        style={{ width: `${(width + 70) * scale}px`, height: `${(height + 40) * scale}px` }}
+        style={{
+          width: `${(width + 70) * scale}px`,
+          height: `${(height + 40) * scale}px`,
+        }}
       >
         {/* laptop image */}
         <Image
@@ -54,7 +57,7 @@ export default function DesktopThumbnail({
               width: width * scale,
               height: height * scale,
               backgroundColor: "currentColor",
-            }}            
+            }}
           />
         )}
       </div>

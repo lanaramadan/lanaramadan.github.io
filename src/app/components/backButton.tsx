@@ -12,7 +12,6 @@ export default function BackButton() {
       className="absolute left-5 top-5 z-30 hover:drop-shadow-[0_0_8px_currentColor]"
       onClick={() => router.push("/work")}
     >
-      {/* Use your BackArrowIcon here or import it */}
       <BackArrowIcon />
     </button>
   );

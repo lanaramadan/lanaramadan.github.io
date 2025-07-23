@@ -11,8 +11,8 @@ export default function ProjectThumbnail({
   return (
     <div className="relative w-fit h-40 flex pt-6">
       {/* bg */}
-      <div 
-        className="absolute bottom-4 w-72 h-36  rounded-2xl z-0"  
+      <div
+        className="absolute bottom-4 w-72 h-36  rounded-2xl z-0"
         style={{
           backgroundColor: "currentColor",
           opacity: 0.4,
@@ -22,7 +22,7 @@ export default function ProjectThumbnail({
       {desktop ? (
         <DesktopThumbnail image={images[0]} />
       ) : (
-        <PhoneThumbnail images={images} /> 
+        <PhoneThumbnail images={images} />
       )}
     </div>
   );

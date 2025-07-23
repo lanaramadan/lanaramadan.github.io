@@ -1,8 +1,8 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function NavigationBar() {
   return (
-    <nav 
+    <nav
       className="
         w-full 
         flex 
@@ -13,7 +13,6 @@ export default function NavigationBar() {
         px-12
       "
     >
-      
       <Link
         href="/"
         className="
@@ -27,7 +26,7 @@ export default function NavigationBar() {
         LANA RAMADAN
       </Link>
 
-      <div 
+      <div
         className="
           tracking-wide 
           font-medium 
@@ -38,10 +37,7 @@ export default function NavigationBar() {
           font-geist-mono
         "
       >
-        <Link
-          href="/work"
-          className="hover:drop-shadow-[0_0_8px_currentColor]"
-        >
+        <Link href="/work" className="hover:drop-shadow-[0_0_8px_currentColor]">
           work
         </Link>
         {/* <Link

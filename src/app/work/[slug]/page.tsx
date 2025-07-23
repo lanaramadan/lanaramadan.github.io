@@ -8,12 +8,8 @@ import PhoneThumbnail from "@/app/components/phoneThumbnail";
 import CurvedLine from "@/app/components/curvedLine";
 import BackButton from "@/app/components/backButton";
 
-type Props = {
-  params: { slug: string };
-};
-
 // render webpages
-export async function generateStaticParams() {
+export function generateStaticParams() {
   const slugs = [
     ...projectData.programmingProjects,
     ...projectData.designProjects,
@@ -22,14 +18,20 @@ export async function generateStaticParams() {
   return slugs;
 }
 
-export default function ProjectPage({ params }: Props) {
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
   const allProjects = [
     ...projectData.programmingProjects,
     ...projectData.designProjects,
   ];
 
   const project: Project | undefined = allProjects.find(
-    (p) => p.webpage === params.slug
+    (p) => p.webpage === slug
   );
 
   if (!project) return notFound();

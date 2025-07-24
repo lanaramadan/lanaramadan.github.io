@@ -7,6 +7,7 @@ import DesktopThumbnail from "@/app/components/desktopThumbnail";
 import PhoneThumbnail from "@/app/components/phoneThumbnail";
 import CurvedLine from "@/app/components/curvedLine";
 import BackButton from "@/app/components/backButton";
+import StarBulletIcon from "@/app/components/icons/starBulletIcon";
 
 // render webpages
 export function generateStaticParams() {
@@ -111,7 +112,10 @@ export default async function ProjectPage({
             </div>
             <ul className="text-[#261817]">
               {tools.map((tool, idx) => (
-                <li key={idx}>{tool}</li>
+                <span key={idx} className="flex gap-1 items-center">
+                  <StarBulletIcon color={color}/>
+                  <li>{tool}</li>
+                </span>
               ))}
             </ul>
           </div>

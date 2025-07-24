@@ -93,7 +93,7 @@ export default function About() {
           <div>
             <div className="flex flex-col mb-2">
               <h1 className="mb-[-0.2em] text-3xl font-medium font-[family-name:var(--font-new-spirit-condensed)]">
-                what I've been...
+                what I&apos;ve been...
               </h1>
               <CurvedLine width={180} stroke={6} />
             </div>

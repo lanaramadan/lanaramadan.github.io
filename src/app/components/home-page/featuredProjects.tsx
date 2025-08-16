@@ -5,13 +5,14 @@ import CurvedLine from "../curvedLine";
 import projectData from "@/data/projects.json";
 import PencilUpIcon from "../icons/pencilUpIcon";
 
+import { Project } from "@/types/project";
+
 export default function FeaturedProjects() {
-  // combine all three projects in the order you want
-  const featuredProjects = [
+  const featuredProjects: Project[] = [
     projectData.designProjects.find((p) => p.name === "GEM"),
     projectData.designProjects.find((p) => p.name === "Dino Docs"),
     projectData.programmingProjects.find((p) => p.name === "HomeMapper"),
-  ].filter(Boolean); // remove any nulls if not found
+  ].filter(Boolean) as Project[];
 
   return (
     <div className="flex flex-col items-center">

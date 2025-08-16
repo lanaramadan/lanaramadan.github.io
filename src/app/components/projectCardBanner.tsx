@@ -46,7 +46,7 @@ export default function ProjectCardBanner({
         <div className="ml-5 w-fit z-10">
           {/* project name */}
           <h3 className="text-4xl font-medium font-geist-mono">
-          {index ? `${String(index + 1).padStart(2, "0")} ` : ""}{name}
+          {index !== null ? `${String(index + 1).padStart(2, "0")} ` : ""}{name}
 
           </h3>
 

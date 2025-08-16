@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavigationBar() {
+export default function NavigationBar({name=true}) {
   return (
     <nav
       className="
@@ -13,6 +13,7 @@ export default function NavigationBar() {
         px-12
       "
     >
+      {name ? 
       <Link
         href="/"
         className="
@@ -26,6 +27,7 @@ export default function NavigationBar() {
         LANA RAMADAN
       </Link>
 
+      : <div></div>}
       <div
         className="
           tracking-wide 

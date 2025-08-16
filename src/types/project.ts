@@ -6,6 +6,8 @@ export type Project = {
   tools: string[];
   links?: {
     github?: string;
+    figmaDemo?: string;
+    pitchDeck?: string;
   };
   duration: {
     start: string;

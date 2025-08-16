@@ -56,6 +56,31 @@
       "desktop": true
     },
     {
+      "name": "HomeMapper",
+      "webpage": "homemapper",
+      "overview": "Application for foster care matching, helping connect children with compatible homes based on key criteria.",
+      "description": "Cafe Diary is a mobile journaling app for coffee lovers to record their café visits and drink experiences. Built with React Native, Expo, and TypeScript, it allows users to search for cafes, add notes, and view statistics. The backend is powered by Node.js, Express.js, and PostgreSQL, and integrates real-time location data for enhanced user context.",
+      "tools": [
+        "React",
+        "TypeScript",
+        "Tailwind",
+        "HTML",
+        "CSS",
+        "ArcGIS Pro",
+        "ArcGIS Online",
+        "Git"
+      ],
+      "links": {
+        "github": "https://github.com/lanaramadan/hopemapper"
+      },
+      "duration": {
+        "start": "July 2025",
+        "end": "July 2025"
+      },
+      "images": ["hopemapper.png"],
+      "desktop": true
+    },
+    {
       "name": "ADMAP",
       "webpage": "admap",
       "overview": "Web platform for secure, user-specific access to Alzheimer's research data.",
@@ -78,33 +103,6 @@
       },
       "images": ["admap.png"],
       "color": "#245799",
-      "desktop": true
-    },
-    {
-      "name": "La Peña",
-      "webpage": "la-pena",
-      "overview": "Cultural event platform built for a nonprofit organization",
-      "description": " La Peña is a community-focused platform developed for a nonprofit to promote and manage cultural events. Built with React, Express, and Node.js, it includes Firebase authentication and PostgreSQL for data management. The platform supports user roles, event creation, and media uploads via AWS S3. It emphasizes accessibility and seamless user experience.",
-      "tools": [
-        "React",
-        "Express",
-        "Node",
-        "Javascript",
-        "Firebase",
-        "PostgreSQL",
-        "HTML",
-        "CSS",
-        "AWS S3",
-        "Git"
-      ],
-      "links": {
-        "github": "https://github.com/ctc-uci/lpa"
-      },
-      "duration": {
-        "start": "Oct 2024",
-        "end": "Jun 2025"
-      },
-      "images": ["la-pena.png"],
       "desktop": true
     },
     {
@@ -133,30 +131,31 @@
       "desktop": true
     },
     {
-      "name": "Cafe Diary",
-      "webpage": "cafe-diary",
-      "overview": "Mobile app to log cafes visited and drinks ordered with location tagging.",
-      "description": "Cafe Diary is a mobile journaling app for coffee lovers to record their café visits and drink experiences. Built with React Native, Expo, and TypeScript, it allows users to search for cafes, add notes, and view statistics. The backend is powered by Node.js, Express.js, and PostgreSQL, and integrates real-time location data for enhanced user context.",
+      "name": "La Peña",
+      "webpage": "la-pena",
+      "overview": "Cultural event platform built for a nonprofit organization.",
+      "description": " La Peña is a community-focused platform developed for a nonprofit to promote and manage cultural events. Built with React, Express, and Node.js, it includes Firebase authentication and PostgreSQL for data management. The platform supports user roles, event creation, and media uploads via AWS S3. It emphasizes accessibility and seamless user experience.",
       "tools": [
-        "React Native",
-        "Expo",
-        "TypeScript",
-        "Tailwind",
-        "CSS",
-        "Node.js",
-        "Express.js",
+        "React",
+        "Express",
+        "Node",
+        "Javascript",
+        "Firebase",
         "PostgreSQL",
+        "HTML",
+        "CSS",
+        "AWS S3",
         "Git"
       ],
       "links": {
-        "github": "https://github.com/lanaramadan/cafe-diary"
+        "github": "https://github.com/ctc-uci/lpa"
       },
       "duration": {
-        "start": "Jun 2025",
-        "end": "Aug 2025"
+        "start": "Oct 2024",
+        "end": "Jun 2025"
       },
-      "images": ["cafe-diary.png"],
-      "desktop": false
+      "images": ["la-pena.png"],
+      "desktop": true
     }
   ],
   "designProjects": [
@@ -164,9 +163,12 @@
       "name": "GEM",
       "webpage": "gem",
       "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
-      "description": " GEM is a travel discovery app concept created during a Product Association fellowship. Designed with a cross-functional team, it focuses on helping users find unique destinations based on personal interests. The project emphasized collaborative problem-solving, user-centered design, and cross-team communication using tools like Figma and Jira.",
+      "description": "GEM is a travel discovery app concept created during a Product Association fellowship. Designed with a cross-functional team, it won 1st place for helping users find unique destinations based on personal interests. The project emphasized collaborative problem-solving, user-centered design, and cross-team communication using tools like Figma and Jira.",
       "tools": ["Figma", "Jira"],
-      "links": {},
+      "links": {
+        "figmaDemo": "https://www.figma.com/proto/WtTzpCPMbwdoD1fKm73TUD/GEM-Wireframes?node-id=1-9&p=f&viewport=805%2C317%2C0.06&t=SOytUisLAlhok037-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=276%3A2258&show-proto-sidebar=1",
+        "pitchDeck": "https://docs.google.com/presentation/d/1esP-TTDC2d98u6pGQxrKPoZMajhezIu_CPWJI2N8_I8/present"
+      },
       "duration": {
         "start": "Jan 2023",
         "end": "Apr 2023"
@@ -181,7 +183,10 @@
       "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
       "description": "AnyWear is a mobile app designed to assist users in packing outfits based on destination and weather. Developed during a design fellowship, it incorporated user research, rapid prototyping, and beta testing. The final prototype was presented to industry professionals and won first place in the program for its design clarity and utility.",
       "tools": ["Figma", "Figjam"],
-      "links": {},
+      "links": {
+        "figmaDemo": "https://www.figma.com/design/FHS4fSMjDNU4usAxLIR2tK/AnyWear-Wireframes?node-id=975-465&t=yAdxgJsD85vmgXY2-1",
+        "pitchDeck": "https://docs.google.com/presentation/d/1mItNVgjRc8I6jnOSw5IQ6dfhPIaPNXHgrsO65Aed_dE/present"
+      },
       "duration": {
         "start": "Mar 2023",
         "end": "Jun 2023"
@@ -196,7 +201,9 @@
       "overview": "A collaborative document editor designed to be safe and fun for kids.",
       "description": "Dino Docs is a Google Docs-inspired platform tailored for children, blending collaborative writing with a playful, kid-friendly interface. Designed in Figma, it emphasizes simplicity, safety, and creativity—featuring colorful UI, helpful dinosaur mascots, and easy-to-use editing tools. The project explores how digital collaboration can be made engaging and accessible for younger users.",
       "tools": ["Figma"],
-      "links": {},
+      "links": {
+        "figmaDemo": "https://www.figma.com/design/YAGECqVZXlQFc7bTiQh8Q7/Dino-Docs?node-id=15-324&t=yf9Ig6xaByjY6Q9o-1"
+      },
       "duration": {
         "start": "Sep 2024",
         "end": "Dec 2024"
@@ -220,12 +227,16 @@
         "Express.js",
         "Git"
       ],
-      "links": {},
+      "links": {
+        "figmaDemo": "https://www.figma.com/design/GL6q2IfFhYaQcFMhyxDBhp/Crowd-Checker-Wireframes?node-id=165-2079&t=qtNJuC1QgOOSzG3e-1",
+        "pitchDeck": "https://docs.google.com/presentation/d/1sdTvt1KWxNMekcDI7Qesw2dEkGzAUCDhe_4tgGnVdEw/present",
+        "github": "https://github.com/Ashv2ley/CrowdChecker"
+      },
       "duration": {
         "start": "Mar 2025",
         "end": "Jun 2025"
       },
-      "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png"],
+      "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png", "crowdy-4.png"],
       "color": "#E06666",
       "desktop": false
     }

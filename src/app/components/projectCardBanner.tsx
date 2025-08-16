@@ -25,7 +25,7 @@ export default function ProjectCardBanner({
     <div className="relative w-fit h-[30vh] flex items-center">
       {/* bg */}
       <div
-        className="absolute w-[88vw] h-[30vh] rounded-3xl z-0"
+        className="absolute w-[88vw] h-[30vh] rounded-3xl z-0 p-32"
         style={{
           backgroundColor: "currentColor",
           opacity: 0.4,

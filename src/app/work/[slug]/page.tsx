@@ -113,7 +113,7 @@ export default async function ProjectPage({
             <ul className="text-[#261817]">
               {tools.map((tool, idx) => (
                 <span key={idx} className="flex gap-1 items-center">
-                  <StarBulletIcon color={color}/>
+                  <StarBulletIcon color={color} />
                   <li>{tool}</li>
                 </span>
               ))}
@@ -121,22 +121,47 @@ export default async function ProjectPage({
           </div>
 
           {/* links */}
-          {links?.github && (
-            <div className="flex flex-col items-center">
+          {(links?.github || links?.figmaDemo || links?.pitchDeck) && (
+            <div className="flex flex-col">
               <div className="flex flex-col items-center">
                 <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
                   Links
                 </h2>
                 <CurvedLine width={175} stroke={7} />
               </div>
-              <a
-                href={links.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-[#261817]"
-              >
-                GitHub Repository
-              </a>
+
+              {links.github && (
+                <a
+                  href={links.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
+                  GitHub Repository
+                </a>
+              )}
+
+              {links.figmaDemo && (
+                <a
+                  href={links.figmaDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
+                  Figma Demo
+                </a>
+              )}
+
+              {links.pitchDeck && (
+                <a
+                  href={links.pitchDeck}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
+                  Pitch Deck
+                </a>
+              )}
             </div>
           )}
         </div>

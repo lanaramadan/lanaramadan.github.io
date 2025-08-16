@@ -1,6 +1,6 @@
 import NavigationBar from "./components/navigation/navigationBar";
 import Footer from "./components/navigation/footer";
-// import FeaturedProjects from "./components/home-page/featuredProjects"
+import FeaturedProjects from "./components/home-page/featuredProjects"
 import HomeTitle from "./components/home-page/homeTitle";
 
 export default function Home() {
@@ -14,9 +14,9 @@ export default function Home() {
       </section>
 
       {/* content */}
-      <section className="sticky h-screen z-10 section-bg border-t-4 border-current">
+      <section className="sticky z-10 h-[157vh] section-bg border-t-4 border-current">
         <NavigationBar/>
-        {/* <FeaturedProjects /> */}
+        <FeaturedProjects />
         <Footer />
 
     

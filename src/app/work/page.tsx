@@ -70,9 +70,9 @@ export default function Work() {
             </button>
           </section>
 
-          <div className="flex flex-col gap-8 w-[88vw] overflow-x-auto mt-5">
+          <div className="flex flex-col gap-8 w-[88vw] mt-5">
             {displayedProjects.map((project, index) => (
-              <div key={index} className="">
+              <div key={index} className="w-full overflow-hidden">
                 <ProjectCardBanner project={project} index={index} />
               </div>
             ))}

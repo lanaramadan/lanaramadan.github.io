@@ -5,7 +5,7 @@ import { Project } from "@/types/project";
 
 type ProjectCardBannerProps = {
   project: Project;
-  index?: number;
+  index?: number | null;
 };
 
 export default function ProjectCardBanner({
@@ -46,7 +46,8 @@ export default function ProjectCardBanner({
         <div className="ml-5 w-fit z-10">
           {/* project name */}
           <h3 className="text-4xl font-medium font-geist-mono">
-            {String(index + 1).padStart(2, "0")} {name}
+          {index ? `${String(index + 1).padStart(2, "0")} ` : ""}{name}
+
           </h3>
 
           {/* duration */}

@@ -122,7 +122,7 @@ export default async function ProjectPage({
 
           {/* links */}
           {(links?.github || links?.figmaDemo || links?.pitchDeck) && (
-            <div className="flex flex-col">
+            <div className="flex flex-col pt-4">
               <div className="flex flex-col items-center">
                 <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
                   Links

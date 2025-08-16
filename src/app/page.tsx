@@ -8,7 +8,7 @@ export default function Home() {
     <main>
       {/* top banner */}
       <section className="sticky top-0 h-screen section-bg flex flex-col">
-        <NavigationBar name={false}/>
+        {/* <NavigationBar name={false}/> */}
         <div className="z-10"><HomeTitle/></div>
         
       </section>

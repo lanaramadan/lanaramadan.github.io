@@ -15,27 +15,27 @@ export default function About() {
         {/* poloroids */}
         <div className="relative w-[44vw]">
           <Polaroid
-            src="/beach.png"
-            alt="Beach"
-            caption="↑ that’s me!!"
+            src="/me.png"
+            alt="me"
+            caption="↑ that's me!!"
             rotation="-25"
             width={240}
             height={240}
             className="absolute z-30 left-[4vw] top-[6vh]"
           />
           <Polaroid
-            src="/beach.png"
-            alt="Beach"
-            caption="🌿☀️"
+            src="/waves.png"
+            alt="beach"
+            caption="i <3 the beach 🌊"
             rotation="15"
             width={240}
             height={240}
             className="absolute z-20 left-[16vw] top-[34vh]"
           />
           <Polaroid
-            src="/beach.png"
-            alt="Beach"
-            caption="🌿☀️"
+            src="/working.png"
+            alt="working"
+            caption="👩‍💻👩‍💻"
             rotation="-10"
             width={240}
             height={240}

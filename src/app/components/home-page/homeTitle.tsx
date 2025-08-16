@@ -20,34 +20,34 @@ export default function HomeTitle() {
       <Polaroid
         src="/beach.png"
         alt="Beach"
-        caption="🌿☀️"
+        caption="🌊☀️"
         rotation="-20"
         width={180}
         height={180}
         className="absolute top-[-1vh] left-1"
       />
       <Polaroid
-        src="/beach.png"
-        alt="Beach"
-        caption="🌿☀️"
+        src="/matcha.png"
+        alt="Coffee & matcha"
+        caption="☕️☕️"
         rotation="12"
         width={180}
         height={180}
         className="absolute bottom-9 left-[-1vw]"
       />
       <Polaroid
-        src="/beach.png"
+        src="/coffee.png"
         alt="Beach"
-        caption="🌿☀️"
+        caption="🍵🍵"
         rotation="-13"
         width={180}
         height={180}
         className="absolute top-24 right-8"
       />
       <Polaroid
-        src="/beach.png"
-        alt="Beach"
-        caption="🌿☀️"
+        src="/city.png"
+        alt="nyc"
+        caption="🚕🚕"
         rotation="13"
         width={180}
         height={180}

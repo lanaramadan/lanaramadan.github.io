@@ -16,9 +16,8 @@ const geistMono = Geist_Mono({
 const IBMPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
-  weight: ['400'],
+  weight: ["400"],
 });
-
 
 export const metadata: Metadata = {
   title: "Lana Ramadan",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function NavigationBar({name=true}) {
+export default function NavigationBar({ name = true }) {
   return (
     <nav
       className="
@@ -13,21 +13,22 @@ export default function NavigationBar({name=true}) {
         px-12
       "
     >
-      {name ? 
-      <Link
-        href="/"
-        className="
+      {name ? (
+        <Link
+          href="/"
+          className="
           hover:drop-shadow-[0_0_8px_currentColor]
           font-medium
           text-2xl
           sm:text-6xl
           font-[family-name:var(--font-new-spirit-condensed)]
         "
-      >
-        LANA RAMADAN
-      </Link>
-
-      : <div></div>}
+        >
+          LANA RAMADAN
+        </Link>
+      ) : (
+        <div></div>
+      )}
       <div
         className="
           tracking-wide 

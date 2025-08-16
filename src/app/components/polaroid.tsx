@@ -58,14 +58,25 @@ export default function Polaroid({
 
       <div className="relative z-10">
         <div className="overflow-hidden border-2 border-current">
-          <Image src={src} alt={alt} width={width} height={height} className="block" />
-        </div> 
-        {caption.length > 2 ? 
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className="block"
+          />
+        </div>
+        {caption.length > 2 ? (
           // text
-          <p className="mt-3 ml-3 text-xl text-[#261817] font-geist-mono">{caption}</p> : 
+          <p className="mt-3 ml-3 text-xl text-[#261817] font-geist-mono">
+            {caption}
+          </p>
+        ) : (
           // emojis
-          <p className="mt-3 ml-3 text-2xl text-[#261817] font-geist-mono">{caption}</p>
-        }
+          <p className="mt-3 ml-3 text-2xl text-[#261817] font-geist-mono">
+            {caption}
+          </p>
+        )}
       </div>
     </div>
   );

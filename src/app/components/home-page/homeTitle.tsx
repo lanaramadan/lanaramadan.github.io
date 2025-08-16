@@ -6,7 +6,7 @@ import NavigationBar from "../navigation/navigationBar";
 export default function HomeTitle() {
   return (
     <div className="flex flex-col relative w-full h-screen justify-between align-center items-center">
-      <NavigationBar name={false}/>
+      <NavigationBar name={false} />
       <div className="flex flex-col w-full h-screen justify-center align-center items-center leading-[0.8]">
         <h1 className="text-[20vw] font-medium font-[family-name:var(--font-new-spirit-condensed)]">
           LANA

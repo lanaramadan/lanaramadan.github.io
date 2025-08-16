@@ -236,7 +236,12 @@
         "start": "Mar 2025",
         "end": "Jun 2025"
       },
-      "images": ["crowdy-1.png", "crowdy-2.png", "crowdy-3.png", "crowdy-4.png"],
+      "images": [
+        "crowdy-1.png",
+        "crowdy-2.png",
+        "crowdy-3.png",
+        "crowdy-4.png"
+      ],
       "color": "#E06666",
       "desktop": false
     }

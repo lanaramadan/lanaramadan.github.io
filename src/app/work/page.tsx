@@ -40,7 +40,7 @@ export default function Work() {
               onClick={() => setActiveCategory("design")}
             >
               <p
-                className={`text-2xl font-medium font-geist-mono text-[#FCFBF7] ${
+                className={`text-2xl font-medium font-geist-mono ${
                   activeCategory === "design"
                     ? "text-[#FCFBF7]"
                     : "text-current"

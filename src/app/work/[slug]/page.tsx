@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import projectData from "@/data/projects.json";
 import { Project } from "@/types/project";
@@ -166,6 +167,23 @@ export default async function ProjectPage({
           )}
         </div>
       </div>
+
+      {/* case study button */}
+      {links?.caseStudy === "" ? (
+        <button className="px-12 py-2 rounded-2xl bg-current mt-10" disabled>
+          <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
+            Case Study Coming Soon ✨
+          </p>
+        </button>
+      ) : links?.caseStudy ? (
+        <Link href={links.caseStudy} target="_blank" rel="noopener noreferrer">
+          <button className="hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl bg-current mt-10">
+            <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
+              View Case Study ↗
+            </p>
+          </button>
+        </Link>
+      ) : null}
 
       <Footer />
     </div>

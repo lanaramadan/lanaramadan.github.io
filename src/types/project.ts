@@ -8,6 +8,7 @@ export type Project = {
     github?: string;
     figmaDemo?: string;
     pitchDeck?: string;
+    caseStudy?: string;
   };
   duration: {
     start: string;

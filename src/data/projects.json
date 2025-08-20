@@ -167,7 +167,8 @@
       "tools": ["Figma", "Jira"],
       "links": {
         "figmaDemo": "https://www.figma.com/proto/WtTzpCPMbwdoD1fKm73TUD/GEM-Wireframes?node-id=1-9&p=f&viewport=805%2C317%2C0.06&t=SOytUisLAlhok037-0&scaling=scale-down&content-scaling=fixed&starting-point-node-id=276%3A2258&show-proto-sidebar=1",
-        "pitchDeck": "https://docs.google.com/presentation/d/1esP-TTDC2d98u6pGQxrKPoZMajhezIu_CPWJI2N8_I8/present"
+        "pitchDeck": "https://docs.google.com/presentation/d/1esP-TTDC2d98u6pGQxrKPoZMajhezIu_CPWJI2N8_I8/present",
+        "caseStudy": "https://www.behance.net/gallery/232821213/GEM"
       },
       "duration": {
         "start": "Jan 2023",
@@ -185,7 +186,8 @@
       "tools": ["Figma", "Figjam"],
       "links": {
         "figmaDemo": "https://www.figma.com/design/FHS4fSMjDNU4usAxLIR2tK/AnyWear-Wireframes?node-id=975-465&t=yAdxgJsD85vmgXY2-1",
-        "pitchDeck": "https://docs.google.com/presentation/d/1mItNVgjRc8I6jnOSw5IQ6dfhPIaPNXHgrsO65Aed_dE/present"
+        "pitchDeck": "https://docs.google.com/presentation/d/1mItNVgjRc8I6jnOSw5IQ6dfhPIaPNXHgrsO65Aed_dE/present",
+        "caseStudy": "https://www.behance.net/gallery/232821835/AnyWear"
       },
       "duration": {
         "start": "Mar 2023",
@@ -202,7 +204,8 @@
       "description": "Dino Docs is a Google Docs-inspired platform tailored for children, blending collaborative writing with a playful, kid-friendly interface. Designed in Figma, it emphasizes simplicity, safety, and creativity—featuring colorful UI, helpful dinosaur mascots, and easy-to-use editing tools. The project explores how digital collaboration can be made engaging and accessible for younger users.",
       "tools": ["Figma"],
       "links": {
-        "figmaDemo": "https://www.figma.com/design/YAGECqVZXlQFc7bTiQh8Q7/Dino-Docs?node-id=15-324&t=yf9Ig6xaByjY6Q9o-1"
+        "figmaDemo": "https://www.figma.com/design/YAGECqVZXlQFc7bTiQh8Q7/Dino-Docs?node-id=15-324&t=yf9Ig6xaByjY6Q9o-1",
+        "caseStudy": "https://www.behance.net/gallery/232801177/Dino-Docs"
       },
       "duration": {
         "start": "Sep 2024",
@@ -230,7 +233,8 @@
       "links": {
         "figmaDemo": "https://www.figma.com/design/GL6q2IfFhYaQcFMhyxDBhp/Crowd-Checker-Wireframes?node-id=165-2079&t=qtNJuC1QgOOSzG3e-1",
         "pitchDeck": "https://docs.google.com/presentation/d/1sdTvt1KWxNMekcDI7Qesw2dEkGzAUCDhe_4tgGnVdEw/present",
-        "github": "https://github.com/Ashv2ley/CrowdChecker"
+        "github": "https://github.com/Ashv2ley/CrowdChecker",
+        "caseStudy": ""
       },
       "duration": {
         "start": "Mar 2025",

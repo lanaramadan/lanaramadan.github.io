@@ -74,7 +74,7 @@ export default async function ProjectPage({
           {/* banner text */}
           <div className="flex flex-col items-center z-20">
             <h2 className="text-lg font-geist-mono">
-              {start} - {end}
+              {start === end ? `${start} - Hackathon` : `${start} - ${end}`}
             </h2>
             <h1 className="text-8xl font-[family-name:var(--font-new-spirit-condensed)] mb-2">
               {name.toUpperCase()}

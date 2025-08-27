@@ -59,13 +59,10 @@ export default function About() {
 
           {/* description */}
           <p className="font-ibm-plex-sans text-[#261817] text-xl leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I design experiences that people actually enjoy using. My focus is on clarity, usability, and a touch of personality in every interface. I think visually, iterate quickly, and care deeply about the details that make a product feel polished. I love exploring the intersection of aesthetics and functionality, crafting interfaces that delight users while solving real problems.
+          </p>
+          <p className="font-ibm-plex-sans text-[#261817] text-xl leading-relaxed">
+            While design is my primary focus, I also bring hands-on development experience, which lets me prototype ideas with a developer’s mindset. My work spans web and mobile applications and is always driven by curiosity, creativity, and a commitment to thoughtful, impactful design. I aim to create interfaces that are not just functional, but human.
           </p>
 
           {/* currently */}

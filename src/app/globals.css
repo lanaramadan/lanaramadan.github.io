@@ -6,8 +6,8 @@
   /* colors */
   --primary-start: rgb(115, 132, 111);
   --primary-end: rgb(148, 105, 104);
-  --primary-start-transparent: rgba(115, 132, 111, 0.3);
-  --primary-end-transparent: rgba(148, 105, 104, 0.3);
+  --primary-start-transparent: rgba(115, 132, 111, 0.4);
+  --primary-end-transparent: rgba(148, 105, 104, 0.4);
   --background: #fcfbf7;
   --foreground: #261817;
 
@@ -44,8 +44,7 @@ body {
       320deg,
       var(--background) 0%,
       var(--primary-start-transparent) 100%
-    ),
-    url("../assets/noise.png");
+    );
   background-size: cover;
   background-position: center;
   position: relative;
@@ -69,8 +68,7 @@ body {
       320deg,
       var(--background) 0%,
       var(--primary-start-transparent) 100%
-    ),
-    url("../assets/noise.png");
+    );
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -87,8 +85,7 @@ body {
       320deg,
       var(--background) 0%,
       var(--primary-end-transparent) 100%
-    ),
-    url("../assets/noise.png");
+    );
   background-size: cover;
   background-position: center;
   opacity: 0;

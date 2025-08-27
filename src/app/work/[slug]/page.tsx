@@ -44,8 +44,15 @@ export default async function ProjectPage({
   return (
     <div
       className="min-h-screen py-2 px-12 w-full flex flex-col items-center"
-      style={{ color: color }}
-    >
+      style={{
+        color: color,
+        zIndex: 0,
+        backgroundImage: `linear-gradient(
+        320deg,
+        #fcfbf7 0%,
+        ${color}1F 100%
+      )`,
+      }}>
       <NavigationBar />
 
       {/* banner */}
@@ -136,8 +143,7 @@ export default async function ProjectPage({
                   href={links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
                   GitHub Repository
                 </a>
               )}
@@ -147,8 +153,7 @@ export default async function ProjectPage({
                   href={links.figmaDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
                   Figma Demo
                 </a>
               )}
@@ -158,8 +163,7 @@ export default async function ProjectPage({
                   href={links.pitchDeck}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
                   Pitch Deck
                 </a>
               )}

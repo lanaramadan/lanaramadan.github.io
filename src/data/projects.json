@@ -56,10 +56,10 @@
       "desktop": true
     },
     {
-      "name": "HomeMapper",
-      "webpage": "homemapper",
+      "name": "HopeMapper",
+      "webpage": "hopemapper",
       "overview": "Application for foster care matching, helping connect children with compatible homes based on key criteria.",
-      "description": "Cafe Diary is a mobile journaling app for coffee lovers to record their café visits and drink experiences. Built with React Native, Expo, and TypeScript, it allows users to search for cafes, add notes, and view statistics. The backend is powered by Node.js, Express.js, and PostgreSQL, and integrates real-time location data for enhanced user context.",
+      "description": "HopeMapper is a web application for foster care matching that helps connect children with compatible homes based on key criteria such as trauma care, age, gender, and languages spoken. Designed to streamline the placement process, it was recognized with first place in Esri's internal hackathon and received the People's Choice award for its intuitive design and impactful approach.",
       "tools": [
         "React",
         "TypeScript",

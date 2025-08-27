@@ -43,6 +43,7 @@
         "start": "July 2025",
         "end": "July 2025"
       },
+      "color": "#769A96",
       "images": ["hopemapper.png"],
       "desktop": true
     },

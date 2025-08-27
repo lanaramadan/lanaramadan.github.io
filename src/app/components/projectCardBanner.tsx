@@ -52,7 +52,7 @@ export default function ProjectCardBanner({
 
           {/* duration */}
           <h4 className="text-lg font-medium font-geist-mono">
-            {formatDate(start)} - {formatDate(end)}
+            {start === end ? `${formatDate(start)} - Hackathon` : `${formatDate(start)} - ${formatDate(end)}`}
           </h4>
 
           {/* overview */}

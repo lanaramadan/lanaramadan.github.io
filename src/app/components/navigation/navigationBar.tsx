@@ -55,12 +55,15 @@ export default function NavigationBar({ name = true }) {
         >
           about
         </Link>
-        {/* <Link
-          href="/contact"
+
+        <Link
+          href="https://drive.google.com/file/d/122jeEE-qKwpD2LD3fz3cC03HE7Sj5gPu/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
-          contact
-        </Link> */}
+          resume
+        </Link>
       </div>
     </nav>
   );

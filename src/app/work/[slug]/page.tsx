@@ -180,12 +180,30 @@ export default async function ProjectPage({
           </p>
         </button>
       ) : links?.caseStudy ? (
-        <Link href={links.caseStudy} target="_blank" rel="noopener noreferrer">
-          <button className="hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl bg-current mt-10">
-            <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
-              View Case Study ↗
-            </p>
-          </button>
+        <Link href={links.caseStudy!} target="_blank" rel="noopener noreferrer">
+          <div className="relative group mt-10">
+            <button className="hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl bg-current mt-10 transition">
+              <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
+                View Case Study ↗
+              </p>
+            </button>
+
+            {/* hover embed preview */}
+            <div className="absolute top-[-32vh] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-50 w-[424px] h-[316px] overflow-hidden rounded-xl drop-shadow-[0_0_8px_currentColor]">
+              <iframe
+                src={`https://www.behance.net/embed/project/${
+                  links.caseStudy.split("/")[4]
+                }?ilo0=1`}
+
+                frameBorder="0"
+                allowFullScreen
+                className="w-full h-full"
+                loading="lazy"
+                allow="clipboard-write"
+                referrerPolicy="strict-origin-when-cross-origin"
+                scrolling="no"></iframe>
+            </div>
+          </div>
         </Link>
       ) : null}
 

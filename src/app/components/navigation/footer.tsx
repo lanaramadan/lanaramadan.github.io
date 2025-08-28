@@ -1,6 +1,7 @@
 import GithubIcon from "../icons/githubIcon";
 import LinkedinIcon from "../icons/linkedinIcon";
 import MailIcon from "../icons/mailIcon";
+import BehanceIcon from "../icons/behanceIcon";
 
 export default function Footer() {
   return (
@@ -16,6 +17,15 @@ export default function Footer() {
           className="hover:drop-shadow-[0_0_8px_currentColor]"
         >
           <LinkedinIcon className="w-[50px] h-[50px]" />
+        </a>
+
+        <a
+          href="https://www.behance.net/lanamramadan"
+          target="_blank"
+          aria-label="Behance"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
+        >
+          <BehanceIcon className="w-[60px] h-[60px]" />
         </a>
 
         <a

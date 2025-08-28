@@ -15,7 +15,7 @@ export default function Home() {
       </section>
 
       {/* content */}
-      <section className="sticky z-10 h-[145vh] section-bg border-t-4 border-current px-4">
+      <section className="sticky z-10 h-[155vh] section-bg border-t-4 border-current px-4">
         <NavigationBar />
         <FeaturedProjects />
         <Footer />

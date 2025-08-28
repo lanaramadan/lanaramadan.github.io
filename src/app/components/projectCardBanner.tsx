@@ -28,7 +28,7 @@ export default function ProjectCardBanner({
 
   return (
     <div
-      className="relative w-full h-[30.5vh] py-4 flex gap-6 hover:drop-shadow-[0_0_8px_currentColor]"
+      className="relative w-full h-[62vh] sm:h-[30.5vh] py-4 flex-col sm:flex-row flex gap-6 hover:drop-shadow-[0_0_8px_currentColor] items-center"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >

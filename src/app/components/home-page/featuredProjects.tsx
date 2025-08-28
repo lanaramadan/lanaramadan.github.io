@@ -30,7 +30,7 @@ export default function FeaturedProjects() {
         <CurvedLine />
       </div>
 
-      <div className="flex flex-col gap-8 w-[92vw] mt-5">
+      <div className="flex flex-col gap-6 w-[92vw] mt-5">
         {featuredProjects.map((project, index) => (
           <div key={index} className="w-full overflow-hidden">
             <ProjectCardBanner project={project} index={null} />

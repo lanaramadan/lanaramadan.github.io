@@ -70,7 +70,7 @@ export default function Work() {
             </button>
           </section>
 
-          <div className="flex flex-col gap-12 w-[92vw] mt-5">
+          <div className="flex flex-col gap-6 w-[92vw] mt-5">
             {displayedProjects.map((project, index) => (
               <div key={index} className="w-full overflow-hidden">
                 <ProjectCardBanner project={project} index={index} />

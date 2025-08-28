@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-// import PencilDownIcon from "./icons/pencilDownIcon";
 
 type PolaroidProps = {
   src: string;
@@ -23,7 +22,6 @@ export default function Polaroid({
   className = "",
 }: PolaroidProps) {
   const [hovered, setHovered] = useState(false);
-  // const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
   const numericRotation = parseInt(rotation);
   const hoverRotation = (-1 * numericRotation).toString();
@@ -47,9 +45,6 @@ export default function Polaroid({
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-{/*       onMouseMove={(e) =>
-        setCursorPos({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY })
-      } */}
     >
       {/* translucent overlay using currentColor */}
       <div
@@ -81,18 +76,7 @@ export default function Polaroid({
             {caption}
           </p>
         )}
-      </div>
-
-      {/* Pencil icon follows cursor */}
-{/*       {hovered && (
-        <div
-          className="pointer-events-none absolute z-10 drop-shadow-[0_0_8px_#FCFBF7]"
-          style={{ top: cursorPos.y, left: cursorPos.x }}
-        >
-          <PencilDownIcon scale={1} />
-        </div>
-      )} */}
-    
+      </div>    
     </div>
   );
 }

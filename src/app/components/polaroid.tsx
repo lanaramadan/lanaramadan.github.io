@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import PencilDownIcon from "./icons/pencilDownIcon";
+// import PencilDownIcon from "./icons/pencilDownIcon";
 
 type PolaroidProps = {
   src: string;
@@ -23,7 +23,7 @@ export default function Polaroid({
   className = "",
 }: PolaroidProps) {
   const [hovered, setHovered] = useState(false);
-  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  // const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
 
   const numericRotation = parseInt(rotation);
   const hoverRotation = (-1 * numericRotation).toString();

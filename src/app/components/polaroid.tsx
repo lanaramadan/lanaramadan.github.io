@@ -47,9 +47,9 @@ export default function Polaroid({
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      onMouseMove={(e) =>
+{/*       onMouseMove={(e) =>
         setCursorPos({ x: e.nativeEvent.offsetX, y: e.nativeEvent.offsetY })
-      }
+      } */}
     >
       {/* translucent overlay using currentColor */}
       <div

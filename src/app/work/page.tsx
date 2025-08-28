@@ -43,14 +43,14 @@ export default function Work() {
         <section>
           <section className="flex gap-8 justify-center pb-4">
             <button
-              className={`hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl ${
+              className={`hover:drop-shadow-[0_0_8px_currentColor] px-6 sm:px-12 py-2 rounded-2xl ${
                 activeCategory === "design" ? "bg-current" : "bg-transparent"
               }`}
               style={{ boxShadow: "inset 0 0 0 3px currentColor" }}
               onClick={() => setActiveCategory("design")}
             >
               <p
-                className={`text-2xl font-medium font-geist-mono ${
+                className={`text-md sm:text-2xl font-medium font-geist-mono ${
                   activeCategory === "design"
                     ? "text-[#FCFBF7]"
                     : "text-current"
@@ -60,7 +60,7 @@ export default function Work() {
               </p>
             </button>
             <button
-              className={`hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl ${
+              className={`hover:drop-shadow-[0_0_8px_currentColor] px-6 sm:px-12 py-2 rounded-2xl ${
                 activeCategory === "programming"
                   ? "bg-current"
                   : "bg-transparent"
@@ -69,7 +69,7 @@ export default function Work() {
               onClick={() => setActiveCategory("programming")}
             >
               <p
-                className={`text-2xl font-medium font-geist-mono text-[#FCFBF7] ${
+                className={`text-md sm:text-2xl font-medium font-geist-mono text-[#FCFBF7] ${
                   activeCategory === "programming"
                     ? "text-[#FCFBF7]"
                     : "text-current"

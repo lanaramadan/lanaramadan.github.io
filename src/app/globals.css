@@ -92,7 +92,7 @@ body {
   animation: bgFade 10s infinite ease-in-out;
 }
 
-/* position scroll animation */
+/* positions scroll animation */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -104,7 +104,7 @@ body {
 
 .animate-scroll {
   display: flex;
-  animation: scroll 30s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 /* dash line */

@@ -7,7 +7,7 @@ export default function Positions() {
       <div className="animate-scroll whitespace-nowrap mt-5 flex gap-3 text-3xl items-center font-geist-mono">
         <h1>application designer</h1>
         <PencilUpIcon />
-        <h1>software engineer</h1>
+        <h1>ux designer</h1>
         <PencilDownIcon />
         <h1>creative coder</h1>
         <PencilUpIcon />
@@ -15,10 +15,12 @@ export default function Positions() {
         <PencilDownIcon />
         <h1>product designer</h1>
         <PencilUpIcon />
+        <h1>software engineer</h1>
+        <PencilDownIcon />
 
         <h1>application designer</h1>
         <PencilUpIcon />
-        <h1>software engineer</h1>
+        <h1>ux designer</h1>
         <PencilDownIcon />
         <h1>creative coder</h1>
         <PencilUpIcon />
@@ -26,6 +28,8 @@ export default function Positions() {
         <PencilDownIcon />
         <h1>product designer</h1>
         <PencilUpIcon />
+        <h1>software engineer</h1>
+        <PencilDownIcon />
       </div>
     </div>
   );

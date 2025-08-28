@@ -26,7 +26,7 @@ export default function HomeTitle() {
         rotation="-20"
         width={180}
         height={180}
-        className="absolute top-[-1vh] left-1"
+        className="absolute top-[-1vh] left-1 hidden sm:block"
       />
       <Polaroid
         src="/matcha.png"
@@ -35,7 +35,7 @@ export default function HomeTitle() {
         rotation="12"
         width={180}
         height={180}
-        className="absolute bottom-9 left-[-1vw]"
+        className="absolute bottom-9 left-[-1vw] hidden sm:block"
       />
       <Polaroid
         src="/coffee.png"
@@ -44,7 +44,7 @@ export default function HomeTitle() {
         rotation="-13"
         width={180}
         height={180}
-        className="absolute top-24 right-8"
+        className="absolute top-24 right-8 hidden sm:block"
       />
       <Polaroid
         src="/city.png"
@@ -53,7 +53,7 @@ export default function HomeTitle() {
         rotation="13"
         width={180}
         height={180}
-        className="absolute bottom-[-6vh] right-48"
+        className="absolute bottom-[-6vh] right-48 hidden sm:block"
       />
     </div>
   );

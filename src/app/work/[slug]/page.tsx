@@ -43,7 +43,7 @@ export default async function ProjectPage({
 
   return (
     <div
-      className="min-h-screen py-2 px-12 w-full flex flex-col items-center"
+      className="min-h-screen py-2 px-4 w-full flex flex-col items-center"
       style={{
         color: color,
         zIndex: 0,
@@ -56,7 +56,7 @@ export default async function ProjectPage({
       <NavigationBar />
 
       {/* banner */}
-      <div className="relative w-[88vw] rounded-3xl overflow-visible">
+      <div className="relative w-[92vw] rounded-3xl overflow-visible">
         {/* bg */}
         {desktop ? (
           <div
@@ -96,7 +96,7 @@ export default async function ProjectPage({
       </div>
 
       {/* overview, tools, links */}
-      <div className="flex flex-col md:flex-row justify-between w-[68vw] pt-12 text-xl font-ibm-plex-sans">
+      <div className="flex flex-col md:flex-row justify-between w-[74vw] pt-12 text-xl font-ibm-plex-sans">
         {/* overview */}
         <div className="flex flex-col items-start w-[60%]">
           <div className="flex flex-col items-center">

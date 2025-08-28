@@ -16,7 +16,7 @@ export default function Work() {
     activeCategory === "programming" ? programmingProjects : designProjects;
 
   return (
-    <div className="min-h-screen py-2 px-12">
+    <div className="min-h-screen py-2 px-4">
       <NavigationBar />
       <div
         className="
@@ -31,7 +31,7 @@ export default function Work() {
         "
       >
         <section>
-          <section className="flex gap-8 justify-center">
+          <section className="flex gap-8 justify-center pb-4">
             <button
               className={`hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl ${
                 activeCategory === "design" ? "bg-current" : "bg-transparent"
@@ -70,7 +70,7 @@ export default function Work() {
             </button>
           </section>
 
-          <div className="flex flex-col gap-8 w-[88vw] mt-5">
+          <div className="flex flex-col gap-12 w-[92vw] mt-5">
             {displayedProjects.map((project, index) => (
               <div key={index} className="w-full overflow-hidden">
                 <ProjectCardBanner project={project} index={index} />

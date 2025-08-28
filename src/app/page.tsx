@@ -5,7 +5,7 @@ import HomeTitle from "./components/home-page/homeTitle";
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       {/* top banner */}
       <section className="sticky top-0 h-screen section-bg flex flex-col">
         {/* <NavigationBar name={false}/> */}
@@ -15,7 +15,7 @@ export default function Home() {
       </section>
 
       {/* content */}
-      <section className="sticky z-10 h-[150vh] section-bg border-t-4 border-current">
+      <section className="sticky z-10 h-[145vh] section-bg border-t-4 border-current px-4">
         <NavigationBar />
         <FeaturedProjects />
         <Footer />

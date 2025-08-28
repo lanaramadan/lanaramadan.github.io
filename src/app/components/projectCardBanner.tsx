@@ -22,37 +22,39 @@ export default function ProjectCardBanner({
   }
 
   return (
-    <div className="relative w-fit h-[30vh] flex items-center">
-      {/* bg */}
-      <div
-        className="absolute w-[88vw] h-[30vh] rounded-3xl z-0 p-32"
-        style={{
-          backgroundColor: "currentColor",
-          opacity: 0.4,
-        }}
-      />
-
-      <div className="flex items-center ml-4">
-        {/* image */}
-        <div className="w-[25em] flex justify-center items-center">
+    <div className="relative w-full h-[26.5vh] flex gap-6">
+      {/* image */}
+      <Link href={`/work/${webpage}`}>
+        <div className="w-[23em] flex justify-center items-center">
           {desktop ? (
             <DesktopThumbnail image={images[0]} />
           ) : (
             <PhoneThumbnail images={images} width={100} height={200} />
           )}
         </div>
+      </Link>
 
-        {/* text content */}
-        <div className="ml-5 w-fit z-10">
+      {/* text content */}
+        <div
+          className="h-full w-full z-10 px-8 rounded-3xl flex flex-col justify-center"
+          style={{
+            backgroundColor: "rgba(252, 251, 247, 0.3)"
+          }}
+        >
+          
           {/* project name */}
+          <Link href={`/work/${webpage}`}>
           <h3 className="text-4xl font-medium font-geist-mono">
             {index !== null ? `${String(index + 1).padStart(2, "0")} ` : ""}
             {name}
           </h3>
+          </Link>
 
           {/* duration */}
           <h4 className="text-lg font-medium font-geist-mono">
-            {start === end ? `${formatDate(start)} - Hackathon` : `${formatDate(start)} - ${formatDate(end)}`}
+            {start === end
+              ? `${formatDate(start)} - Hackathon`
+              : `${formatDate(start)} - ${formatDate(end)}`}
           </h4>
 
           {/* overview */}
@@ -62,14 +64,14 @@ export default function ProjectCardBanner({
 
           {/* btn */}
           <Link href={`/work/${webpage}`}>
-            <button className="hover:drop-shadow-[0_0_8px_currentColor] bg-current mt-10 px-7 py-1 rounded-lg">
-              <p className="text-lg font-medium font-geist-mono text-[#FCFBF7]">
-                read more
-              </p>
-            </button>
+          <button className="w-fit hover:drop-shadow-[0_0_8px_currentColor] bg-current mt-10 px-7 py-1 rounded-lg inline-flex">
+            <p className="text-lg font-medium font-geist-mono text-[#FCFBF7]">
+              read more
+            </p>
+          </button>
           </Link>
         </div>
-      </div>
+      
     </div>
   );
 }

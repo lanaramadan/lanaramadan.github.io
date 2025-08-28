@@ -8,10 +8,10 @@ import ActivityBubble from "../components/activityBubble";
 
 export default function About() {
   return (
-    <div className="min-h-screen py-2 px-12 w-full flex flex-col items-center">
+    <div className="min-h-screen py-2 px-4 w-full flex flex-col items-center">
       <NavigationBar />
 
-      <div className="relative w-[88vw] h-[90vh]">
+      <div className="relative w-[92vw] h-[105vh]">
         {/* poloroids */}
         <div className="relative w-[44vw]">
           <Polaroid
@@ -42,8 +42,9 @@ export default function About() {
             className="absolute z-10 left-[4vw] top-[60vh]"
           />
         </div>
+        
         {/* text */}
-        <div className="pl-[40vw] flex flex-col gap-5">
+        <div className="pl-[44vw] flex flex-col gap-5">
           {/* header */}
           <div className="flex items-end">
             <div className="pb-1">

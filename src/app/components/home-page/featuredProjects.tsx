@@ -16,21 +16,21 @@ export default function FeaturedProjects() {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="flex flex-col items-center pb-6">
+      <div className="flex flex-col items-center">
         <h2
           className="
-        font-medium
-        text-xl
-        sm:text-5xl
-        font-[family-name:var(--font-new-spirit-condensed)]
-      "
+            font-medium
+            text-xl
+            sm:text-5xl
+            font-[family-name:var(--font-new-spirit-condensed)]
+          "
         >
           Selected Projects
         </h2>
         <CurvedLine />
       </div>
 
-      <div className="flex flex-col gap-8 w-[88vw] mt-5">
+      <div className="flex flex-col gap-8 w-[92vw] mt-5">
         {featuredProjects.map((project, index) => (
           <div key={index} className="w-full overflow-hidden">
             <ProjectCardBanner project={project} index={null} />

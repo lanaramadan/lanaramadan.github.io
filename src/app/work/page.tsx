@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NavigationBar from "@/app/components/navigation/navigationBar";
 import Footer from "@/app/components/navigation/footer";
 import ProjectCardBanner from "@/app/components/projectCardBanner";
@@ -9,9 +9,19 @@ export default function Work() {
   const programmingProjects = projectData.programmingProjects;
   const designProjects = projectData.designProjects;
 
-  const [activeCategory, setActiveCategory] = useState<
-    "programming" | "design"
-  >("design");
+  const [activeCategory, setActiveCategory] = useState<"programming" | "design">(
+    () => {
+      if (typeof window !== "undefined") {
+        return (localStorage.getItem("activeCategory") as "programming" | "design") || "design";
+      }
+      return "design";
+    }
+  );
+
+  useEffect(() => {
+    localStorage.setItem("activeCategory", activeCategory);
+  }, [activeCategory]);
+  
   const displayedProjects =
     activeCategory === "programming" ? programmingProjects : designProjects;
 

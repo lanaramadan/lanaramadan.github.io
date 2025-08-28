@@ -45,7 +45,7 @@ const StarIcon: React.FC<StarIconProps> = ({
           width="48.834"
           height="47.0698"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix

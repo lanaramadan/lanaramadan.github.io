@@ -84,14 +84,14 @@ export default function Polaroid({
       </div>
 
       {/* Pencil icon follows cursor */}
-      {hovered && (
+{/*       {hovered && (
         <div
           className="pointer-events-none absolute z-10 drop-shadow-[0_0_8px_#FCFBF7]"
           style={{ top: cursorPos.y, left: cursorPos.x }}
         >
           <PencilDownIcon scale={1} />
         </div>
-      )}
+      )} */}
     
     </div>
   );

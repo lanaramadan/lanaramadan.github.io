@@ -10,7 +10,7 @@ export default function ActivityBubble({
   return (
     <div className="font-ibm-plex-sans relative flex flex-col text-xl">
       <div
-        className="absolute inset-0 w-[50%] h-full"
+        className="absolute inset-0 w-[100%] sm:w-[50%] h-full"
         style={{
           backgroundColor: "currentColor",
           opacity: 0.4,

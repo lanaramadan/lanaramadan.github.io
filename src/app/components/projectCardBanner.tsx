@@ -20,6 +20,8 @@ export default function ProjectCardBanner({
   const { start, end } = project.duration;
   const [hovered, setHovered] = useState(false);
 
+  const stars = false;
+
   function formatDate(dateStr: string) {
     const [month, year] = dateStr.split(" ");
     const shortMonth = month.slice(0, 3);
@@ -43,7 +45,7 @@ export default function ProjectCardBanner({
         </div>
 
         {/* stars on hover - mobile */}
-        {hovered && !desktop && (
+        {stars && hovered && !desktop && (
           <>
             <StarIcon className="absolute top-[0.35vh] left-[6vw] z-10" />
             <StarIcon className="absolute top-[1vh] left-[16vw] z-10" />
@@ -53,7 +55,7 @@ export default function ProjectCardBanner({
           </>
         )}
         {/* stars on hover - desktop */}
-        {hovered && desktop && (
+        {stars && hovered && desktop && (
           <>
             <StarIcon className="absolute top-[0vh] left-[6vw] z-10" />
             <StarIcon className="absolute bottom-[4vh] left-[1vw] z-10" />
@@ -71,10 +73,9 @@ export default function ProjectCardBanner({
         }}
       >
         {/* stars on hover - text */}
-        {hovered && (
+        {stars && hovered && (
           <>
             <StarIcon className="absolute top-[19vh] left-[38vw] z-10" />
-            {/* <StarIcon className="absolute top-[22vh] left-[27vw] z-10" /> */}
             <StarIcon className="absolute top-[0.33vh] left-[62vw] z-10" />
             <StarIcon className="absolute top-[24.3vh] left-[88.3vw] z-10" />
             

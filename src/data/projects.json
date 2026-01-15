@@ -3,7 +3,7 @@
     {
       "name": "Esri",
       "webpage": "esri",
-      "overview": "",
+      "overview": "More information coming soon ✨",
       "description": "More information coming soon ✨",
       "tools": [
         "Angular",
@@ -182,6 +182,44 @@
     }
   ],
   "designProjects": [
+    {
+      "name": "Roam",
+      "webpage": "roam",
+      "overview": "More information coming soon ✨",
+      "description": "More information coming soon ✨",
+      "tools": [
+        "Figma",
+        "Figjam",
+        "Airtable"
+      ],
+      "duration": {
+        "start": "October 2025",
+        "end": "December 2025"
+      },
+      "images": [],
+      "desktop": true
+    },
+    {
+      "name": "Esri",
+      "webpage": "esri",
+      "overview": "More information coming soon ✨",
+      "description": "More information coming soon ✨",
+      "tools": [
+        "Angular",
+        "TypeScript",
+        "PostgreSQL",
+        "MongoDB",
+        "Calcite UI",
+        "Figma",
+        "Git"
+      ],
+      "duration": {
+        "start": "June 2025",
+        "end": "September 2025"
+      },
+      "images": [],
+      "desktop": true
+    },
     {
       "name": "GEM",
       "webpage": "gem",

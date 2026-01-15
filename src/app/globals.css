@@ -4,10 +4,10 @@
 
 :root {
   /* colors */
-  --primary-start: rgb(115, 132, 111);
-  --primary-end: rgb(148, 105, 104);
-  --primary-start-transparent: rgba(115, 132, 111, 0.4);
-  --primary-end-transparent: rgba(148, 105, 104, 0.4);
+  --primary-start: rgba(115, 132, 111);
+  --primary-end: rgba(148, 105, 104);
+  --primary-start-transparent: rgba(115, 132, 111, 0.2);
+  --primary-end-transparent: rgba(148, 105, 104, 0.2);
   --background: #fcfbf7;
   --foreground: #261817;
 

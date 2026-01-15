@@ -10,7 +10,7 @@ import { Project } from "@/types/project";
 export default function FeaturedProjects() {
   const featuredProjects: Project[] = [
     projectData.designProjects.find((p) => p.name === "GEM"),
-    projectData.designProjects.find((p) => p.name === "Dino Docs"),
+    projectData.designProjects.find((p) => p.name === "AnyWear"),
     projectData.programmingProjects.find((p) => p.name === "HopeMapper"),
   ].filter(Boolean) as Project[];
 

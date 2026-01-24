@@ -15,7 +15,7 @@ export default function HomeTitle() {
       </div>
 
       {/* poloroids */}
-      <Polaroid
+      {/* <Polaroid
         src="/beach.png"
         alt="Beach"
         caption="🌊☀️"
@@ -50,7 +50,7 @@ export default function HomeTitle() {
         width={180}
         height={180}
         className="absolute bottom-[-6vh] right-48 hidden sm:block"
-      />
+      /> */}
     </div>
   );
 }

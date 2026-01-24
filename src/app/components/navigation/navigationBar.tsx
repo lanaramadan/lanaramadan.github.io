@@ -5,17 +5,17 @@ export default function NavigationBar() {
     <nav
       className="
 	  	fixed
-		top-0
-		left-0
-		z-50
-        w-full 
-        flex 
-        justify-between 
-        items-center
-        pt-4
-        pb-10
-        px-12
-		text-dark
+      top-0
+      left-0
+      z-50
+      w-full 
+      flex 
+      justify-between 
+      items-center
+      pt-4
+      pb-10
+      px-12
+		  text-dark
       "
     >
       <Link
@@ -44,7 +44,10 @@ export default function NavigationBar() {
 			font-geist-mono
         "
       >
-        <Link href="/#work" className="hover:drop-shadow-[0_0_8px_currentColor]">
+        <Link
+          href="/#work"
+          className="hover:drop-shadow-[0_0_8px_currentColor]"
+        >
           work
         </Link>
 

@@ -56,7 +56,7 @@ export default async function ProjectPage({
       <NavigationBar />
 
       {/* banner */}
-      <div className="relative w-[92vw] rounded-3xl overflow-visible">
+      <div className="relative w-[92vw] rounded-3xl overflow-visible mt-24">
         {/* bg */}
         {desktop ? (
           <div
@@ -207,7 +207,7 @@ export default async function ProjectPage({
         </Link>
       ) : null}
 
-      <Footer />
+      <Footer mini={true}/>
     </div>
   );
 }

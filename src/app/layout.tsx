@@ -43,7 +43,7 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${IBMPlexSans.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${IBMPlexSans.variable} ${ImperialScript} antialiased`}
       >
         {children}
       </body>

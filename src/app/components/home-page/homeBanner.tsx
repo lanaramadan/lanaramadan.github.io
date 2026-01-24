@@ -21,11 +21,11 @@ export default function HomeBanner() {
       {/* text section */}
       <div className="flex flex-col gap-6">
         <div className="font-medium">
-          <h3 className="text-3xl font-[family-name:var(--font-new-spirit-condensed)]">
+          <h3 className="text-3xl font-new-spirit-condensed">
             Based in...
           </h3>
           <div className="flex flex-col items-end">
-            <p className="text-5xl font-[family-name:var(--font-new-spirit-condensed)]">
+            <p className="text-5xl font-new-spirit-condensed">
               📍 Orange County, California
             </p>
             <p className="text-lg font-geist-mono">
@@ -37,7 +37,7 @@ export default function HomeBanner() {
         </div>
 
         <div className="font-medium">
-          <h3 className="text-3xl font-[family-name:var(--font-new-spirit-condensed)]">
+          <h3 className="text-3xl font-new-spirit-condensed">
             Currently...
           </h3>
           <p className="text-lg font-geist-mono">

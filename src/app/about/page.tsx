@@ -75,7 +75,7 @@ export default function About() {
               <PencilDownIcon scale={1.5} />
             </div>
             <div>
-              <h1 className="text-6xl font-medium font-[family-name:var(--font-new-spirit-condensed)]">
+              <h1 className="text-6xl font-medium font-new-spirit-condensed">
                 Hi! I&apos;m Lana :)
               </h1>
               <CurvedLine width={300} stroke={4} />
@@ -103,7 +103,7 @@ export default function About() {
           {/* currently */}
           <div>
             <div className="flex flex-col ">
-              <h1 className="mb-[-0.2em] text-3xl font-medium font-[family-name:var(--font-new-spirit-condensed)]">
+              <h1 className="mb-[-0.2em] text-3xl font-medium font-new-spirit-condensed">
                 currently...
               </h1>
               <CurvedLine width={130} stroke={8} />
@@ -124,7 +124,7 @@ export default function About() {
           {/* activities */}
           <div>
             <div className="flex flex-col mb-2">
-              <h1 className="mb-[-0.2em] text-3xl font-medium font-[family-name:var(--font-new-spirit-condensed)]">
+              <h1 className="mb-[-0.2em] text-3xl font-medium font-new-spirit-condensed">
                 what I&apos;ve been...
               </h1>
               <CurvedLine width={180} stroke={6} />

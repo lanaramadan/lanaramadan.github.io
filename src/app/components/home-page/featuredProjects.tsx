@@ -22,7 +22,7 @@ export default function FeaturedProjects() {
             font-medium
             text-xl
             sm:text-5xl
-            font-[family-name:var(--font-new-spirit-condensed)]
+            font-new-spirit-condensed
           "
         >
           Selected Projects

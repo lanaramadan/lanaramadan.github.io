@@ -39,21 +39,22 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
-      {/* top banner */}
-      <section className="sticky top-0 h-screen section-bg flex flex-col">
-        {/* <NavigationBar name={false}/> */}
-        <div className="z-10">
-          <HomeTitle />
-        </div>
-      </section>
+    <NavigationBar />
+    // <main className="">
+    //   {/* top banner */}
+    //   <section className="sticky top-0 h-screen section-bg flex flex-col">
+    //     {/* <NavigationBar name={false}/> */}
+    //     <div className="z-10">
+    //       <HomeTitle />
+    //     </div>
+    //   </section>
 
-      {/* content */}
-      <section className="sticky z-10 h-[155vh] section-bg border-t-4 border-current px-4">
-        <NavigationBar />
-        <FeaturedProjects />
-        <Footer />
-      </section>
-    </main>
+    //   {/* content */}
+    //   <section className="sticky z-10 h-[155vh] section-bg border-t-4 border-current px-4">
+    //     <NavigationBar />
+    //     <FeaturedProjects />
+    //     <Footer />
+    //   </section>
+    // </main>
   );
 }

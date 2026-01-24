@@ -20,7 +20,7 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           height="300.316"
           fill="url(#paint0_linear_2036_1033)"
         />
-        <g clip-path="url(#clip0_2036_1033)">
+        <g clipPath="url(#clip0_2036_1033)">
           <g filter="url(#filter1_di_2036_1033)">
             <path
               d="M339.985 225.158L75.0001 378.147V72.169L339.985 225.158Z"
@@ -34,7 +34,7 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
             />
           </g>
         </g>
-        <g clip-path="url(#clip1_2036_1033)">
+        <g clipPath="url(#clip1_2036_1033)">
           <g filter="url(#filter3_di_2036_1033)">
             <path
               d="M335.8 180.523C338.667 178.661 342.363 178.661 345.23 180.523L621.99 360.284C629.217 364.979 625.893 376.2 617.275 376.2H63.7552C55.1371 376.2 51.8128 364.979 59.0402 360.284L335.8 180.523Z"
@@ -42,7 +42,7 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
             />
           </g>
         </g>
-        <g clip-path="url(#clip2_2036_1033)">
+        <g clipPath="url(#clip2_2036_1033)">
           <g filter="url(#filter4_di_2036_1033)">
             <path
               d="M335.8 269.793C338.667 271.655 342.363 271.655 345.23 269.793L621.99 90.0322C629.217 85.3379 625.893 74.1167 617.275 74.1167H63.7552C55.1371 74.1167 51.8128 85.3379 59.0402 90.0322L335.8 269.793Z"
@@ -59,9 +59,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           width="679.97"
           height="450.316"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -94,9 +94,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           width="267.105"
           height="309.865"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -147,9 +147,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           width="278.764"
           height="319.757"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -200,9 +200,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           width="572.277"
           height="198.486"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"
@@ -253,9 +253,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           width="572.277"
           height="198.486"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix
             in="SourceAlpha"
             type="matrix"

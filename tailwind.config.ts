@@ -9,14 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        dark: "var(--dark)",
+        medium: "var(--medium)",
+        light: "var(--light)",
+        text: "var(--text)",
+        background: "var(--background)"
+
       },
       fontFamily: {
         'geist-mono': 'var(--font-geist-mono)',
         'geist-sans': 'var(--font-geist-sans)',
         'ibm-plex-sans': 'var(--font-ibm-plex-sans)',
-        'font-new-spirit-condensed': 'var(--font-new-spirit-condensed)'
+        'new-spirit-condensed': 'var(--font-new-spirit-condensed)'
       },
     },
   },

@@ -7,6 +7,7 @@ import NavigationBar from "./components/navigation/navigationBar";
 import Footer from "./components/navigation/footer";
 import FeaturedProjects from "./components/home-page/featuredProjects";
 import HomeTitle from "./components/home-page/homeTitle";
+import Works from "./components/home-page/works";
 
 export default function Home() {
   useEffect(() => {
@@ -39,7 +40,13 @@ export default function Home() {
   }, []);
 
   return (
+    <main>
     <NavigationBar />
+
+    <HomeTitle />
+
+    <Works />
+    </main>
     // <main className="">
     //   {/* top banner */}
     //   <section className="sticky top-0 h-screen section-bg flex flex-col">

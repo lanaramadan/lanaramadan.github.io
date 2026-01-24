@@ -20,7 +20,8 @@ export default {
         'geist-mono': 'var(--font-geist-mono)',
         'geist-sans': 'var(--font-geist-sans)',
         'ibm-plex-sans': 'var(--font-ibm-plex-sans)',
-        'new-spirit-condensed': 'var(--font-new-spirit-condensed)'
+        'new-spirit-condensed': 'var(--font-new-spirit-condensed)',
+        'eternate': 'var(--font-eternate)'
       },
     },
   },

@@ -22,6 +22,7 @@
   --font-geist-mono: "Geist Mono", monospace;
   --font-new-spirit-condensed: "new-spirit-condensed", serif;
   --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+  --font-eternate: "Eternate", "serif";
 }
 
 @media (prefers-color-scheme: dark) {

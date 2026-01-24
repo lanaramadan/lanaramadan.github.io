@@ -18,24 +18,24 @@ export default function Works() {
     const cols = 3;
     const row = Math.floor(index / cols);
     const col = index % cols;
-  
+
     const cardWidth = 340;
     const gap = 64;
-  
+
     const totalWidth = cols * cardWidth + (cols - 1) * gap;
-  
+
     const startX = -totalWidth / 2 + cardWidth / 2;
-  
+
     const x = startX + col * (cardWidth + gap);
     const y = row * 350 - 170;
-  
+
     return { x, y };
   };
-  
 
   return (
     <section id="work" ref={containerRef} className="relative h-[300vh] ">
-      <div className="
+      <div
+        className="
         sticky 
         top-0
         flex
@@ -48,7 +48,8 @@ export default function Works() {
         gap-6 
         bg-[url('/green-bg.png')] 
         bg-cover 
-        bg-center">
+        bg-center"
+      >
         {/* subheader */}
         <div className="flex flex-col items-center text-dark">
           <h2
@@ -76,7 +77,7 @@ export default function Works() {
             // straighten cards
             const rotate = useTransform(
               scrollYProgress,
-              [0, .6],
+              [0, 0.6],
               [initialRotations[index], 0]
             );
 
@@ -88,7 +89,7 @@ export default function Works() {
                   x,
                   y,
                   rotate,
-                  zIndex: 10 - index, 
+                  zIndex: 10 - index,
                 }}
               >
                 <ProjectCard project={project} />

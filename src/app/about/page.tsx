@@ -7,11 +7,10 @@ import AboutMe from "../components/about-page/aboutMe";
 export default function About() {
   return (
     <main>
-      <NavigationBar/>
-      <AboutTitle/>
-      <AboutMe/>
-      <Footer/>
+      <NavigationBar />
+      <AboutTitle />
+      <AboutMe />
+      <Footer />
     </main>
-
   );
 }

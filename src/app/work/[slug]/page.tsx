@@ -52,7 +52,8 @@ export default async function ProjectPage({
         #fcfbf7 0%,
         ${color}1F 100%
       )`,
-      }}>
+      }}
+    >
       <NavigationBar />
 
       {/* banner */}
@@ -143,7 +144,8 @@ export default async function ProjectPage({
                   href={links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   GitHub Repository
                 </a>
               )}
@@ -153,7 +155,8 @@ export default async function ProjectPage({
                   href={links.figmaDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   Figma Demo
                 </a>
               )}
@@ -163,7 +166,8 @@ export default async function ProjectPage({
                   href={links.pitchDeck}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   Pitch Deck
                 </a>
               )}
@@ -194,20 +198,20 @@ export default async function ProjectPage({
                 src={`https://www.behance.net/embed/project/${
                   links.caseStudy.split("/")[4]
                 }?ilo0=1`}
-
                 frameBorder="0"
                 allowFullScreen
                 className="w-full h-full"
                 loading="lazy"
                 allow="clipboard-write"
                 referrerPolicy="strict-origin-when-cross-origin"
-                scrolling="no"></iframe>
+                scrolling="no"
+              ></iframe>
             </div>
           </div>
         </Link>
       ) : null}
 
-      <Footer mini={true}/>
+      <Footer mini={true} />
     </div>
   );
 }

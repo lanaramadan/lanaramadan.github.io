@@ -23,12 +23,17 @@
   --font-new-spirit-condensed: "new-spirit-condensed", serif;
   --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
   --font-eternate: "Eternate", "serif";
+  --font-imperial-script: "Imperial Script", "serif";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fcfbf7;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* text color animation */

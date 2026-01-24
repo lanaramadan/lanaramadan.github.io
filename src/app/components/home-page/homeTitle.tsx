@@ -1,7 +1,5 @@
 import Polaroid from "../polaroid";
 import Positions from "./positions";
-import DownArrowIcon from "../icons/downArrowIcon";
-import NavigationBar from "../navigation/navigationBar";
 
 export default function HomeTitle() {
   return (

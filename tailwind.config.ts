@@ -21,7 +21,8 @@ export default {
         'geist-sans': 'var(--font-geist-sans)',
         'ibm-plex-sans': 'var(--font-ibm-plex-sans)',
         'new-spirit-condensed': 'var(--font-new-spirit-condensed)',
-        'eternate': 'var(--font-eternate)'
+        'eternate': 'var(--font-eternate)',
+        'imperial-script': 'var(--font-imperial-script)'
       },
     },
   },

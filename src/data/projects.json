@@ -24,7 +24,7 @@
     {
       "name": "HopeMapper",
       "webpage": "hopemapper",
-      "overview": "Application for foster care matching, helping connect children with compatible homes based on key criteria.",
+      "overview": "Application for foster care matching, helping connect children with compatible homes.",
       "description": "HopeMapper is a web application for foster care matching that helps connect children with compatible homes based on key criteria such as trauma care, age, gender, and languages spoken. Designed to streamline the placement process, it was recognized with first place in Esri's internal hackathon and received the People's Choice award for its intuitive design and impactful approach.",
       "tools": [
         "React",
@@ -223,7 +223,7 @@
     {
       "name": "GEM",
       "webpage": "gem",
-      "overview": "Platform for young travelers to discover and explore hidden gems  tailored to their preferences.",
+      "overview": "Platform for young travelers to discover and explore hidden gems.",
       "description": "GEM is a travel discovery app concept created during a Product Association fellowship. Designed with a cross-functional team, it won 1st place for helping users find unique destinations based on personal interests. The project emphasized collaborative problem-solving, user-centered design, and cross-team communication using tools like Figma and Jira.",
       "tools": ["Figma", "Jira"],
       "links": {

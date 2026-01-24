@@ -41,13 +41,10 @@ export default function Home() {
 
   return (
     <main>
-      <NavigationBar />
-
-      <HomeTitle />
-
-      <Works />
-
-      <Footer />
+      <NavigationBar/>
+      <HomeTitle/>
+      <Works/>
+      <Footer/>
     </main>
   );
 }

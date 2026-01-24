@@ -34,8 +34,21 @@ export default function Works() {
   
 
   return (
-    <section id="work" ref={containerRef} className="relative h-[300vh]">
-      <div className="sticky top-0 flex flex-col bg-light h-screen w-full px-48 py-10 gap-6">
+    <section id="work" ref={containerRef} className="relative h-[300vh] ">
+      <div className="
+        sticky 
+        top-0
+        flex
+        flex-col 
+        bg-light 
+        h-screen
+        w-full
+        px-48 
+        py-10 
+        gap-6 
+        bg-[url('/green-bg.png')] 
+        bg-cover 
+        bg-center">
         {/* subheader */}
         <div className="flex flex-col items-center text-dark">
           <h2

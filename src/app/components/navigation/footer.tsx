@@ -10,8 +10,20 @@ export default function Footer() {
       <div className="flex flex-col gap-8 text-5xl font-serif">
         <p>Let's keep in <span className="font-imperial-script text-7xl">touch</span>!</p>
         <div className="flex gap-12">
-          <p className="font-ibm-plex-sans text-xl hover:underline hover:drop-shadow-[0_0_8px_currentColor]">Email ↗</p>
-          <p className="font-ibm-plex-sans text-xl hover:underline hover:drop-shadow-[0_0_8px_currentColor]">Linkedin ↗</p>
+        <a
+            href="mailto:lanamramadan@gmail.com"
+            className="font-ibm-plex-sans text-xl hover:underline hover:drop-shadow-[0_0_8px_currentColor]"
+          >
+            Email ↗
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lanamramadan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-ibm-plex-sans text-xl hover:underline hover:drop-shadow-[0_0_8px_currentColor]"
+          >
+            Linkedin ↗
+          </a>
         </div>
       </div>
 

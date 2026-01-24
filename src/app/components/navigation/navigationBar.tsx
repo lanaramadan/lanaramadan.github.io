@@ -44,7 +44,7 @@ export default function NavigationBar() {
 			font-geist-mono
         "
       >
-        <Link href="#work" className="hover:drop-shadow-[0_0_8px_currentColor]">
+        <Link href="/#work" className="hover:drop-shadow-[0_0_8px_currentColor]">
           work
         </Link>
 

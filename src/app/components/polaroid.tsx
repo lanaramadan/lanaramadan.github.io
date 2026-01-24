@@ -7,9 +7,9 @@ type PolaroidProps = {
   alt: string;
   caption: string;
   width?: number;
-  height?: number;
   rotation?: string;
   className?: string;
+  rotate?: boolean
 };
 
 export default function Polaroid({
@@ -17,62 +17,50 @@ export default function Polaroid({
   alt,
   caption,
   width = 200,
-  height = 200,
   rotation = "-10",
   className = "",
+  rotate = true
 }: PolaroidProps) {
   const [hovered, setHovered] = useState(false);
 
   const numericRotation = parseInt(rotation);
-  const hoverRotation = (-1 * numericRotation).toString();
+  const hoverRotation = rotate ? (-1 * numericRotation).toString() : numericRotation.toString();
 
   return (
     <div
       className={`
-        bg-current
         p-3 
-        pb-4
-        w-fit 
-        border-2
-        border-current
-        transition-transform duration-500 ease-in-out
-        hover:scale-[1.05]
+        bg-background
+        drop-shadow-[0_0_16px_rgba(115,132,111,0.75)] 
+        transition-all duration-500 ease-in-out
         ${className}
       `}
       style={{
-        backgroundColor: "#FCFBF7",
         transform: `rotate(${hovered ? hoverRotation : rotation}deg)`,
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* translucent overlay using currentColor */}
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundColor: "currentColor",
-          opacity: 0.4,
-        }}
-      />
-
-      <div className="relative z-10">
-        <div className="overflow-hidden border-2 border-current">
+      <div>
+        {/* image */}
+        <div className="relative" style={{ width: `${width}px`, height: `${width * 1.2}px` }}>
           <Image
             src={src}
             alt={alt}
-            width={width}
-            height={height}
-            className="block"
+            fill={true}
+            style={{ objectFit: 'cover' }}
           />
         </div>
+
+        {/* caption */}
         {caption.length > 2 ? (
           // text
-          <p className="mt-3 ml-3 text-xl text-[#261817] font-geist-mono">
+          <p className="text-center mt-3 text-2xl text-dark font-eternate">
             {caption}
           </p>
         ) : (
           // emojis
-          <p className="mt-3 ml-3 text-2xl text-[#261817] font-geist-mono">
+          <p className="mt-3 ml-3 text-2xl font-geist-mono">
             {caption}
           </p>
         )}

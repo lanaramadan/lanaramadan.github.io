@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 import Postcard from "./postcard";
+import Polaroid from "../polaroid";
 
 export default function AboutMe() {
   const [flip, setFlip] = useState(true);
@@ -28,6 +29,21 @@ export default function AboutMe() {
       bg-cover 
       bg-center"
     >
+
+      {/* Polaroid stacked on bottom-right */}
+      <Polaroid
+        src="/me.jpeg"
+        alt="A picture of me!"
+        caption="that's me!"
+        rotation={`${flip ? "7" : "15"}`}
+        width={250}
+        className={`
+        absolute z-10
+            ${flip ? "top-[20em] right-[-2em]" : "top-[24em] right-[6em]"}
+          `}
+
+      />
+
       <motion.div
         transition={{ duration: 0.7 }}
         animate={{ rotateY: flip ? 0 : 180 }}
@@ -57,6 +73,8 @@ export default function AboutMe() {
               className="h-full"
             >
               <Postcard side="front" />
+
+              
             </button>
           </motion.div>
 

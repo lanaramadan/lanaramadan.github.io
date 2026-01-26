@@ -66,7 +66,7 @@ export default function NavigationBar({
           space-x-10
           text-sm
           sm:space-x-20
-          sm:text-xl
+          sm:text-lg
           font-geist-mono
           ${color}
         `}

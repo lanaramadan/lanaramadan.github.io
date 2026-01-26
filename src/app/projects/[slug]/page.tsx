@@ -9,19 +9,11 @@ import CurvedLine from "@/app/components/curvedLine";
 import BackButton from "@/app/components/backButton";
 import StarBulletIcon from "@/app/components/icons/starBulletIcon";
 
-type Props = {
+export default async function ProjectPage({
+  params,
+}: {
   params: { slug: string };
-};
-
-export function generateStaticParams() {
-  return projectData.designProjects
-    .filter(
-      (p) => p.webpage === "projects/esri" || p.webpage === "projects/roam"
-    )
-    .map((p) => ({ slug: p.webpage.replace("projects/", "") }));
-}
-
-export default async function ProjectPage({ params }: Props) {
+}) {
   const { slug } = params;
   const project = projectData.designProjects.find(
     (p) => p.webpage === `projects/${slug}`

@@ -24,10 +24,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     setRotate(0);
   };
 
-  return (
-    <Link href={`/${webpage}`}>
-      <div
-        className="
+  if (webpage) {
+    return (
+      <Link href={`/${webpage}`}>
+        <div
+          className="
           flex
           flex-col 
           items-left 
@@ -38,9 +39,43 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           transition-transform 
           duration-300 
           ease-out"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          style={{ transform: `rotate(${rotate}deg)` }}
+        >
+          <h3 className="font-new-spirit-condensed m-3 text-4xl text-text">
+            {name}
+          </h3>
+
+          <div className="flex flex-col items-left p-3 bg-background rounded-3xl gap-2">
+            <p className="h-12">{overview}</p>
+
+            <div className="flex justify-center items-center h-36">
+              {desktop ? (
+                <DesktopThumbnail image={images[0]} scale={0.65} />
+              ) : (
+                <PhoneThumbnail images={images} width={60} height={120} />
+              )}
+            </div>
+          </div>
+        </div>
+      </Link>
+    );
+  } else {
+    return (
+      <div
+        className="
+          flex
+          flex-col 
+          items-left 
+          bg-medium 
+          rounded-3xl 
+          drop-shadow-[0_0_16px_rgba(115,132,111,0.75)] 
+          transition-transform 
+          duration-300 
+          ease-out"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        style={{ transform: `rotate(${rotate}deg)` }}
       >
         <h3 className="font-new-spirit-condensed m-3 text-4xl text-text">
           {name}
@@ -58,6 +93,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </div>
         </div>
       </div>
-    </Link>
-  );
+    );
+  }
 }

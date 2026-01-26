@@ -268,8 +268,8 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           y2="300.316"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBDCD4" />
-          <stop offset="1" stop-color="#B5BCB0" />
+          <stop stopColor="#DBDCD4" />
+          <stop offset="1" stopColor="#B5BCB0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2036_1033"
@@ -279,8 +279,8 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           y2="298.903"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B5BCB0" />
-          <stop offset="1" stop-color="#DBDCD4" />
+          <stop stopColor="#B5BCB0" />
+          <stop offset="1" stopColor="#DBDCD4" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2036_1033"
@@ -290,8 +290,8 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           y2="-1.5899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B5BCB0" />
-          <stop offset="1" stop-color="#DBDCD4" />
+          <stop stopColor="#B5BCB0" />
+          <stop offset="1" stopColor="#DBDCD4" />
         </linearGradient>
         <clipPath id="clip0_2036_1033">
           <rect width="529.97" height="300.316" fill="white" />

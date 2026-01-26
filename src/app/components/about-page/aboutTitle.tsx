@@ -13,7 +13,7 @@ export default function AboutTitle() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center group">
         <div className="z-20 translate-x-8 group-hover:translate-x-0 transition-transform duration-300 ease-out">
           <Polaroid
-            src="/beach.png"
+            src="/beach.jpg"
             alt="Beach"
             caption="@ the beach"
             rotation="-12"

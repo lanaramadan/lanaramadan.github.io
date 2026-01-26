@@ -677,8 +677,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
           y2="180.367"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBDCD4" />
-          <stop offset="1" stop-color="#B5BCB0" />
+          <stop stopColor="#DBDCD4" />
+          <stop offset="1" stopColor="#B5BCB0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2036_1085"
@@ -688,8 +688,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
           y2="484.923"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#DBDCD4" />
-          <stop offset="1" stop-color="#B5BCB0" />
+          <stop stopColor="#DBDCD4" />
+          <stop offset="1" stopColor="#B5BCB0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2036_1085"
@@ -699,8 +699,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
           y2="483.509"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#B5BCB0" />
-          <stop offset="1" stop-color="#DBDCD4" />
+          <stop stopColor="#B5BCB0" />
+          <stop offset="1" stopColor="#DBDCD4" />
         </linearGradient>
         <clipPath id="clip0_2036_1085">
           <rect width="529.97" height="484.923" fill="white" />

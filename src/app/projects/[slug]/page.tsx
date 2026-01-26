@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import projectData from "@/data/projects.json";
-import { Project } from "@/types/project";
+
 import NavigationBar from "@/app/components/navigation/navigationBar";
 import Footer from "@/app/components/navigation/footer";
 import DesktopThumbnail from "@/app/components/desktopThumbnail";
@@ -10,38 +9,32 @@ import CurvedLine from "@/app/components/curvedLine";
 import BackButton from "@/app/components/backButton";
 import StarBulletIcon from "@/app/components/icons/starBulletIcon";
 
-// render webpages
-export function generateStaticParams() {
-  const slugs = [
-    ...projectData.designProjects,
-  ].map((p) => ({ slug: p.webpage }));
+type Props = {
+  params: { slug: string };
+};
 
-  return slugs;
+export function generateStaticParams() {
+  return projectData.designProjects
+    .filter(
+      (p) => p.webpage === "projects/esri" || p.webpage === "projects/roam"
+    )
+    .map((p) => ({ slug: p.webpage.replace("projects/", "") }));
 }
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-
-  const allProjects = [
-    ...projectData.designProjects,
-  ];
-
-  const project: Project | undefined = allProjects.find(
-    (p) => p.webpage === slug
+export default async function ProjectPage({ params }: Props) {
+  const { slug } = params;
+  const project = projectData.designProjects.find(
+    (p) => p.webpage === `projects/${slug}`
   );
 
   if (!project) return notFound();
 
-  const { name, images, description, tools, links, color, desktop } = project;
+  const { name, images, description, tools, color, desktop } = project;
   const { start, end } = project.duration;
 
   return (
     <div
-      className="min-h-screen py-2 px-4 w-full flex flex-col items-center"
+      className="min-h-screen py-2 px-4 w-full flex flex-col items-center bg-background"
       style={{
         color: color,
         zIndex: 0,
@@ -52,21 +45,21 @@ export default async function ProjectPage({
       )`,
       }}
     >
-      <NavigationBar />
+      <NavigationBar background={true} />
 
       {/* banner */}
       <div className="relative w-[92vw] rounded-3xl overflow-visible mt-24">
         {/* bg */}
         {desktop ? (
           <div
-            className="absolute top-0 left-0 w-full h-[75vh] rounded-3xl bg-current opacity-40"
+            className="absolute top-0 left-0 w-full h-[75vh] rounded-3xl bg-medium"
             style={{
               zIndex: 0,
             }}
           />
         ) : (
           <div
-            className="absolute top-0 left-0 w-full h-[60vh] rounded-3xl bg-current opacity-40"
+            className="absolute top-0 left-0 w-full h-[60vh] rounded-3xl bg-medium"
             style={{
               zIndex: 0,
             }}
@@ -99,25 +92,25 @@ export default async function ProjectPage({
         {/* overview */}
         <div className="flex flex-col items-start w-[60%]">
           <div className="flex flex-col items-center">
-            <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
+            <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed text-dark">
               Overview
             </h2>
-            <CurvedLine width={175} stroke={7} />
+            <CurvedLine width={175} stroke={7} className="text-dark"/>
           </div>
 
-          <div className="text-[#261817]">{description}</div>
+          <div className="text-text">{description}</div>
         </div>
 
         <div className="flex flex-col items-center">
           {/* tools */}
           <div>
             <div className="flex flex-col items-center">
-              <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
+              <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed text-dark">
                 Tools
               </h2>
-              <CurvedLine width={175} stroke={7} />
+              <CurvedLine width={175} stroke={7} className="text-dark"/>
             </div>
-            <ul className="text-[#261817]">
+            <ul className="text-text">
               {tools.map((tool, idx) => (
                 <span key={idx} className="flex gap-1 items-center">
                   <StarBulletIcon color={color} />
@@ -126,91 +119,10 @@ export default async function ProjectPage({
               ))}
             </ul>
           </div>
-
-          {/* links */}
-          {(links?.github || links?.figmaDemo || links?.pitchDeck) && (
-            <div className="flex flex-col pt-4">
-              <div className="flex flex-col items-center">
-                <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
-                  Links
-                </h2>
-                <CurvedLine width={175} stroke={7} />
-              </div>
-
-              {links.github && (
-                <a
-                  href={links.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
-                  GitHub Repository
-                </a>
-              )}
-
-              {links.figmaDemo && (
-                <a
-                  href={links.figmaDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
-                  Figma Demo
-                </a>
-              )}
-
-              {links.pitchDeck && (
-                <a
-                  href={links.pitchDeck}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
-                >
-                  Pitch Deck
-                </a>
-              )}
-            </div>
-          )}
         </div>
       </div>
 
-      {/* case study button */}
-      {links?.caseStudy === "" ? (
-        <button className="px-12 py-2 rounded-2xl bg-current mt-10" disabled>
-          <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
-            Case Study Coming Soon ✨
-          </p>
-        </button>
-      ) : links?.caseStudy ? (
-        <Link href={links.caseStudy!} target="_blank" rel="noopener noreferrer">
-          <div className="relative group mt-10">
-            <button className="hover:drop-shadow-[0_0_8px_currentColor] px-12 py-2 rounded-2xl bg-current mt-10 transition">
-              <p className="text-2xl font-medium font-geist-mono text-[#FCFBF7]">
-                View Case Study ↗
-              </p>
-            </button>
-
-            {/* hover embed preview */}
-            <div className="absolute top-[-32vh] left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 z-50 w-[424px] h-[316px] overflow-hidden rounded-xl drop-shadow-[0_0_8px_currentColor]">
-              <iframe
-                src={`https://www.behance.net/embed/project/${
-                  links.caseStudy.split("/")[4]
-                }?ilo0=1`}
-                frameBorder="0"
-                allowFullScreen
-                className="w-full h-full"
-                loading="lazy"
-                allow="clipboard-write"
-                referrerPolicy="strict-origin-when-cross-origin"
-                scrolling="no"
-              ></iframe>
-            </div>
-          </div>
-        </Link>
-      ) : null}
-
       <Footer mini={true} />
-    
     </div>
   );
 }

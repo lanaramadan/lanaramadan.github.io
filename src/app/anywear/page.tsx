@@ -87,7 +87,7 @@ export default async function AnywearPage() {
         />
       </div>
 
-      <Footer mini={true} />
+      <Footer mini={true} color="text-[#7E5443]" />
     </div>
   );
 }

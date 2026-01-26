@@ -87,7 +87,7 @@ export default async function DinoDocsPage() {
         />
       </div>
 
-      <Footer mini={true} />
+      <Footer mini={true} color="text-[#80C079]" />
     </div>
   );
 }

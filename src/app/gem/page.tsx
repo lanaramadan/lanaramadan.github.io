@@ -101,7 +101,7 @@ export default async function GemPage() {
         />
       </div>
 
-      <Footer mini={true} />
+      <Footer mini={true} color="text-[#065143]" />
     </div>
   );
 }

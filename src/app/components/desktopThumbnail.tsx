@@ -50,13 +50,12 @@ export default function DesktopThumbnail({
           />
         ) : (
           <div
-            className="absolute rounded-md z-0"
+            className="absolute rounded-md z-0 bg-dark"
             style={{
               top: 12 * scale,
               left: 36 * scale,
               width: width * scale,
               height: height * scale,
-              backgroundColor: "currentColor",
             }}
           />
         )}

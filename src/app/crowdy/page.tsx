@@ -24,7 +24,7 @@ export default async function CrowdyPage() {
         </div>
       </div>
 
-      <Footer mini={true} />
+      <Footer mini={true} color="text-[#E06666]"/>
     </div>
   );
 }

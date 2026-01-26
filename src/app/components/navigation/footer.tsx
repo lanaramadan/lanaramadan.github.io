@@ -12,15 +12,16 @@ import OpenLetter from "../openLetter";
 
 type FooterProps = {
   mini?: boolean;
+  color?: string;
 };
 
-export default function Footer({ mini = false }: FooterProps) {
+export default function Footer({ mini = false, color = "text-dark" }: FooterProps) {
   const [hovered, setHovered] = useState(false);
 
   if (mini) {
     return (
-      <footer className="mt-16 text-center text-dark">
-        <p className="font-geist-mono mb-4 text-xl font-medium">
+      <footer className={`mt-16 text-center ${color}`}>
+        <p className={`font-geist-mono mb-4 text-xl font-medium`}>
           Thank you for stopping by :)
         </p>
         <div className="flex justify-center gap-10 mt-2">
@@ -29,7 +30,7 @@ export default function Footer({ mini = false }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="hover:drop-shadow-[0_0_8px_currentColor]"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <LinkedinIcon className="w-[50px] h-[50px]" />
           </a>
@@ -39,7 +40,7 @@ export default function Footer({ mini = false }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Behance"
-            className="hover:drop-shadow-[0_0_8px_currentColor]"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <BehanceIcon className="w-[60px] h-[60px]" />
           </a>
@@ -49,7 +50,7 @@ export default function Footer({ mini = false }: FooterProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="hover:drop-shadow-[0_0_8px_currentColor]"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <GithubIcon className="w-[50px] h-[50px]" />
           </a>
@@ -57,7 +58,7 @@ export default function Footer({ mini = false }: FooterProps) {
           <a
             href="mailto:lanamramadan@gmail.com"
             aria-label="Email"
-            className="hover:drop-shadow-[0_0_8px_currentColor]"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <MailIcon className="w-[50px] h-[50px]" />
           </a>

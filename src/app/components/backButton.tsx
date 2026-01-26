@@ -10,7 +10,7 @@ export default function BackButton() {
     <button
       aria-label="Go back"
       className="absolute left-5 top-5 z-30 hover:drop-shadow-[0_0_8px_currentColor]"
-      onClick={() => router.push("/#work")}
+      onClick={() => router.push("/#projects")}
     >
       <BackArrowIcon />
     </button>

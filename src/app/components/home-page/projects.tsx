@@ -5,7 +5,7 @@ import projectData from "@/data/projects.json";
 import CurvedLine from "../curvedLine";
 import ProjectCard from "./projectCard";
 
-export default function Works() {
+export default function Projects() {
   const containerRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -50,7 +50,7 @@ export default function Works() {
   return (
     <div className="sticky top-0  h-[400vh] w-full">
       <section ref={containerRef} className="relative h-[400vh] ">
-        <div id="work" className="absolute top-[250vh]" />
+        <div id="projects" className="absolute top-[250vh]" />
 
         <div
           className="
@@ -74,16 +74,17 @@ export default function Works() {
               className="
               font-medium
               text-xl
-              sm:text-8xl
+              sm:text-7xl
               font-imperial-script
+              pt-6
             "
             >
-              works
+              projects
             </h2>
-            <CurvedLine width="180" stroke="8" className="-mt-4" />
+            <CurvedLine width="180" stroke="6" className="-mt-4" />
           </div>
 
-          {/* works/projects */}
+          {/* projects */}
           <div className="relative w-full flex-1 flex items-center justify-center">
             {projectData.designProjects.map((project, index) => {
               const { x, y, rotate } = cardMotionValues[index];

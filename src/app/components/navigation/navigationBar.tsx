@@ -1,6 +1,30 @@
-import Link from "next/link";
+"use client";
 
-export default function NavigationBar({ background = false }) {
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+type NavigationBarProps = {
+  background?: boolean;
+  color?: string;
+};
+
+export default function NavigationBar({
+  background = false,
+  color = "text-dark",
+}: NavigationBarProps) {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/", label: "home" },
+    { href: "/#projects", label: "projects" },
+    { href: "/about", label: "about" },
+    {
+      href: "https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing",
+      label: "resume",
+      external: true,
+    },
+  ];
+  
   return (
     <nav
       className={`
@@ -10,51 +34,60 @@ export default function NavigationBar({ background = false }) {
         z-50
         w-full
         flex
-        justify-between
+        justify-center
         items-center
-        pt-4
+        pt-8
         pb-4
         px-12
-        text-dark
+        ${color}
         ${background ? "bg-background" : ""}
       `}
     >
-      <Link
+      {/* <Link
         href="/"
-        className="
+        className={`
           relative
           h-16
           w-20
           font-new-spirit-condensed
-          text-5xl 
-          hover:drop-shadow-[0_0_8px_currentColor]"
-        >
+          text-5xl
+          hover:drop-shadow-[0_0_8px_currentColor]
+          ${color}
+        `}
+      >
         <span className="absolute left-0 top-0">L</span>
-
         <span className="absolute left-2 top-5 text-medium">R</span>
-      </Link>
+      </Link> */}
 
       <div
-        className="
-			tracking-wide 
-			font-medium 
-			space-x-10
-			text-sm
-			sm:space-x-20
-			sm:text-xl
-			font-geist-mono
-        "
+        className={`
+          tracking-wide 
+          font-medium 
+          space-x-10
+          text-sm
+          sm:space-x-20
+          sm:text-xl
+          font-geist-mono
+          ${color}
+        `}
       >
         <Link
-          href="/#work"
-          className="hover:drop-shadow-[0_0_8px_currentColor]"
+          href="/"
+          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
         >
-          work
+          home
+        </Link>
+
+        <Link
+          href="/#projects"
+          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
+        >
+          projects
         </Link>
 
         <Link
           href="/about"
-          className="hover:drop-shadow-[0_0_8px_currentColor]"
+          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
         >
           about
         </Link>
@@ -63,13 +96,13 @@ export default function NavigationBar({ background = false }) {
           href="https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="
-		  	hover:drop-shadow-[0_0_8px_currentColor]
-			bg-light
-			px-6
-			py-1
-			rounded-2xl
-			"
+          className={`
+            hover:drop-shadow-[0_0_8px_currentColor]
+            px-6
+            py-1
+            rounded-2xl
+            ${color === "text-dark" ? "bg-light" : `bg-[${color}]`}
+          `}
         >
           resume
         </Link>

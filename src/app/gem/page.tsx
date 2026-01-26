@@ -4,7 +4,7 @@ import NavigationBar from "@/app/components/navigation/navigationBar";
 export default async function GemPage() {
   return (
     <div className="bg-background p-32 pb-8 w-full">
-      <NavigationBar background={true} />
+      <NavigationBar background={true} color="text-[#065143]" />
       <div className="flex flex-col">
         <img
           src="/case-studies/gem/cover.png"

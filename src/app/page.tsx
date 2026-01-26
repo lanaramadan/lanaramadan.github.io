@@ -6,7 +6,7 @@ import { useEffect } from "react";
 import NavigationBar from "./components/navigation/navigationBar";
 import Footer from "./components/navigation/footer";
 import HomeTitle from "./components/home-page/homeTitle";
-import Works from "./components/home-page/works";
+import Projects from "./components/home-page/projects";
 
 export default function Home() {
   useEffect(() => {
@@ -41,10 +41,10 @@ export default function Home() {
 
   return (
     <main>
-      <NavigationBar/>
-      <HomeTitle/>
-      <Works/>
-      <Footer/>
+      <NavigationBar />
+      <HomeTitle />
+      <Projects />
+      <Footer />
     </main>
   );
 }

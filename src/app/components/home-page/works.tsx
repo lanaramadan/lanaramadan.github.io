@@ -14,6 +14,7 @@ export default function Works() {
 
   const initialRotations = [1, -1, -2, -2, -3, 3];
 
+  // get the each card's final position in the grid
   const getCardPosition = (index: number) => {
     const cols = 3;
     const row = Math.floor(index / cols);
@@ -31,6 +32,20 @@ export default function Works() {
 
     return { x, y };
   };
+
+  // Precompute motion values for each card
+  const cardMotionValues = projectData.designProjects.map((_, index) => {
+    const { x: finalX, y: finalY } = getCardPosition(index);
+
+    /* eslint-disable react-hooks/rules-of-hooks */
+    const x = useTransform(scrollYProgress, [0, 0.4], [0, finalX]);
+    const y = useTransform(scrollYProgress, [0, 0.4], [0, finalY]);
+    const rotate = useTransform(scrollYProgress, [0, 0.4], [initialRotations[index], 0]);
+    /* eslint-enable react-hooks/rules-of-hooks */
+
+
+    return { x, y, rotate };
+  });
 
   return (
     <div className="sticky top-0  h-[400vh] w-full">
@@ -71,18 +86,7 @@ export default function Works() {
           {/* works/projects */}
           <div className="relative w-full flex-1 flex items-center justify-center">
             {projectData.designProjects.map((project, index) => {
-              const { x: finalX, y: finalY } = getCardPosition(index);
-
-              // move cards
-              const x = useTransform(scrollYProgress, [0, 0.4], [0, finalX]);
-              const y = useTransform(scrollYProgress, [0, 0.4], [0, finalY]);
-
-              // straighten cards
-              const rotate = useTransform(
-                scrollYProgress,
-                [0, 0.4],
-                [initialRotations[index], 0]
-              );
+              const { x, y, rotate } = cardMotionValues[index];
 
               return (
                 <motion.div

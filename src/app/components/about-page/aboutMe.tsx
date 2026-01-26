@@ -3,8 +3,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import Stamp1 from "../icons/stamp1";
-import Stamp2 from "../icons/stamp2";
 import Postcard from "./postcard";
 
 export default function AboutMe() {

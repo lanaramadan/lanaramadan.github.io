@@ -1,4 +1,3 @@
-import Polaroid from "../polaroid";
 import Positions from "./positions";
 
 export default function HomeTitle() {

@@ -12,23 +12,19 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const { name, webpage, overview, images, desktop } = project;
-  const [hovered, setHovered] = useState(false);
   const [rotate, setRotate] = useState(0);
 
   const handleMouseEnter = () => {
     // random rotation between -10 and 10 degrees
     const randomRotation = Math.floor(Math.random() * 21) - 10;
     setRotate(randomRotation);
-    setHovered(true);
   };
 
   const handleMouseLeave = () => {
     setRotate(0);
-    setHovered(false);
   };
 
   return (
-    // TODO add drop shadow on hover
     <Link href={`/work/${webpage}`}>
       <div
         className="

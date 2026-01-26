@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   };
 
   return (
-    <Link href={`/work/${webpage}`}>
+    <Link href={`/${webpage}`}>
       <div
         className="
           flex

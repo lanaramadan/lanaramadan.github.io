@@ -13,7 +13,6 @@ import StarBulletIcon from "@/app/components/icons/starBulletIcon";
 // render webpages
 export function generateStaticParams() {
   const slugs = [
-    ...projectData.programmingProjects,
     ...projectData.designProjects,
   ].map((p) => ({ slug: p.webpage }));
 
@@ -28,7 +27,6 @@ export default async function ProjectPage({
   const { slug } = await params;
 
   const allProjects = [
-    ...projectData.programmingProjects,
     ...projectData.designProjects,
   ];
 

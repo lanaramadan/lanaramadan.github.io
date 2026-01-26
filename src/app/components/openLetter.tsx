@@ -52,7 +52,7 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="159.383"
               transform="matrix(0.899693 -0.380109 0.413717 0.935304 22.0146 168.163)"
               fill="#F8F4F0"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <rect
               x="-0.0158056"
@@ -61,8 +61,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="159.407"
               transform="matrix(0.899693 -0.380109 0.413717 0.935304 22.0158 168.157)"
               stroke="#F8F4F0"
-              stroke-width="0.024068"
-              shape-rendering="crispEdges"
+              strokeWidth="0.024068"
+              shapeRendering="crispEdges"
             />
 
             <image
@@ -89,7 +89,7 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="152.645"
               transform="matrix(0.976819 0.222905 -0.193119 0.978162 0.478516 277.087)"
               fill="#F8F4F0"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <rect
               x="-0.00943106"
@@ -98,8 +98,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="152.669"
               transform="matrix(0.976819 0.222905 -0.193119 0.978162 0.475506 277.089)"
               stroke="#F8F4F0"
-              stroke-width="0.024068"
-              shape-rendering="crispEdges"
+              strokeWidth="0.024068"
+              shapeRendering="crispEdges"
             />
             <image
               width="227.14"
@@ -121,7 +121,7 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="151.328"
               transform="matrix(0.989711 0.115993 -0.0784428 0.999873 280.114 144.29)"
               fill="#F8F4F0"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <rect
               x="-0.0109662"
@@ -130,8 +130,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="151.352"
               transform="matrix(0.989711 0.115993 -0.0784428 0.999873 280.113 144.291)"
               stroke="#F8F4F0"
-              stroke-width="0.024068"
-              shape-rendering="crispEdges"
+              strokeWidth="0.024068"
+              shapeRendering="crispEdges"
             />
 
             <image
@@ -158,7 +158,7 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="161.379"
               transform="matrix(0.973096 -0.147884 0.185018 0.998221 129.561 65.0168)"
               fill="#F8F4F0"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <rect
               x="-0.0139368"
@@ -167,8 +167,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="161.403"
               transform="matrix(0.973096 -0.147884 0.185018 0.998221 129.562 65.0148)"
               stroke="#F8F4F0"
-              stroke-width="0.024068"
-              shape-rendering="crispEdges"
+              strokeWidth="0.024068"
+              shapeRendering="crispEdges"
             />
 
             <image
@@ -195,7 +195,7 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="153.508"
               transform="matrix(0.960392 0.298853 -0.272215 0.954911 176.102 168.474)"
               fill="#F8F4F0"
-              shape-rendering="crispEdges"
+              shapeRendering="crispEdges"
             />
             <rect
               x="-0.00828154"
@@ -204,8 +204,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
               height="153.532"
               transform="matrix(0.960392 0.298853 -0.272215 0.954911 176.097 168.475)"
               stroke="#F8F4F0"
-              stroke-width="0.024068"
-              shape-rendering="crispEdges"
+              strokeWidth="0.024068"
+              shapeRendering="crispEdges"
             />
 
             <image

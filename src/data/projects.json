@@ -184,7 +184,7 @@
   "designProjects": [
     {
       "name": "Roam",
-      "webpage": "roam",
+      "webpage": "projects/roam",
       "overview": "More information coming soon ✨",
       "description": "More information coming soon ✨",
       "tools": [
@@ -201,7 +201,7 @@
     },
     {
       "name": "Esri",
-      "webpage": "esri",
+      "webpage": "projects/esri",
       "overview": "More information coming soon ✨",
       "description": "More information coming soon ✨",
       "tools": [

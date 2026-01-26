@@ -7,13 +7,8 @@ import DesktopThumbnail from "@/app/components/desktopThumbnail";
 import PhoneThumbnail from "@/app/components/phoneThumbnail";
 import CurvedLine from "@/app/components/curvedLine";
 import BackButton from "@/app/components/backButton";
-import StarBulletIcon from "@/app/components/icons/starBulletIcon";
 
-export default async function ProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function ProjectPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const project = projectData.designProjects.find(
     (p) => p.webpage === `projects/${slug}`
@@ -21,7 +16,7 @@ export default async function ProjectPage({
 
   if (!project) return notFound();
 
-  const { name, images, description, tools, color, desktop } = project;
+  const { name, images, description, color, desktop } = project;
   const { start, end } = project.duration;
 
   return (
@@ -87,30 +82,10 @@ export default async function ProjectPage({
             <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed text-dark">
               Overview
             </h2>
-            <CurvedLine width={175} stroke={7} className="text-dark"/>
+            <CurvedLine width={175} stroke={7} className="text-dark" />
           </div>
 
           <div className="text-text">{description}</div>
-        </div>
-
-        <div className="flex flex-col items-center">
-          {/* tools */}
-          <div>
-            <div className="flex flex-col items-center">
-              <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed text-dark">
-                Tools
-              </h2>
-              <CurvedLine width={175} stroke={7} className="text-dark"/>
-            </div>
-            <ul className="text-text">
-              {tools.map((tool, idx) => (
-                <span key={idx} className="flex gap-1 items-center">
-                  <StarBulletIcon color={color} />
-                  <li>{tool}</li>
-                </span>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
 

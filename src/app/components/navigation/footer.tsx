@@ -59,8 +59,8 @@ export default function Footer({ mini = false }: FooterProps) {
   }
 
   return (
-    <div className="sticky top-0 text-dark bg-background overflow-hidden flex relative w-full h-screen justify-center items-center gap-24 px-20">
-      <div className="flex flex-col gap-8 text-5xl font-serif">
+    <div className="sticky top-0 text-dark bg-background overflow-hidden flex relative w-full h-screen justify-center items-center gap-32 px-20">
+      <div className="flex flex-col gap-8 text-5xl font-new-spirit-condensed">
         <p>
           Let&apos;s keep in{" "}
           <span className="font-imperial-script text-7xl">touch</span>!

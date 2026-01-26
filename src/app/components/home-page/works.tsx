@@ -33,73 +33,75 @@ export default function Works() {
   };
 
   return (
-    <section ref={containerRef} className="relative h-[300vh] ">
-      <div id="work" className="absolute top-[180vh]" />
+    <div className="sticky top-0  h-[500vh] w-full">
+      <section ref={containerRef} className="relative h-[500vh] ">
+        <div id="work" className="absolute top-[250vh]" />
 
-      <div
-        className="
-        sticky 
-        top-0
-        flex
-        flex-col 
-        bg-light 
-        h-screen
-        w-full
-        px-48 
-        py-10 
-        gap-6 
-        bg-[url('/green-bg.png')] 
-        bg-cover 
-        bg-center"
-      >
-        {/* subheader */}
-        <div className="flex flex-col items-center text-dark">
-          <h2
-            className="
+        <div
+          className="
+          sticky 
+          top-0
+          flex
+          flex-col 
+          bg-light 
+          h-screen
+          w-full
+          px-48 
+          py-10 
+          gap-6 
+          bg-[url('/green-bg.png')] 
+          bg-cover 
+          bg-center"
+        >
+          {/* subheader */}
+          <div className="flex flex-col items-center text-dark">
+            <h2
+              className="
               font-medium
               text-xl
               sm:text-8xl
               font-imperial-script
             "
-          >
-            works
-          </h2>
-          <CurvedLine width="180" stroke="8" className="-mt-4" />
+            >
+              works
+            </h2>
+            <CurvedLine width="180" stroke="8" className="-mt-4" />
+          </div>
+
+          {/* works/projects */}
+          <div className="relative w-full flex-1 flex items-center justify-center">
+            {projectData.designProjects.map((project, index) => {
+              const { x: finalX, y: finalY } = getCardPosition(index);
+
+              // move cards
+              const x = useTransform(scrollYProgress, [0, 0.5], [0, finalX]);
+              const y = useTransform(scrollYProgress, [0, 0.5], [0, finalY]);
+
+              // straighten cards
+              const rotate = useTransform(
+                scrollYProgress,
+                [0, 0.5],
+                [initialRotations[index], 0]
+              );
+
+              return (
+                <motion.div
+                  key={index}
+                  className="absolute w-[30%]"
+                  style={{
+                    x,
+                    y,
+                    rotate,
+                    zIndex: 10 - index,
+                  }}
+                >
+                  <ProjectCard project={project} />
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
-
-        {/* works/projects */}
-        <div className="relative w-full flex-1 flex items-center justify-center">
-          {projectData.designProjects.map((project, index) => {
-            const { x: finalX, y: finalY } = getCardPosition(index);
-
-            // move cards
-            const x = useTransform(scrollYProgress, [0, 0.6], [0, finalX]);
-            const y = useTransform(scrollYProgress, [0, 0.6], [0, finalY]);
-
-            // straighten cards
-            const rotate = useTransform(
-              scrollYProgress,
-              [0, 0.6],
-              [initialRotations[index], 0]
-            );
-
-            return (
-              <motion.div
-                key={index}
-                className="absolute w-[30%]"
-                style={{
-                  x,
-                  y,
-                  rotate,
-                  zIndex: 10 - index,
-                }}
-              >
-                <ProjectCard project={project} />
-              </motion.div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }

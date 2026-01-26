@@ -4,24 +4,36 @@
 
 :root {
   /* colors */
-  --primary-start: rgba(115, 132, 111);
+  --dark: #73846F;
+  --medium: #B5BCB0;
+  --light: #DBDCD4;
+  --text: #261817;
+  --background: #F8F4F0;
+
+  /* --primary-start: rgba(115, 132, 111);
   --primary-end: rgba(148, 105, 104);
   --primary-start-transparent: rgba(115, 132, 111, 0.2);
   --primary-end-transparent: rgba(148, 105, 104, 0.2);
   --background: #fcfbf7;
-  --foreground: #261817;
+  --foreground: #261817; */
 
   /* fonts */
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
   --font-new-spirit-condensed: "new-spirit-condensed", serif;
   --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+  --font-eternate: "Eternate", "serif";
+  --font-imperial-script: "Imperial Script", "serif";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #fcfbf7;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* text color animation */

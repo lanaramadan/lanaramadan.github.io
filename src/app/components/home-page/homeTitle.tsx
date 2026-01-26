@@ -1,32 +1,27 @@
-import Polaroid from "../polaroid";
 import Positions from "./positions";
-import DownArrowIcon from "../icons/downArrowIcon";
-import NavigationBar from "../navigation/navigationBar";
 
 export default function HomeTitle() {
   return (
-    <div className="flex flex-col relative w-full h-screen justify-between align-center items-center">
-      <NavigationBar name={false} />
-      <div className="flex flex-col w-full h-screen justify-center align-center items-center leading-[0.8]">
-        <h1 className="text-[20vw] font-medium font-[family-name:var(--font-new-spirit-condensed)]">
-          LANA
-        </h1>
-        <h1 className="text-[20vw] font-medium font-[family-name:var(--font-new-spirit-condensed)]">
-          RAMADAN
-        </h1>
+    <div className="sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center">
+      <div className="flex flex-col w-full h-screen justify-center align-center items-center leading-[0.8] text-[20vw] font-medium font-new-spirit-condensed">
+        <h1>LANA</h1>
+        <h1>RAMADAN</h1>
         <Positions />
       </div>
-      <DownArrowIcon className="mb-10" />
+
+      <div className="pb-8 font-eternate text-2xl">
+        ↓ <span className="font-bold">scroll down</span> ↓
+      </div>
 
       {/* poloroids */}
-      <Polaroid
+      {/* <Polaroid
         src="/beach.png"
         alt="Beach"
         caption="🌊☀️"
-        rotation="-20"
+        rotation="20"
         width={180}
         height={180}
-        className="absolute top-[-1vh] left-1 hidden sm:block"
+        className="absolute top-[-8vh] left-64 hidden sm:block"
       />
       <Polaroid
         src="/matcha.png"
@@ -54,7 +49,7 @@ export default function HomeTitle() {
         width={180}
         height={180}
         className="absolute bottom-[-6vh] right-48 hidden sm:block"
-      />
+      /> */}
     </div>
   );
 }

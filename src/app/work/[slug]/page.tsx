@@ -52,11 +52,12 @@ export default async function ProjectPage({
         #fcfbf7 0%,
         ${color}1F 100%
       )`,
-      }}>
+      }}
+    >
       <NavigationBar />
 
       {/* banner */}
-      <div className="relative w-[92vw] rounded-3xl overflow-visible">
+      <div className="relative w-[92vw] rounded-3xl overflow-visible mt-24">
         {/* bg */}
         {desktop ? (
           <div
@@ -83,7 +84,7 @@ export default async function ProjectPage({
             <h2 className="text-lg font-geist-mono">
               {start === end ? `${start} - Hackathon` : `${start} - ${end}`}
             </h2>
-            <h1 className="text-8xl font-[family-name:var(--font-new-spirit-condensed)] mb-2">
+            <h1 className="text-8xl font-new-spirit-condensed mb-2">
               {name.toUpperCase()}
             </h1>
             {desktop ? (
@@ -100,7 +101,7 @@ export default async function ProjectPage({
         {/* overview */}
         <div className="flex flex-col items-start w-[60%]">
           <div className="flex flex-col items-center">
-            <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+            <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
               Overview
             </h2>
             <CurvedLine width={175} stroke={7} />
@@ -113,7 +114,7 @@ export default async function ProjectPage({
           {/* tools */}
           <div>
             <div className="flex flex-col items-center">
-              <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+              <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
                 Tools
               </h2>
               <CurvedLine width={175} stroke={7} />
@@ -132,7 +133,7 @@ export default async function ProjectPage({
           {(links?.github || links?.figmaDemo || links?.pitchDeck) && (
             <div className="flex flex-col pt-4">
               <div className="flex flex-col items-center">
-                <h2 className="font-medium text-4xl mb-[-.1em] font-[family-name:var(--font-new-spirit-condensed)]">
+                <h2 className="font-medium text-4xl mb-[-.1em] font-new-spirit-condensed">
                   Links
                 </h2>
                 <CurvedLine width={175} stroke={7} />
@@ -143,7 +144,8 @@ export default async function ProjectPage({
                   href={links.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   GitHub Repository
                 </a>
               )}
@@ -153,7 +155,8 @@ export default async function ProjectPage({
                   href={links.figmaDemo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   Figma Demo
                 </a>
               )}
@@ -163,7 +166,8 @@ export default async function ProjectPage({
                   href={links.pitchDeck}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current">
+                  className="underline italic hover:drop-shadow-[0_0_8px_currentColor] text-current"
+                >
                   Pitch Deck
                 </a>
               )}
@@ -194,20 +198,21 @@ export default async function ProjectPage({
                 src={`https://www.behance.net/embed/project/${
                   links.caseStudy.split("/")[4]
                 }?ilo0=1`}
-
                 frameBorder="0"
                 allowFullScreen
                 className="w-full h-full"
                 loading="lazy"
                 allow="clipboard-write"
                 referrerPolicy="strict-origin-when-cross-origin"
-                scrolling="no"></iframe>
+                scrolling="no"
+              ></iframe>
             </div>
           </div>
         </Link>
       ) : null}
 
-      <Footer />
+      <Footer mini={true} />
+    
     </div>
   );
 }

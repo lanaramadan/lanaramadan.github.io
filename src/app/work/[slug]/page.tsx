@@ -212,6 +212,7 @@ export default async function ProjectPage({
       ) : null}
 
       <Footer mini={true} />
+    
     </div>
   );
 }

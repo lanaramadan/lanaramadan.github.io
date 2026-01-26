@@ -1,22 +1,23 @@
 import Link from "next/link";
 
-export default function NavigationBar() {
+export default function NavigationBar({ background = false }) {
   return (
     <nav
-      className="
-	  	fixed
-      top-0
-      left-0
-      z-50
-      w-full 
-      flex 
-      justify-between 
-      items-center
-      pt-4
-      pb-10
-      px-12
-		  text-dark
-      "
+      className={`
+        fixed
+        top-0
+        left-0
+        z-50
+        w-full
+        flex
+        justify-between
+        items-center
+        pt-4
+        pb-4
+        px-12
+        text-dark
+        ${background ? "bg-background" : ""}
+      `}
     >
       <Link
         href="/"
@@ -59,7 +60,7 @@ export default function NavigationBar() {
         </Link>
 
         <Link
-          href="https://drive.google.com/file/d/122jeEE-qKwpD2LD3fz3cC03HE7Sj5gPu/view?usp=sharing"
+          href="https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="

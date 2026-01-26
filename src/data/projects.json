@@ -259,6 +259,24 @@
       "desktop": true
     },
     {
+      "name": "Dino Docs",
+      "webpage": "dino-docs",
+      "overview": "A collaborative document editor designed to be safe and fun for kids.",
+      "description": "Dino Docs is a Google Docs-inspired platform tailored for children, blending collaborative writing with a playful, kid-friendly interface. Designed in Figma, it emphasizes simplicity, safety, and creativity—featuring colorful UI, helpful dinosaur mascots, and easy-to-use editing tools. The project explores how digital collaboration can be made engaging and accessible for younger users.",
+      "tools": ["Figma"],
+      "links": {
+        "figmaDemo": "https://www.figma.com/design/YAGECqVZXlQFc7bTiQh8Q7/Dino-Docs?node-id=15-324&t=yf9Ig6xaByjY6Q9o-1",
+        "caseStudy": "https://www.behance.net/gallery/232801177/Dino-Docs"
+      },
+      "duration": {
+        "start": "Sep 2024",
+        "end": "Dec 2024"
+      },
+      "images": ["dino-docs.png"],
+      "color": "#77B0F7",
+      "desktop": true
+    },
+    {
       "name": "Crowdy!",
       "webpage": "crowdy",
       "overview": "A mobile app to help students check campus crowd levels in real time.",

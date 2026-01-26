@@ -33,8 +33,8 @@ export default function Works() {
   };
 
   return (
-    <div className="sticky top-0  h-[500vh] w-full">
-      <section ref={containerRef} className="relative h-[500vh] ">
+    <div className="sticky top-0  h-[400vh] w-full">
+      <section ref={containerRef} className="relative h-[400vh] ">
         <div id="work" className="absolute top-[250vh]" />
 
         <div
@@ -74,13 +74,13 @@ export default function Works() {
               const { x: finalX, y: finalY } = getCardPosition(index);
 
               // move cards
-              const x = useTransform(scrollYProgress, [0, 0.5], [0, finalX]);
-              const y = useTransform(scrollYProgress, [0, 0.5], [0, finalY]);
+              const x = useTransform(scrollYProgress, [0, 0.4], [0, finalX]);
+              const y = useTransform(scrollYProgress, [0, 0.4], [0, finalY]);
 
               // straighten cards
               const rotate = useTransform(
                 scrollYProgress,
-                [0, 0.5],
+                [0, 0.4],
                 [initialRotations[index], 0]
               );
 

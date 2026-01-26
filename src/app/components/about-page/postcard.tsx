@@ -18,19 +18,19 @@ export default function Postcard({ side }: PostcardProps) {
           </p>
           <div className="text-text text-ibm-plex-sans flex flex-col gap-10 text-lg">
             <p>
-              I'm a fourth-year Computer Science & Informatics (Human-Computer
+              I&apos;m a fourth-year Computer Science & Informatics (Human-Computer
               Interaction) student at UC Irvine, passionate about storytelling
               through human-centered design.
             </p>
             <p>
-              I blend a designer's eye with a developer's mindset to build
+              I blend a designer&apos;s eye with a developer&apos;s mindset to build
               engineer-friendly solutions for user problems. My goal is creating
-              interfaces that aren't just functional, but genuinely human:
+              interfaces that aren&apos;t just functional, but genuinely human:
               design that tells stories, inspires change, and enhances community
               experiences.
             </p>
             <p>
-              When I'm not designing, I'm probably journaling at a new cafe,
+              When I&apos;m not designing, I&apos;m probably journaling at a new cafe,
               crocheting, getting lost in Pinterest boards, or sipping on a
               matcha latte.
             </p>

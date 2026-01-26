@@ -1,14 +1,22 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { useState } from "react";
+
 import GithubIcon from "../icons/githubIcon";
 import LinkedinIcon from "../icons/linkedinIcon";
 import MailIcon from "../icons/mailIcon";
 import BehanceIcon from "../icons/behanceIcon";
 import ClosedLetter from "../closedLetter";
+import OpenLetter from "../openLetter";
 
 type FooterProps = {
   mini?: boolean;
 };
 
 export default function Footer({ mini = false }: FooterProps) {
+  const [hovered, setHovered] = useState(false);
+
   if (mini) {
     return (
       <footer className="mt-16 text-center text-dark">
@@ -59,7 +67,7 @@ export default function Footer({ mini = false }: FooterProps) {
   }
 
   return (
-    <div className="sticky top-0 text-dark bg-background overflow-hidden flex relative w-full h-screen justify-center items-center gap-32 px-20">
+    <div className="sticky top-0 text-dark bg-background overflow-hidden flex relative w-full h-screen justify-center items-center gap-28 px-20">
       <div className="flex flex-col gap-8 text-5xl font-new-spirit-condensed">
         <p>
           Let&apos;s keep in{" "}
@@ -83,7 +91,23 @@ export default function Footer({ mini = false }: FooterProps) {
         </div>
       </div>
 
-      <ClosedLetter rotate={-11} />
+      <div 
+        className="flex pt-80 group"
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+      >
+        <div className="drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[-11deg] group-hover:rotate-[5deg] transition-transform duration-300">
+          <ClosedLetter />
+        </div>
+
+        <div
+          className="-ml-[24em] -mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300"
+        >
+          <motion.div>
+          <OpenLetter hovered={hovered} />
+          </motion.div>
+      </div>
+      </div>
     </div>
   );
 }

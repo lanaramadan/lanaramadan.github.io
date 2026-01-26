@@ -5,92 +5,53 @@ type ClosedLetterProps = {
 export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
   return (
     <svg
-      width="680"
-      height="451"
-      viewBox="0 0 680 451"
+      width="530"
+      height="301"
+      viewBox="0 0 530 301"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       style={{ transform: `rotate(${rotate}deg)` }}
     >
-      <g filter="url(#filter0_d_2036_1033)">
-        <rect
-          x="75"
-          y="75"
-          width="529.97"
-          height="300.316"
-          fill="url(#paint0_linear_2036_1033)"
-        />
-        <g clipPath="url(#clip0_2036_1033)">
-          <g filter="url(#filter1_di_2036_1033)">
-            <path
-              d="M339.985 225.158L75.0001 378.147V72.169L339.985 225.158Z"
-              fill="#DBDCD4"
-            />
-          </g>
-          <g filter="url(#filter2_di_2036_1033)">
-            <path
-              d="M339.985 225.158L604.97 378.147V72.169L339.985 225.158Z"
-              fill="#DBDCD4"
-            />
-          </g>
+      <rect
+        width="529.97"
+        height="300.316"
+        fill="url(#paint0_linear_2036_1033)"
+      />
+      <g clipPath="url(#clip0_2036_1033)">
+        <g filter="url(#filter0_di_2036_1033)">
+          <path
+            d="M264.985 150.158L0.00012207 303.147V-2.83102L264.985 150.158Z"
+            fill="#DBDCD4"
+          />
         </g>
-        <g clipPath="url(#clip1_2036_1033)">
-          <g filter="url(#filter3_di_2036_1033)">
-            <path
-              d="M335.8 180.523C338.667 178.661 342.363 178.661 345.23 180.523L621.99 360.284C629.217 364.979 625.893 376.2 617.275 376.2H63.7552C55.1371 376.2 51.8128 364.979 59.0402 360.284L335.8 180.523Z"
-              fill="url(#paint1_linear_2036_1033)"
-            />
-          </g>
+        <g filter="url(#filter1_di_2036_1033)">
+          <path
+            d="M264.985 150.158L529.97 303.147V-2.83102L264.985 150.158Z"
+            fill="#DBDCD4"
+          />
         </g>
-        <g clipPath="url(#clip2_2036_1033)">
-          <g filter="url(#filter4_di_2036_1033)">
-            <path
-              d="M335.8 269.793C338.667 271.655 342.363 271.655 345.23 269.793L621.99 90.0322C629.217 85.3379 625.893 74.1167 617.275 74.1167H63.7552C55.1371 74.1167 51.8128 85.3379 59.0402 90.0322L335.8 269.793Z"
-              fill="url(#paint2_linear_2036_1033)"
-            />
-          </g>
+      </g>
+      <g clipPath="url(#clip1_2036_1033)">
+        <g filter="url(#filter2_di_2036_1033)">
+          <path
+            d="M260.8 105.523C263.667 103.661 267.363 103.661 270.23 105.523L546.99 285.284C554.217 289.979 550.893 301.2 542.275 301.2H-11.2448C-19.8629 301.2 -23.1872 289.979 -15.9598 285.284L260.8 105.523Z"
+            fill="url(#paint1_linear_2036_1033)"
+          />
+        </g>
+      </g>
+      <g clipPath="url(#clip2_2036_1033)">
+        <g filter="url(#filter3_di_2036_1033)">
+          <path
+            d="M260.8 194.793C263.667 196.655 267.363 196.655 270.23 194.793L546.99 15.0322C554.217 10.3379 550.893 -0.88327 542.275 -0.88327H-11.2448C-19.8629 -0.88327 -23.1872 10.3379 -15.9598 15.0322L260.8 194.793Z"
+            fill="url(#paint2_linear_2036_1033)"
+          />
         </g>
       </g>
       <defs>
         <filter
-          id="filter0_d_2036_1033"
-          x="0"
-          y="0"
-          width="679.97"
-          height="450.316"
-          filterUnits="userSpaceOnUse"
-          colorInterpolationFilters="sRGB"
-        >
-          <feFlood floodOpacity="0" result="BackgroundImageFix" />
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          />
-          <feOffset />
-          <feGaussianBlur stdDeviation="37.5" />
-          <feComposite in2="hardAlpha" operator="out" />
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0.45098 0 0 0 0 0.517647 0 0 0 0 0.435294 0 0 0 0.5 0"
-          />
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_2036_1033"
-          />
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_2036_1033"
-            result="shape"
-          />
-        </filter>
-        <filter
-          id="filter1_di_2036_1033"
-          x="73.9403"
-          y="70.579"
+          id="filter0_di_2036_1033"
+          x="-1.0597"
+          y="-4.42096"
           width="267.105"
           height="309.865"
           filterUnits="userSpaceOnUse"
@@ -141,9 +102,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           />
         </filter>
         <filter
-          id="filter2_di_2036_1033"
-          x="333.095"
-          y="64.5727"
+          id="filter1_di_2036_1033"
+          x="258.095"
+          y="-10.4273"
           width="278.764"
           height="319.757"
           filterUnits="userSpaceOnUse"
@@ -194,9 +155,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           />
         </filter>
         <filter
-          id="filter3_di_2036_1033"
-          x="54.3766"
-          y="179.127"
+          id="filter2_di_2036_1033"
+          x="-20.6234"
+          y="104.127"
           width="572.277"
           height="198.486"
           filterUnits="userSpaceOnUse"
@@ -247,9 +208,9 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
           />
         </filter>
         <filter
-          id="filter4_di_2036_1033"
-          x="54.3766"
-          y="74.1167"
+          id="filter3_di_2036_1033"
+          x="-20.6234"
+          y="-0.883301"
           width="572.277"
           height="198.486"
           filterUnits="userSpaceOnUse"
@@ -301,51 +262,46 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
         </filter>
         <linearGradient
           id="paint0_linear_2036_1033"
-          x1="339.985"
-          y1="75"
-          x2="339.985"
-          y2="375.316"
+          x1="264.985"
+          y1="0"
+          x2="264.985"
+          y2="300.316"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#DBDCD4" />
-          <stop offset="1" stopColor="#B5BCB0" />
+          <stop stop-color="#DBDCD4" />
+          <stop offset="1" stop-color="#B5BCB0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2036_1033"
-          x1="340.515"
-          y1="177.461"
-          x2="344.136"
-          y2="373.903"
+          x1="265.515"
+          y1="102.461"
+          x2="269.136"
+          y2="298.903"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#B5BCB0" />
-          <stop offset="1" stopColor="#DBDCD4" />
+          <stop stop-color="#B5BCB0" />
+          <stop offset="1" stop-color="#DBDCD4" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2036_1033"
-          x1="340.515"
-          y1="272.855"
-          x2="340.515"
-          y2="73.4101"
+          x1="265.515"
+          y1="197.855"
+          x2="265.515"
+          y2="-1.5899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#B5BCB0" />
-          <stop offset="1" stopColor="#DBDCD4" />
+          <stop stop-color="#B5BCB0" />
+          <stop offset="1" stop-color="#DBDCD4" />
         </linearGradient>
         <clipPath id="clip0_2036_1033">
-          <rect
-            width="529.97"
-            height="300.316"
-            fill="white"
-            transform="translate(75 75)"
-          />
+          <rect width="529.97" height="300.316" fill="white" />
         </clipPath>
         <clipPath id="clip1_2036_1033">
           <rect
             width="529.97"
             height="197.855"
             fill="white"
-            transform="translate(75 177.461)"
+            transform="translate(0 102.461)"
           />
         </clipPath>
         <clipPath id="clip2_2036_1033">
@@ -353,7 +309,7 @@ export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
             width="529.97"
             height="197.855"
             fill="white"
-            transform="matrix(1 0 0 -1 75 272.855)"
+            transform="matrix(1 0 0 -1 0 197.855)"
           />
         </clipPath>
       </defs>

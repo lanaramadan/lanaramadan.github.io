@@ -39,7 +39,11 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
       {/* images */}
       <g>
         <motion.g
-          animate={{ y: hovered ? -240 : 0, x: hovered ? -164: 0, rotate: hovered ? -8 : 0}}
+          animate={{
+            y: hovered ? -240 : 0,
+            x: hovered ? -164 : 0,
+            rotate: hovered ? -8 : 0,
+          }}
           transition={{ type: "spring", stiffness: 120, damping: 16 }}
         >
           <g filter="url(#filter1_di_2036_1085)">
@@ -72,7 +76,11 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
         </motion.g>
 
         <motion.g
-          animate={{ y: hovered ? -130 : 0, x: hovered? 120 : 40, rotate: hovered? -15 : 0}}
+          animate={{
+            y: hovered ? -130 : 0,
+            x: hovered ? 120 : 40,
+            rotate: hovered ? -15 : 0,
+          }}
           transition={{ type: "spring", stiffness: 120, damping: 16 }}
         >
           <g filter="url(#filter5_di_2036_1085)">
@@ -103,9 +111,8 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
           </g>
         </motion.g>
 
-
         <motion.g
-          animate={{ y: hovered ? -60 : 0, rotate: hovered ? 10 : 0}}
+          animate={{ y: hovered ? -60 : 0, rotate: hovered ? 10 : 0 }}
           transition={{ type: "spring", stiffness: 120, damping: 16 }}
         >
           <g filter="url(#filter2_di_2036_1085)">
@@ -138,7 +145,11 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
         </motion.g>
 
         <motion.g
-          animate={{ y: hovered ? -110 : 0, x: hovered ? 150: 0, rotate: hovered ? -10 : 0}}
+          animate={{
+            y: hovered ? -110 : 0,
+            x: hovered ? 150 : 0,
+            rotate: hovered ? -10 : 0,
+          }}
           transition={{ type: "spring", stiffness: 120, damping: 16 }}
         >
           <g filter="url(#filter3_di_2036_1085)">
@@ -171,7 +182,11 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
         </motion.g>
 
         <motion.g
-          animate={{ y: hovered ? -190 : 0, x: hovered ? -180: 0, rotate: hovered ? -15 : 0}}
+          animate={{
+            y: hovered ? -190 : 0,
+            x: hovered ? -180 : 0,
+            rotate: hovered ? -15 : 0,
+          }}
           transition={{ type: "spring", stiffness: 120, damping: 16 }}
         >
           <g filter="url(#filter4_di_2036_1085)">
@@ -202,8 +217,6 @@ export default function OpenLetter({ hovered = false }: OpenLetterProps) {
             />
           </g>
         </motion.g>
-
-       
       </g>
 
       {/* envelope bottom */}

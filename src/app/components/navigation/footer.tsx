@@ -91,7 +91,7 @@ export default function Footer({ mini = false }: FooterProps) {
         </div>
       </div>
 
-      <div 
+      <div
         className="flex pt-80 group"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -100,13 +100,11 @@ export default function Footer({ mini = false }: FooterProps) {
           <ClosedLetter />
         </div>
 
-        <div
-          className="-ml-[24em] -mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300"
-        >
+        <div className="-ml-[24em] -mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300">
           <motion.div>
-          <OpenLetter hovered={hovered} />
+            <OpenLetter hovered={hovered} />
           </motion.div>
-      </div>
+        </div>
       </div>
     </div>
   );

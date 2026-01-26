@@ -1,19 +1,23 @@
 import React from "react";
 
 type PencilUpIconProps = {
-  width?: number | string;
-  height?: number | string;
+  width?: number;
+  height?: number;
+  scale?: number;
 };
 
 const PencilUpIcon: React.FC<PencilUpIconProps> = ({
   width = 35,
   height = 26,
+  scale = 1
 }) => {
+  const scaledWidth = width * scale;
+  const scaledHeight = height * scale
   return (
-    <span className="w-6 h-6 flex items-center justify-center shrink-0">
+    <span className="flex items-center justify-center shrink-0 pt-1">
       <svg
-        width={width}
-        height={height}
+        width={scaledWidth}
+        height={scaledHeight}
         viewBox="0 0 35 26"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

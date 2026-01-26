@@ -15,7 +15,7 @@ export default function AboutTitle() {
           <Polaroid
             src="/beach.png"
             alt="Beach"
-            caption="subtitle here"
+            caption="@ the beach"
             rotation="-12"
             width={140}
             rotate={false}
@@ -25,7 +25,7 @@ export default function AboutTitle() {
           <Polaroid
             src="/matcha.png"
             alt="Coffee & matcha"
-            caption="subtitle here"
+            caption="design fuel"
             rotation="5"
             width={200}
             rotate={false}
@@ -33,9 +33,9 @@ export default function AboutTitle() {
         </div>
         <div className="z-0 -translate-x-8 group-hover:translate-x-0 transition-transform duration-300 ease-out">
           <Polaroid
-            src="/coffee.png"
+            src="/city.png"
             alt="Coffee"
-            caption="subtitle here"
+            caption="in the city"
             rotation="17"
             width={150}
             rotate={false}

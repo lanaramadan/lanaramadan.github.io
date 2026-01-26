@@ -13,17 +13,26 @@ export default function Postcard({ side }: PostcardProps) {
       <div className="flex w-full h-full">
         {/* text */}
         <div className="basis-1/2 flex flex-col gap-10 justify-center text-left">
-          <p className="text-text font-serif text-4xl">Nice to meet you!</p>
+          <p className="text-text font-new-spirit-condensed text-4xl">
+            Hi there!
+          </p>
           <div className="text-text text-ibm-plex-sans flex flex-col gap-10 text-lg">
             <p>
-              I’m a fourth-year student at UC Irvine studying Computer Science
-              and Informatics (Human-Computer Interaction) with a passion for
-              storytelling and creating space for human connection through
-              design.
+              I'm a fourth-year Computer Science & Informatics (Human-Computer
+              Interaction) student at UC Irvine, passionate about storytelling
+              through human-centered design.
             </p>
             <p>
-              When I’m not designing, I like to journal, try new cafes, crochet,
-              make Pinterest board, and drink matcha lattes.
+              I blend a designer's eye with a developer's mindset to build
+              engineer-friendly solutions for user problems. My goal is creating
+              interfaces that aren't just functional, but genuinely human:
+              design that tells stories, inspires change, and enhances community
+              experiences.
+            </p>
+            <p>
+              When I'm not designing, I'm probably journaling at a new cafe,
+              crocheting, getting lost in Pinterest boards, or sipping on a
+              matcha latte.
             </p>
           </div>
         </div>
@@ -55,14 +64,14 @@ export default function Postcard({ side }: PostcardProps) {
 
             {/* text on top of lines */}
             <div className="relative flex justify-start h-full top-[-3vh] gap-6 text-left">
-              <p className="text-2xl font-serif mt-6">To:</p>
+              <p className="text-2xl font-new-spirit-condensed mt-6">To:</p>
               <p className="text-7xl text-text font-eternate leading-[1.2]">
                 Whomever it may concern &lt;3
               </p>
             </div>
 
             {/* <div className="relative flex justify-start h-full top-[-3vh] gap-6">
-              <p className="text-2xl font-serif mt-6">From:</p>
+              <p className="text-2xl font-new-spirit-condensed mt-6">From:</p>
               <p className="text-7xl text-text font-eternate leading-[1.2]">
                 Lana Ramadan &lt;3
               </p>
@@ -77,17 +86,19 @@ export default function Postcard({ side }: PostcardProps) {
     <div className="">
       <Image
         priority
-        src="/beach.png"
+        src="/beach.jpg"
         alt="Beach"
         fill={true}
         className="p-8 object-cover drop-shadow-none shadow-now"
       />
 
-      <div className="absolute top-16 right-16 z-10">
-        <p className="text-text text-right font-eternate text-9xl leading-[1.35] drop-shadow-[0_0_4px_rgba(38,24,23,0.75)]">
-          greetings from
+      <div className="absolute top-[-1em] right-16 z-10">
+        <p className="text-[#946968] text-right font-new-spirit-condensed text-9xl leading-[.8]">
+          <span className="font-ibm-plex-sans text-4xl pr-8">
+            greetings from
+          </span>
           <br />
-          california!
+          California!
         </p>
       </div>
     </div>

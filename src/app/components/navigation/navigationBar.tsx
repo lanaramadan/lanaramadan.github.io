@@ -22,16 +22,16 @@ export default function NavigationBar({ background = false }) {
       <Link
         href="/"
         className="
-			relative
-			h-16
-			w-20
-			font-new-spirit-condensed
-			text-5xl 
-			hover:drop-shadow-[0_0_8px_currentColor]"
-      >
-        <span className="absolute left-0 top-0 font-serif">L</span>
+          relative
+          h-16
+          w-20
+          font-new-spirit-condensed
+          text-5xl 
+          hover:drop-shadow-[0_0_8px_currentColor]"
+        >
+        <span className="absolute left-0 top-0">L</span>
 
-        <span className="absolute left-3 top-5 font-serif text-medium">R</span>
+        <span className="absolute left-2 top-5 text-medium">R</span>
       </Link>
 
       <div

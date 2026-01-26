@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 
 type NavigationBarProps = {
   background?: boolean;
@@ -12,19 +9,6 @@ export default function NavigationBar({
   background = false,
   color = "text-dark",
 }: NavigationBarProps) {
-  const pathname = usePathname();
-
-  const navLinks = [
-    { href: "/", label: "home" },
-    { href: "/#projects", label: "projects" },
-    { href: "/about", label: "about" },
-    {
-      href: "https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing",
-      label: "resume",
-      external: true,
-    },
-  ];
-  
   return (
     <nav
       className={`
@@ -97,12 +81,12 @@ export default function NavigationBar({
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            hover:drop-shadow-[0_0_8px_currentColor]
-            px-6
-            py-1
-            rounded-2xl
-            ${color === "text-dark" ? "bg-light" : `bg-[${color}]`}
-          `}
+          hover:drop-shadow-[0_0_8px_currentColor]
+          px-6
+          py-1
+          rounded-2xl
+          ${color === "text-dark" ? "bg-light" : `bg-[${color}]`}
+        `}
         >
           resume
         </Link>

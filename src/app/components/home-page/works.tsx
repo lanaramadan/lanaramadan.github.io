@@ -33,7 +33,9 @@ export default function Works() {
   };
 
   return (
-    <section id="work" ref={containerRef} className="relative h-[300vh] ">
+    <section ref={containerRef} className="relative h-[300vh] ">
+      <div id="work" className="absolute top-[180vh]" />
+
       <div
         className="
         sticky 

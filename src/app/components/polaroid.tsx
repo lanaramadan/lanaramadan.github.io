@@ -48,7 +48,7 @@ export default function Polaroid({
             src={src}
             alt={alt}
             fill={true}
-            style={{ objectFit: 'cover' }}
+            className="object-cover"
           />
         </div>
 

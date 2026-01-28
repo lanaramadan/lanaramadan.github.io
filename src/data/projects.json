@@ -4,7 +4,7 @@
       "name": "Esri",
       "webpage": "esri",
       "overview": "More information coming soon ✨",
-      "description": "More information coming soon ✨",
+      "description": "During my internship at Esri, I worked as an Application Developer Intern on production-level applications using Angular, TypeScript, and Calcite UI. My role involved developing and refining user interfaces, collaborating closely with designers and engineers, and integrating frontend components with backend data systems. Due to a non-disclosure agreement, specific implementation details and project outcomes unfortunately cannot be shared.",
       "tools": [
         "Angular",
         "TypeScript",
@@ -18,7 +18,7 @@
         "start": "June 2025",
         "end": "September 2025"
       },
-      "images": [],
+      "images": ["esri.png"],
       "desktop": true
     },
     {
@@ -202,8 +202,8 @@
     {
       "name": "Esri",
       "webpage": "",
-      "overview": "More information coming soon ✨",
-      "description": "More information coming soon ✨",
+      "overview": "Application Developer Intern at Esri, collaborating on internal applications.",
+      "description": "As an Application Developer Intern at Esri, I improved usability and accessibility across internal tools. I conducted user interviews to uncover workflow pain points, redesigned interfaces in Figma with the Calcite Design System, and collaborated with engineers to deliver production-ready Angular interfaces.",
       "tools": [
         "Angular",
         "TypeScript",
@@ -217,8 +217,9 @@
         "start": "June 2025",
         "end": "September 2025"
       },
-      "images": [],
-      "desktop": true
+      "images": ["esri.png"],
+      "desktop": true,
+      "nda": true
     },
     {
       "name": "GEM",

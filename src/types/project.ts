@@ -17,4 +17,5 @@ export type Project = {
   images: string[];
   color?: string;
   desktop: boolean;
+  nda?: boolean
 };

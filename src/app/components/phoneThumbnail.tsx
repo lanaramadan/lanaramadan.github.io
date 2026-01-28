@@ -4,7 +4,6 @@ import Image from "next/image";
 
 type PhoneThumbnailProps = {
   images: string[];
-  scale?: number;
   count?: number;
   width?: number;
   height?: number;
@@ -12,9 +11,8 @@ type PhoneThumbnailProps = {
 
 export default function PhoneThumbnail({
   images,
-  scale = 1,
   count = 3,
-  width = 75,
+  width = 80,
   height = 150,
 }: PhoneThumbnailProps) {
   const mobileProjects: (string | null)[] = [...images.slice(0, count)];
@@ -46,8 +44,8 @@ export default function PhoneThumbnail({
             key={idx}
             className="relative"
             style={{
-              width: `${(width + 20) * scale}px`,
-              height: `${(height + 20) * scale}px`,
+              width: `${(width + 20)}px`,
+              height: `${(height + 20)}px`,
             }}
           >
             {/* phone image */}
@@ -64,10 +62,10 @@ export default function PhoneThumbnail({
               <Image
                 src={src}
                 alt={`Overlay ${idx + 1}`}
-                width={width * scale}
-                height={height * scale}
-                className="absolute rounded-xl z-0"
-                style={{ top: 3 * scale, left: 10 * scale }}
+                width={width}
+                height={height}
+                className="absolute rounded-sm z-0"
+                style={{ top: 4, left: 10.6 }}
                 priority
                 onError={() => handleError(idx)}
               />
@@ -75,10 +73,10 @@ export default function PhoneThumbnail({
               <div
                 className="absolute rounded-xl z-0"
                 style={{
-                  top: 3 * scale,
-                  left: 10 * scale,
-                  width: width * scale,
-                  height: (height + 15) * scale,
+                  top: 4,
+                  left: 10.6,
+                  width: width,
+                  height: (height + 15),
                   backgroundColor: "currentColor",
                 }}
               />

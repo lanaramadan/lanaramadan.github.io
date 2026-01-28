@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
     // random rotation between -10 and 10 degrees
     const randomRotation = Math.floor(Math.random() * 21) - 10;
-    setRotate(randomRotation);
+    setRotate(webpage ? randomRotation : 0);
   };
 
   const handleMouseLeave = () => {
@@ -40,12 +40,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
   const CardContent = (
     <div
-      className="
-        flex flex-col items-left bg-medium rounded-3xl
-        drop-shadow-[0_0_16px_rgba(115,132,111,0.75)]
-        hover:shadow-[inset_0_0_16px_rgba(115,132,111,0.5),0_0_16px_rgba(115,132,111,0.75)]
-        transition-transform duration-300 ease-out w-fit cursor-pointer
-        "
+      className={`
+      flex flex-col items-left bg-medium rounded-3xl
+      drop-shadow-[0_0_16px_rgba(115,132,111,0.75)]
+      transition-transform duration-300 ease-out w-auto cursor-pointer
+      ${
+        webpage
+          ? "hover:shadow-[inset_0_0_16px_rgba(115,132,111,0.5),0_0_16px_rgba(115,132,111,0.75)]"
+          : ""
+      }
+    `}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
@@ -55,14 +59,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {name}
       </h3>
 
-      {/* Sliding content area */}
-      <div className="relative overflow-hidden p-3 bg-background rounded-3xl h-[14rem]">
+      <div className="relative overflow-hidden p-3 bg-background rounded-3xl h-[18rem] md:h-[14rem]">
         <motion.div
           animate={{ opacity: revealed ? 0.3 : 1 }}
           transition={{ duration: 0.25 }}
           className="flex flex-col gap-2 h-full"
         >
-          <p className="h-16 md:h-12">{overview}</p>
+          <p className="h-20 md:h-12">{overview}</p>
 
           <div className="flex justify-center items-center flex-1">
             {desktop ? (

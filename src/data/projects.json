@@ -196,12 +196,12 @@
         "start": "October 2025",
         "end": "December 2025"
       },
-      "images": [],
-      "desktop": true
+      "images": ["roam-1.png", "roam-2.png", "roam-3.png"],
+      "desktop": false
     },
     {
       "name": "Esri",
-      "webpage": "",
+      "webpage": "esri",
       "overview": "Application Developer Intern at Esri, collaborating on internal applications.",
       "description": "As an Application Developer Intern at Esri, I improved usability and accessibility across internal tools. I conducted user interviews to uncover workflow pain points, redesigned interfaces in Figma with the Calcite Design System, and collaborated with engineers to deliver production-ready Angular interfaces.",
       "tools": [

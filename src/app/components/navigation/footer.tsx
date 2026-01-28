@@ -22,7 +22,7 @@ export default function Footer({ mini = false, color = "text-dark" }: FooterProp
 
   if (mini) {
     return (
-      <footer className={`mt-16 text-center ${color}`}>
+      <footer className={`bg-background mt-16 text-center ${color}`}>
         <p className={`font-geist-mono mb-4 text-xl font-medium`}>
           Thank you for stopping by :)
         </p>

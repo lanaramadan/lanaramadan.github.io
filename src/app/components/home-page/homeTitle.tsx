@@ -14,7 +14,7 @@ export default function HomeTitle() {
   }, []);
 
   return (
-    <div className="sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center cursor-none">
+    <div className="sticky top-0 bg-background text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center cursor-none">
       {/* gradient cursor */}
       <div
         className="pointer-events-none fixed w-16 h-16 rounded-full bg-gradient-to-r from-dark via-dark to-medium opacity-90 blur-xl transform -translate-x-1/2 -translate-y-1/2 transition-all duration-100"

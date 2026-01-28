@@ -4,13 +4,18 @@ import { motion } from "framer-motion";
 
 type OpenLetterProps = {
   hovered?: boolean;
+  scale?: number;
+
 };
 
-export default function OpenLetter({ hovered = false }: OpenLetterProps) {
+export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterProps) {
+  const width = 530 * scale;
+  const height = 485 * scale;
+
   return (
     <svg
-      width="530"
-      height="485"
+      width={width}
+      height={height}
       viewBox="0 0 530 485"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

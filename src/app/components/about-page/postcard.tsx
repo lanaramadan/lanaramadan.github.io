@@ -10,13 +10,13 @@ type PostcardProps = {
 export default function Postcard({ side }: PostcardProps) {
   if (side == "front") {
     return (
-      <div className="flex w-full h-full">
+      <div className="flex flex-col md:flex-row w-full h-full">
         {/* text */}
-        <div className="basis-1/2 flex flex-col gap-10 justify-center text-left">
+        <div className="md:basis-1/2 flex flex-col gap-10 justify-center text-left">
           <p className="text-text font-new-spirit-condensed text-4xl">
             Hi there!
           </p>
-          <div className="text-text text-ibm-plex-sans flex flex-col gap-10 text-lg">
+          <div className="text-text text-ibm-plex-sans flex flex-col gap-4 md:gap-10 text-lg">
             <p>
               I&apos;m a fourth-year Computer Science & Informatics (Human-Computer
               Interaction) student at UC Irvine, passionate about storytelling
@@ -38,12 +38,12 @@ export default function Postcard({ side }: PostcardProps) {
         </div>
 
         {/* vertical line */}
-        <div className="w-[4px] self-stretch bg-dark mx-8" />
+        <div className="hidden md:block w-[4px] self-stretch bg-dark mx-8" />
 
         {/* right side */}
-        <div className="basis-1/2 relative flex flex-col gap-20">
+        <div className="md:basis-1/2 relative flex flex-col gap-20">
           {/* stamps */}
-          <div className="w-full flex justify-end">
+          <div className="hidden md:flex w-full justify-end">
             <div className="-mr-10 pb-8">
               <Stamp2 />
             </div>
@@ -53,14 +53,14 @@ export default function Postcard({ side }: PostcardProps) {
           </div>
 
           {/* lines container */}
-          <div className="relative flex flex-col justify-between h-full">
+          <div className="hidden relative md:flex flex-col justify-between h-full">
             {/* horizontal lines */}
-            <div className="absolute inset-0 flex flex-col justify-center gap-20 mb-0">
+            {/* <div className="absolute inset-0 flex flex-col justify-center gap-20 mb-0">
               <div className="w-full border-b-4 border-dark" />
               <div className="w-full border-b-4 border-dark" />
               <div className="w-full border-b-4 border-dark" />
               <div className="w-full border-b-4 border-dark" />
-            </div>
+            </div> */}
 
             {/* text on top of lines */}
             <div className="relative flex justify-start h-full top-[-3vh] gap-6 text-left">

@@ -10,6 +10,7 @@ type PolaroidProps = {
   rotation?: string;
   className?: string;
   rotate?: boolean
+  scale?: number
 };
 
 export default function Polaroid({
@@ -19,12 +20,14 @@ export default function Polaroid({
   width = 200,
   rotation = "-10",
   className = "",
-  rotate = true
+  rotate = true,
+  scale = 1
 }: PolaroidProps) {
   const [hovered, setHovered] = useState(false);
 
   const numericRotation = parseInt(rotation);
   const hoverRotation = rotate ? (-1 * numericRotation).toString() : numericRotation.toString();
+
 
   return (
     <div
@@ -43,7 +46,7 @@ export default function Polaroid({
     >
       <div>
         {/* image */}
-        <div className="relative" style={{ width: `${width}px`, height: `${width * 1.2}px` }}>
+        <div className="relative" style={{ width: `${width * scale}px`, height: `${width * 1.2 * scale}px` }}>
           <Image
             src={src}
             alt={alt}

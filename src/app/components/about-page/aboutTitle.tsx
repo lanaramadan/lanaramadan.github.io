@@ -2,7 +2,7 @@ import Polaroid from "../polaroid";
 
 export default function AboutTitle() {
   return (
-    <div className="sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center">
+    <div className="hidden md:block sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center">
       <div className="flex flex-col w-full h-screen justify-center align-center items-center leading-[1] text-[15vw] font-medium font-new-spirit-condensed">
         <h1>Designer</h1>
         <h1>Creative Coder</h1>

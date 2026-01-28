@@ -16,6 +16,8 @@ type FooterProps = {
 };
 
 export default function Footer({ mini = false, color = "text-dark" }: FooterProps) {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   const [hovered, setHovered] = useState(false);
 
   if (mini) {
@@ -68,13 +70,13 @@ export default function Footer({ mini = false, color = "text-dark" }: FooterProp
   }
 
   return (
-    <div className="sticky top-0 text-dark bg-background overflow-hidden flex relative w-full h-screen justify-center items-center gap-28 px-20">
+    <div className="sticky top-0 text-dark bg-background overflow-hidden flex flex-col md:flex-row relative w-full h-screen justify-center items-center gap-4 md:gap-28 px-4 md:px-20">
       <div className="flex flex-col gap-8 text-5xl font-new-spirit-condensed">
         <p>
           Let&apos;s keep in{" "}
           <span className="font-imperial-script text-7xl">touch</span>!
         </p>
-        <div className="flex gap-12">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
           <a
             href="mailto:lanamramadan@gmail.com"
             className="font-ibm-plex-sans text-xl hover:underline hover:drop-shadow-[0_0_8px_currentColor]"
@@ -98,12 +100,12 @@ export default function Footer({ mini = false, color = "text-dark" }: FooterProp
         onMouseLeave={() => setHovered(false)}
       >
         <div className="drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[-11deg] group-hover:rotate-[5deg] transition-transform duration-300">
-          <ClosedLetter />
+          <ClosedLetter scale={isMobile ? .5 : 1}/>
         </div>
 
-        <div className="-ml-[24em] -mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300">
+        <div className="-ml-[24em] -mt-[14em] md:-mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300">
           <motion.div>
-            <OpenLetter hovered={hovered} />
+            <OpenLetter hovered={hovered} scale={isMobile ? .5 : 1}/>
           </motion.div>
         </div>
       </div>

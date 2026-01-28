@@ -1,4 +1,5 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
+
 import { useRef } from "react";
 
 import projectData from "@/data/projects.json";
@@ -6,13 +7,16 @@ import CurvedLine from "../curvedLine";
 import ProjectCard from "./projectCard";
 
 export default function Projects() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   const containerRef = useRef(null);
+
+  const initialRotations = [1, -1, -2, -2, -3, 3];
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end start"],
   });
-
-  const initialRotations = [1, -1, -2, -2, -3, 3];
 
   // get the each card's final position in the grid
   const getCardPosition = (index: number) => {
@@ -33,8 +37,17 @@ export default function Projects() {
     return { x, y };
   };
 
-  // Precompute motion values for each card
-  const cardMotionValues = projectData.designProjects.map((_, index) => {
+  // Precompute motion values
+  const cardMotionValues: {
+    x: MotionValue<number> | number;
+    y: MotionValue<number> | number;
+    rotate: MotionValue<number> | number;
+  }[] = projectData.designProjects.map((_, index) => {
+    if (isMobile) {
+      // mobile: no animation
+      return { x: 0, y: 0, rotate: 0 };
+    }
+
     const { x: finalX, y: finalY } = getCardPosition(index);
 
     /* eslint-disable react-hooks/rules-of-hooks */
@@ -43,13 +56,12 @@ export default function Projects() {
     const rotate = useTransform(scrollYProgress, [0, 0.4], [initialRotations[index], 0]);
     /* eslint-enable react-hooks/rules-of-hooks */
 
-
     return { x, y, rotate };
   });
 
   return (
-    <div className="sticky top-0  h-[400vh] w-full">
-      <section ref={containerRef} className="relative h-[400vh] ">
+    <div className="sticky top-0  md:h-[400vh] w-full">
+      <section ref={containerRef} className="relative md:h-[400vh] ">
         <div id="projects" className="absolute top-[250vh]" />
 
         <div
@@ -61,20 +73,21 @@ export default function Projects() {
           bg-light 
           h-screen
           w-full
-          px-48 
+          px-0
+          md:px-48 
           py-10 
           gap-6 
           bg-[url('/green-bg.png')] 
           bg-cover 
-          bg-center"
+          bg-center
+          justify-center"
         >
           {/* subheader */}
           <div className="flex flex-col items-center text-dark">
             <h2
               className="
               font-medium
-              text-xl
-              sm:text-7xl
+              text-7xl
               font-imperial-script
               pt-6
             "
@@ -85,26 +98,34 @@ export default function Projects() {
           </div>
 
           {/* projects */}
-          <div className="relative w-full flex-1 flex items-center justify-center">
-            {projectData.designProjects.map((project, index) => {
-              const { x, y, rotate } = cardMotionValues[index];
+          {isMobile ? (
+            <div className="flex gap-6 overflow-x-scroll py-8 px-8 snap-x">
+              {projectData.designProjects.map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+            </div>
+          ) : (
+            <div className="relative w-full flex-1 flex items-center justify-center">
+              {projectData.designProjects.map((project, index) => {
+                const { x, y, rotate } = cardMotionValues[index];
 
-              return (
-                <motion.div
-                  key={index}
-                  className="absolute w-[30%]"
-                  style={{
-                    x,
-                    y,
-                    rotate,
-                    zIndex: 10 - index,
-                  }}
-                >
-                  <ProjectCard project={project} />
-                </motion.div>
-              );
-            })}
-          </div>
+                return (
+                  <motion.div
+                    key={index}
+                    className="absolute w-[30%]"
+                    style={{
+                      x,
+                      y,
+                      rotate,
+                      zIndex: 10 - index,
+                    }}
+                  >
+                    <ProjectCard project={project} />
+                  </motion.div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </section>
     </div>

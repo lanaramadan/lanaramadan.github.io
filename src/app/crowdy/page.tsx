@@ -3,7 +3,7 @@ import NavigationBar from "@/app/components/navigation/navigationBar";
 
 export default async function CrowdyPage() {
   return (
-    <div className="bg-background p-32 pb-8 w-full">
+    <div className="bg-background p-4 md:p-32 pb-8 w-full">
       <NavigationBar background={true} color="text-[#E06666]" />
       <div className="flex flex-col">
         <img

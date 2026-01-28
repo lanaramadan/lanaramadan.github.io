@@ -1,12 +1,16 @@
 type ClosedLetterProps = {
-  rotate?: number; // degrees
+  rotate?: number;
+  scale?: number;
 };
 
-export default function ClosedLetter({ rotate = 0 }: ClosedLetterProps) {
+export default function ClosedLetter({ rotate = 0, scale = 1 }: ClosedLetterProps) {
+  const width = 530 * scale;
+  const height = 301 * scale;
+
   return (
     <svg
-      width="530"
-      height="301"
+      width={width}
+      height={height}
       viewBox="0 0 530 301"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

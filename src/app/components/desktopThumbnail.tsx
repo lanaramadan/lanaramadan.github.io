@@ -17,7 +17,7 @@ export default function DesktopThumbnail({
 
   return (
     <div
-      className="flex justify-between z-10 px-4 width-fit"
+      className="flex justify-between z-10 px-4 w-fit"
       // style={{ width: `${(width + 104) * scale}px` }}
     >
       <div

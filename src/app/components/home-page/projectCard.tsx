@@ -38,7 +38,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           hover:shadow-[inset_0_0_16px_rgba(115,132,111,0.5), 0_0_16px_rgba(115,132,111,0.75)]
           transition-transform 
           duration-300 
-          ease-out"
+          ease-out
+          w-fit"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{ transform: `rotate(${rotate}deg)` }}
@@ -48,7 +49,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           </h3>
 
           <div className="flex flex-col items-left p-3 bg-background rounded-3xl gap-2">
-            <p className="h-12">{overview}</p>
+            <p className="h-16 md:h-12">{overview}</p>
 
             <div className="flex justify-center items-center h-36">
               {desktop ? (

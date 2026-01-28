@@ -7,6 +7,8 @@ import Postcard from "./postcard";
 import Polaroid from "../polaroid";
 
 export default function AboutMe() {
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
   const [flip, setFlip] = useState(true);
 
   return (
@@ -23,13 +25,13 @@ export default function AboutMe() {
       h-screen 
       justify-between 
       items-center 
-      px-48 
+      px-4
+      sm:px-48 
       py-24
       bg-[url('/green-bg.png')] 
       bg-cover 
       bg-center"
     >
-
       {/* Polaroid stacked on bottom-right */}
       <Polaroid
         src="/me.jpeg"
@@ -37,11 +39,16 @@ export default function AboutMe() {
         caption="that's me!"
         rotation={`${flip ? "7" : "15"}`}
         width={250}
+        scale={isMobile ? 0.6 : 1}
         className={`
-        absolute z-10
-            ${flip ? "top-[20em] right-[-2em]" : "top-[24em] right-[6em]"}
-          `}
-
+          absolute z-10
+          top-[44em] right-[0em]
+          ${
+            flip
+              ? "md:top-[20em] md:right-[-2em]"
+              : "md:top-[24em] md:right-[6em]"
+          }
+        `}
       />
 
       <motion.div
@@ -69,16 +76,18 @@ export default function AboutMe() {
             className="h-full"
           >
             <button
-              onClick={() => setFlip((prevState) => !prevState)}
+              onClick={() => {
+                if (window.innerWidth >= 768) {
+                  setFlip((prev) => !prev);
+                }
+              }}
               className="h-full"
             >
               <Postcard side="front" />
-
-              
             </button>
           </motion.div>
 
-          {/* image side */}
+          {/* image side (desktop only) */}
           <motion.div
             initial={{ rotateY: 180 }}
             animate={{ rotateY: flip ? 180 : 0 }}
@@ -87,6 +96,7 @@ export default function AboutMe() {
               backfaceVisibility: "hidden",
               display: flip ? "none" : "block",
             }}
+            className="hidden sm:block"
           >
             <button onClick={() => setFlip((prevState) => !prevState)}>
               <Postcard side="back" />

@@ -1,8 +1,29 @@
+import { useEffect, useState } from "react";
+
 import Positions from "./positions";
 
 export default function HomeTitle() {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
-    <div className="sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center">
+    <div className="sticky top-0 text-dark overflow-hidden flex flex-col relative w-full h-screen justify-between align-center items-center cursor-none">
+      {/* gradient cursor */}
+      <div
+        className="pointer-events-none fixed w-16 h-16 rounded-full bg-gradient-to-r from-dark via-dark to-medium opacity-90 blur-xl transform -translate-x-1/2 -translate-y-1/2 transition-all duration-100"
+        style={{
+          left: mousePos.x,
+          top: mousePos.y,
+        }}
+      />
+
       <div className="flex flex-col w-full h-screen justify-center align-center items-center leading-[0.8] text-[20vw] font-medium font-new-spirit-condensed">
         <h1>LANA</h1>
         <h1>RAMADAN</h1>

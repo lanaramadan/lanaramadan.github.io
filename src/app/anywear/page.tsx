@@ -14,14 +14,14 @@ export default async function AnywearPage() {
         />
 
         <img
-          src="/case-studies/anywear/info.png"
+          src="/case-studies/anywear/Info.png"
           alt="info"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
         />
 
         <img
-          src="/case-studies/anywear/users.png"
+          src="/case-studies/anywear/Users.png"
           alt="users"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"

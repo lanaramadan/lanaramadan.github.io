@@ -7,28 +7,28 @@ export default async function GemPage() {
       <NavigationBar background={true} color="text-[#065143]" />
       <div className="flex flex-col">
         <img
-          src="/case-studies/gem/cover.png"
+          src="/case-studies/gem/Cover.png"
           alt="cover"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
         />
 
         <img
-          src="/case-studies/gem/info.png"
+          src="/case-studies/gem/Info.png"
           alt="info"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
         />
 
         <img
-          src="/case-studies/gem/users.png"
+          src="/case-studies/gem/Users.png"
           alt="users"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
         />
 
         <img
-          src="/case-studies/gem/analysis.png"
+          src="/case-studies/gem/Analysis.png"
           alt="analysis"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"

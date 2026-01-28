@@ -7,7 +7,7 @@ export default async function CrowdyPage() {
       <NavigationBar background={true} color="text-[#E06666]" />
       <div className="flex flex-col">
         <img
-          src="/case-studies/crowdy/cover.png"
+          src="/case-studies/crowdy/Cover.png"
           alt="cover"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"

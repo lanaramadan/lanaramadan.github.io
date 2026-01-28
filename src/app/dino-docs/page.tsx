@@ -7,14 +7,14 @@ export default async function DinoDocsPage() {
       <NavigationBar background={true} color="text-[#80C079]" />
       <div className="flex flex-col">
         <img
-          src="/case-studies/dino-docs/cover.png"
+          src="/case-studies/dino-docs/Cover.png"
           alt="cover"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
         />
 
         <img
-          src="/case-studies/dino-docs/info.png"
+          src="/case-studies/dino-docs/Info.png"
           alt="info"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"
@@ -73,7 +73,7 @@ export default async function DinoDocsPage() {
         </div>
 
         <img
-          src="/case-studies/dino-docs/Highlights.png"
+          src="/case-studies/dino-docs/highlights.png"
           alt="Highlights"
           style={{ width: "100%", height: "auto" }}
           className="w-screen"

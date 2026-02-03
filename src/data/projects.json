@@ -183,6 +183,21 @@
   ],
   "designProjects": [
     {
+      "name": "Heirloom",
+      "webpage": "",
+      "overview": "More information coming soon ✨",
+      "description": "More information coming soon ✨",
+      "tools": [
+        "Figma"
+      ],
+      "duration": {
+        "start": "January 2025",
+        "end": "DecembJanuaryer 2025"
+      },
+      "images": ["heirloom-1.png", "heirloom-2.png", "heirloom-3.png"],
+      "desktop": false
+    },
+    {
       "name": "Roam",
       "webpage": "",
       "overview": "More information coming soon ✨",
@@ -239,25 +254,6 @@
       "images": ["gem-1.png", "gem-2.png", "gem-3.png", "gem-4.png"],
       "color": "#065143",
       "desktop": false
-    },
-    {
-      "name": "AnyWear",
-      "webpage": "anywear",
-      "overview": "Platform for style-conscious travelers to get help packing for their adventures.",
-      "description": "AnyWear is a mobile app designed to assist users in packing outfits based on destination and weather. Developed during a design fellowship, it incorporated user research, rapid prototyping, and beta testing. The final prototype was presented to industry professionals and won first place in the program for its design clarity and utility.",
-      "tools": ["Figma", "Figjam"],
-      "links": {
-        "figmaDemo": "https://www.figma.com/design/FHS4fSMjDNU4usAxLIR2tK/AnyWear-Wireframes?node-id=975-465&t=yAdxgJsD85vmgXY2-1",
-        "pitchDeck": "https://docs.google.com/presentation/d/1mItNVgjRc8I6jnOSw5IQ6dfhPIaPNXHgrsO65Aed_dE/present",
-        "caseStudy": "https://www.behance.net/gallery/232821835/AnyWear"
-      },
-      "duration": {
-        "start": "Mar 2023",
-        "end": "Jun 2023"
-      },
-      "images": ["anywear.png"],
-      "color": "#7E5443",
-      "desktop": true
     },
     {
       "name": "Dino Docs",

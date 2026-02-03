@@ -11,7 +11,7 @@ export default function Projects() {
 
   const containerRef = useRef(null);
 
-  const initialRotations = [1, -1, -2, -2, -3, 3];
+  const initialRotations = [3, -3, 6, -6, -9, 9];
 
   const { scrollYProgress } = useScroll({
     target: containerRef,

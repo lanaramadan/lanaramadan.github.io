@@ -16,18 +16,30 @@ type FooterProps = {
   color?: string;
 };
 
-export default function Footer({ mini = false, background="bg-background", color = "text-text" }: FooterProps) {
+export default function Footer({
+  mini = false,
+  background = "bg-background",
+  color = "text-text",
+}: FooterProps) {
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   const [hovered, setHovered] = useState(false);
 
   if (mini) {
     return (
-      <footer className={`${background} pt-8 pb-8 text-center ${color}`}>
-        <p className={`font-geist-mono mb-4 text-xl font-medium`}>
-          Thank you for stopping by :)
+      <footer className={`${background} pt-12 pb-8 text-center ${color}`}>
+        <p className={`font-historia-sky mb-4 text-5xl font-medium`}>
+          Thank you for stopping by!
         </p>
-        <div className="flex justify-center gap-10 mt-2">
+        <div className="flex justify-center gap-10 mt-2 font-ibm-plex-sans text-xl">
+          <a
+            href="mailto:lanamramadan@gmail.com"
+            aria-label="Email"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
+          >
+            Email ↗
+          </a>
+
           <a
             href="https://www.linkedin.com/in/lanamramadan"
             target="_blank"
@@ -35,10 +47,10 @@ export default function Footer({ mini = false, background="bg-background", color
             aria-label="LinkedIn"
             className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
-            <LinkedinIcon className="w-[50px] h-[50px]" />
+            Linkedin ↗
           </a>
 
-          <a
+          {/* <a
             href="https://www.behance.net/lanamramadan"
             target="_blank"
             rel="noopener noreferrer"
@@ -46,9 +58,9 @@ export default function Footer({ mini = false, background="bg-background", color
             className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <BehanceIcon className="w-[60px] h-[60px]" />
-          </a>
+          </a> */}
 
-          <a
+          {/* <a
             href="https://github.com/lanaramadan"
             target="_blank"
             rel="noopener noreferrer"
@@ -56,15 +68,7 @@ export default function Footer({ mini = false, background="bg-background", color
             className={`hover:drop-shadow-[0_0_8px_currentColor]`}
           >
             <GithubIcon className="w-[50px] h-[50px]" />
-          </a>
-
-          <a
-            href="mailto:lanamramadan@gmail.com"
-            aria-label="Email"
-            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
-          >
-            <MailIcon className="w-[50px] h-[50px]" />
-          </a>
+          </a> */}
         </div>
       </footer>
     );
@@ -101,12 +105,12 @@ export default function Footer({ mini = false, background="bg-background", color
         onMouseLeave={() => setHovered(false)}
       >
         <div className="drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[-11deg] group-hover:rotate-[5deg] transition-transform duration-300">
-          <ClosedLetter scale={isMobile ? .5 : 1}/>
+          <ClosedLetter scale={isMobile ? 0.5 : 1} />
         </div>
 
         <div className="-ml-[24em] -mt-[14em] md:-mt-[16em] drop-shadow-[0_0_32px_rgba(115,132,111,0.55)] transform rotate-[11deg] group-hover:rotate-[5deg] transition-transform duration-300">
           <motion.div>
-            <OpenLetter hovered={hovered} scale={isMobile ? .5 : 1}/>
+            <OpenLetter hovered={hovered} scale={isMobile ? 0.5 : 1} />
           </motion.div>
         </div>
       </div>

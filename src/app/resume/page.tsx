@@ -6,7 +6,7 @@ import Footer from "@/app/components/navigation/footer";
 export default function About() {
   return (
     <main>
-      <NavigationBar />
+      <NavigationBar background={true} backgroundColor="bg-light"/>
       <div className="flex flex-col items-center gap-8 bg-light w-full pt-24">
         <div>
           <Link

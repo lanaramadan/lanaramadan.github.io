@@ -2,11 +2,13 @@ import Link from "next/link";
 
 type NavigationBarProps = {
   background?: boolean;
+  backgroundColor?: string;
   color?: string;
 };
 
 export default function NavigationBar({
   background = false,
+  backgroundColor = "bg-background",
   color = "text-dark",
 }: NavigationBarProps) {
   return (
@@ -24,7 +26,7 @@ export default function NavigationBar({
         pb-4
         px-12
         ${color}
-        ${background ? "bg-background" : ""}
+        ${background ? backgroundColor : ""}
       `}
     >
       {/* <Link

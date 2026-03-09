@@ -56,7 +56,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="238.069"
               height="159.383"
               transform="matrix(0.899693 -0.380109 0.413717 0.935304 22.0146 168.163)"
-              fill="#F8F4F0"
+              fill="#F6F1E8"
               shapeRendering="crispEdges"
             />
             <rect
@@ -65,7 +65,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="238.093"
               height="159.407"
               transform="matrix(0.899693 -0.380109 0.413717 0.935304 22.0158 168.157)"
-              stroke="#F8F4F0"
+              stroke="#F6F1E8"
               strokeWidth="0.024068"
               shapeRendering="crispEdges"
             />
@@ -93,7 +93,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="240.01"
               height="152.645"
               transform="matrix(0.976819 0.222905 -0.193119 0.978162 0.478516 277.087)"
-              fill="#F8F4F0"
+              fill="#F6F1E8"
               shapeRendering="crispEdges"
             />
             <rect
@@ -102,7 +102,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="240.034"
               height="152.669"
               transform="matrix(0.976819 0.222905 -0.193119 0.978162 0.475506 277.089)"
-              stroke="#F8F4F0"
+              stroke="#F6F1E8"
               strokeWidth="0.024068"
               shapeRendering="crispEdges"
             />
@@ -125,7 +125,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="241.033"
               height="151.328"
               transform="matrix(0.989711 0.115993 -0.0784428 0.999873 280.114 144.29)"
-              fill="#F8F4F0"
+              fill="#F6F1E8"
               shapeRendering="crispEdges"
             />
             <rect
@@ -134,7 +134,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="241.057"
               height="151.352"
               transform="matrix(0.989711 0.115993 -0.0784428 0.999873 280.113 144.291)"
-              stroke="#F8F4F0"
+              stroke="#F6F1E8"
               strokeWidth="0.024068"
               shapeRendering="crispEdges"
             />
@@ -162,7 +162,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="236.787"
               height="161.379"
               transform="matrix(0.973096 -0.147884 0.185018 0.998221 129.561 65.0168)"
-              fill="#F8F4F0"
+              fill="#F6F1E8"
               shapeRendering="crispEdges"
             />
             <rect
@@ -171,7 +171,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="236.811"
               height="161.403"
               transform="matrix(0.973096 -0.147884 0.185018 0.998221 129.562 65.0148)"
-              stroke="#F8F4F0"
+              stroke="#F6F1E8"
               strokeWidth="0.024068"
               shapeRendering="crispEdges"
             />
@@ -199,7 +199,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="239.242"
               height="153.508"
               transform="matrix(0.960392 0.298853 -0.272215 0.954911 176.102 168.474)"
-              fill="#F8F4F0"
+              fill="#F6F1E8"
               shapeRendering="crispEdges"
             />
             <rect
@@ -208,7 +208,7 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
               width="239.266"
               height="153.532"
               transform="matrix(0.960392 0.298853 -0.272215 0.954911 176.097 168.475)"
-              stroke="#F8F4F0"
+              stroke="#F6F1E8"
               strokeWidth="0.024068"
               shapeRendering="crispEdges"
             />
@@ -231,13 +231,13 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
           <g filter="url(#filter6_di_2036_1085)">
             <path
               d="M264.985 334.764L-0.00012207 487.753V181.775L264.985 334.764Z"
-              fill="#DBDCD4"
+              fill="#E3D8CE"
             />
           </g>
           <g filter="url(#filter7_di_2036_1085)">
             <path
               d="M264.985 334.764L529.97 487.753V181.775L264.985 334.764Z"
-              fill="#DBDCD4"
+              fill="#E3D8CE"
             />
           </g>
         </g>
@@ -682,8 +682,8 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
           y2="180.367"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#DBDCD4" />
-          <stop offset="1" stopColor="#B5BCB0" />
+          <stop stopColor="#E3D8CE" />
+          <stop offset="1" stopColor="#6D5A56" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2036_1085"
@@ -693,8 +693,8 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
           y2="484.923"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#DBDCD4" />
-          <stop offset="1" stopColor="#B5BCB0" />
+          <stop stopColor="#E3D8CE" />
+          <stop offset="1" stopColor="#6D5A56" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2036_1085"
@@ -704,8 +704,8 @@ export default function OpenLetter({ hovered = false, scale = 1 }: OpenLetterPro
           y2="483.509"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#B5BCB0" />
-          <stop offset="1" stopColor="#DBDCD4" />
+          <stop stopColor="#6D5A56" />
+          <stop offset="1" stopColor="#E3D8CE" />
         </linearGradient>
         <clipPath id="clip0_2036_1085">
           <rect width="529.97" height="484.923" fill="white" />

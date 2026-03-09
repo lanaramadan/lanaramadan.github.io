@@ -42,11 +42,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div
       className={`
       flex flex-col items-left bg-medium rounded-3xl
-      drop-shadow-[0_0_16px_rgba(115,132,111,0.75)]
+      drop-shadow-[0_0_16px_rgba(101,70,63,0.5)]
       transition-transform duration-300 ease-out w-auto cursor-pointer
       ${
         webpage
-          ? "hover:shadow-[inset_0_0_16px_rgba(115,132,111,0.5),0_0_16px_rgba(115,132,111,0.75)]"
+          ? "hover:shadow-[inset_0_0_16px_rgba(101,70,63,0.5),0_0_16px_rgba(101,70,63,0.75)]"
           : ""
       }
     `}
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       onClick={handleClick}
       style={{ transform: `rotate(${!revealed ? rotate : 0}deg)` }}
     >
-      <h3 className="font-new-spirit-condensed m-3 text-4xl text-text">
+      <h3 className="font-new-spirit-condensed m-3 text-4xl text-light">
         {name}
       </h3>
 

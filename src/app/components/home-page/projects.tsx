@@ -77,7 +77,7 @@ export default function Projects() {
           md:px-48 
           py-10 
           gap-6 
-          bg-[url('/green-bg.png')] 
+          bg-light
           bg-cover 
           bg-center
           justify-center"
@@ -88,13 +88,13 @@ export default function Projects() {
               className="
               font-medium
               text-7xl
-              font-imperial-script
+              font-historia-sky
               pt-6
             "
             >
               projects
             </h2>
-            <CurvedLine width="180" stroke="6" className="-mt-4" />
+            <CurvedLine width="180" stroke="6" className="-mt-6" />
           </div>
 
           {/* projects */}

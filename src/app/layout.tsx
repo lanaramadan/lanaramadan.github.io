@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 const IBMPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "500", "600"],
 });
 
 const ImperialScript = Imperial_Script({

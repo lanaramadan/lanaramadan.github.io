@@ -25,13 +25,13 @@ export default function ClosedLetter({ rotate = 0, scale = 1 }: ClosedLetterProp
         <g filter="url(#filter0_di_2036_1033)">
           <path
             d="M264.985 150.158L0.00012207 303.147V-2.83102L264.985 150.158Z"
-            fill="#DBDCD4"
+            fill="#E3D8CE"
           />
         </g>
         <g filter="url(#filter1_di_2036_1033)">
           <path
             d="M264.985 150.158L529.97 303.147V-2.83102L264.985 150.158Z"
-            fill="#DBDCD4"
+            fill="#E3D8CE"
           />
         </g>
       </g>
@@ -272,8 +272,8 @@ export default function ClosedLetter({ rotate = 0, scale = 1 }: ClosedLetterProp
           y2="300.316"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#DBDCD4" />
-          <stop offset="1" stopColor="#B5BCB0" />
+          <stop stopColor="#E3D8CE" />
+          <stop offset="1" stopColor="#6D5A56" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_2036_1033"
@@ -283,8 +283,8 @@ export default function ClosedLetter({ rotate = 0, scale = 1 }: ClosedLetterProp
           y2="298.903"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#B5BCB0" />
-          <stop offset="1" stopColor="#DBDCD4" />
+          <stop stopColor="#6D5A56" />
+          <stop offset="1" stopColor="#E3D8CE" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_2036_1033"
@@ -294,8 +294,8 @@ export default function ClosedLetter({ rotate = 0, scale = 1 }: ClosedLetterProp
           y2="-1.5899"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#B5BCB0" />
-          <stop offset="1" stopColor="#DBDCD4" />
+          <stop stopColor="#6D5A56" />
+          <stop offset="1" stopColor="#E3D8CE" />
         </linearGradient>
         <clipPath id="clip0_2036_1033">
           <rect width="529.97" height="300.316" fill="white" />

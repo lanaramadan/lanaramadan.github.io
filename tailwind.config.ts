@@ -22,7 +22,8 @@ export default {
         'ibm-plex-sans': 'var(--font-ibm-plex-sans)',
         'new-spirit-condensed': 'var(--font-new-spirit-condensed)',
         'eternate': 'var(--font-eternate)',
-        'imperial-script': 'var(--font-imperial-script)'
+        'imperial-script': 'var(--font-imperial-script)',
+        'historia-sky': 'var(--font-historia-sky)'
       },
     },
   },

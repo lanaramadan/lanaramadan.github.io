@@ -71,9 +71,7 @@ export default function NavigationBar({
         </Link>
 
         <Link
-          href="/https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/resume"
           className={`relative group ${color}`}
         >
           <span className="relative z-10">resume</span>

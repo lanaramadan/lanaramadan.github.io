@@ -12,17 +12,18 @@ import OpenLetter from "../openLetter";
 
 type FooterProps = {
   mini?: boolean;
+  background?: string;
   color?: string;
 };
 
-export default function Footer({ mini = false, color = "text-dark" }: FooterProps) {
+export default function Footer({ mini = false, background="bg-background", color = "text-text" }: FooterProps) {
   const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   const [hovered, setHovered] = useState(false);
 
   if (mini) {
     return (
-      <footer className={`bg-background mt-16 text-center ${color}`}>
+      <footer className={`${background} pt-8 pb-8 text-center ${color}`}>
         <p className={`font-geist-mono mb-4 text-xl font-medium`}>
           Thank you for stopping by :)
         </p>

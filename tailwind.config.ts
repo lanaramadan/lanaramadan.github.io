@@ -13,8 +13,8 @@ export default {
         medium: "var(--medium)",
         light: "var(--light)",
         text: "var(--text)",
-        background: "var(--background)"
-
+        background: "var(--background)",
+        offwhite: "var(--offwhite)",
       },
       fontFamily: {
         'geist-mono': 'var(--font-geist-mono)',

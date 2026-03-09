@@ -177,6 +177,12 @@ export default function HomeTitle() {
       >
         ↓ scroll down ↓
       </Link>
+
+      <div className="fixed bottom-4 right-4 z-40 font-ibm-plex-sans text-sm text-dark/50 text-right leading-relaxed">
+        ⚠️ site under construction, 
+        <br />
+        apologies for any errors!
+      </div>
     </div>
   );
 }

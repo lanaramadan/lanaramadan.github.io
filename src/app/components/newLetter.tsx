@@ -353,9 +353,9 @@ export default function NewLetter({ scale = 1 }) {
           Thank you so much for taking the time to look through my portfolio! I
           always appreciate new opportunities to learn and grow &lt;3
           <br />
-          If you're interested in working together,
+          If you&apos;re interested in working together,
           <br />
-          I'd love to chat!
+          I&apos;d love to chat!
         </p>
       </div>
     </div>

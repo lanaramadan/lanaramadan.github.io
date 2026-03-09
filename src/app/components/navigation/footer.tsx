@@ -1,7 +1,5 @@
 "use client";
 
-import { useState } from "react";
-
 import NewLetter from "../newLetter";
 
 type FooterProps = {

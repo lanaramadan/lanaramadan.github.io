@@ -51,44 +51,33 @@ export default function NavigationBar({
           text-sm
           md:space-x-20
           md:text-lg
-          font-geist-mono
+          font-ibm-plex-sans
           ${color}
         `}
       >
-        <Link
-          href="/"
-          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
-        >
-          home
+        <Link href="/" className={`relative group ${color}`}>
+          <span className="relative z-10">home</span>
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[120%] rounded-[50%] border border-current scale-0 group-hover:scale-100 transition-transform duration-200 ease-out" />
+        </Link>
+
+        <Link href="/#projects" className={`relative group ${color}`}>
+          <span className="relative z-10">projects</span>
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[120%] rounded-[50%] border border-current scale-0 group-hover:scale-100 transition-transform duration-200 ease-out" />
+        </Link>
+
+        <Link href="/about" className={`relative group ${color}`}>
+          <span className="relative z-10">about</span>
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[120%] rounded-[50%] border border-current scale-0 group-hover:scale-100 transition-transform duration-200 ease-out" />
         </Link>
 
         <Link
-          href="/#projects"
-          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
-        >
-          projects
-        </Link>
-
-        <Link
-          href="/about"
-          className={`hover:drop-shadow-[0_0_8px_currentColor] ${color}`}
-        >
-          about
-        </Link>
-
-        <Link
-          href="https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing"
+          href="/https://drive.google.com/file/d/1FrviveUauMriJOOf9PztUsA7VZyWPQto/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className={`
-          hover:drop-shadow-[0_0_8px_currentColor]
-          px-6
-          py-1
-          rounded-2xl
-          ${color === "text-dark" ? "bg-light" : `bg-[${color}]`}
-        `}
+          className={`relative group ${color}`}
         >
-          resume
+          <span className="relative z-10">resume</span>
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[160%] h-[120%] rounded-[50%] border border-current scale-0 group-hover:scale-100 transition-transform duration-200 ease-out" />
         </Link>
       </div>
     </nav>

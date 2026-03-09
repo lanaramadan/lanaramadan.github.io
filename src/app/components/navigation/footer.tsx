@@ -3,10 +3,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import GithubIcon from "../icons/githubIcon";
-import LinkedinIcon from "../icons/linkedinIcon";
-import MailIcon from "../icons/mailIcon";
-import BehanceIcon from "../icons/behanceIcon";
 import ClosedLetter from "../closedLetter";
 import OpenLetter from "../openLetter";
 

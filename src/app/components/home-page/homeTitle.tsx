@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+import { motion } from "framer-motion";
+
 import HoverScaleText from "./hoverScaleText";
 
 interface FloatingItem {
@@ -171,15 +173,20 @@ export default function HomeTitle() {
       </div>
 
       {/* Scroll cue */}
-      <Link
-        href="/#projects"
-        className="pb-4 font-historia-sky text-4xl text-dark z-10 cursor-none hover:drop-shadow-[0_0_8px_currentColor] transition-opacity duration-200"
+      <motion.div
+        animate={{ y: [2, -8, 2] }}
+        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
       >
-        ↓ scroll down ↓
-      </Link>
+        <Link
+          href="/#projects"
+          className="pb-4 font-historia-sky text-4xl text-dark z-10 cursor-none hover:opacity-60 transition-opacity duration-200"
+        >
+          ↓ scroll down ↓
+        </Link>
+      </motion.div>
 
       <div className="fixed bottom-4 right-4 z-40 font-ibm-plex-sans text-sm text-dark/50 text-right leading-relaxed">
-        ⚠️ site under construction, 
+        ⚠️ Site under construction,
         <br />
         apologies for any errors!
       </div>

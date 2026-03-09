@@ -4,17 +4,19 @@ type NavigationBarProps = {
   background?: boolean;
   backgroundColor?: string;
   color?: string;
+  sticky?: boolean;
 };
 
 export default function NavigationBar({
   background = false,
   backgroundColor = "bg-background",
   color = "text-dark",
+  sticky = false,
 }: NavigationBarProps) {
   return (
     <nav
       className={`
-        fixed
+      ${sticky ? "sticky" : "fixed"}
         top-0
         left-0
         z-50

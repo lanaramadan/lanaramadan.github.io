@@ -184,23 +184,23 @@
   "designProjects": [
     {
       "name": "Heirloom",
-      "webpage": "",
-      "overview": "More information coming soon ✨",
+      "webpage": "heirloom",
+      "overview": "Cooking app that helps bridge generational gaps.",
       "description": "More information coming soon ✨",
       "tools": [
         "Figma"
       ],
       "duration": {
         "start": "January 2025",
-        "end": "DecembJanuaryer 2025"
+        "end": "January 2025"
       },
       "images": ["heirloom-1.png", "heirloom-2.png", "heirloom-3.png"],
       "desktop": false
     },
     {
       "name": "Roam",
-      "webpage": "",
-      "overview": "More information coming soon ✨",
+      "webpage": "roam",
+      "overview": "Scavenger-hunt style app that turns everyday outings into guided adventures.",
       "description": "More information coming soon ✨",
       "tools": [
         "Figma",

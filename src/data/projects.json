@@ -272,40 +272,6 @@
       "images": ["dino-docs.png"],
       "color": "#77B0F7",
       "desktop": true
-    },
-    {
-      "name": "Crowdy!",
-      "webpage": "crowdy",
-      "overview": "A mobile app to help students check campus crowd levels in real time.",
-      "description": "Crowdy! is a student-centered app that helps users navigate their campus by showing real-time crowd data across libraries, study spots, dining areas, and gyms. Designed in Figma, the app provides live updates to help students find the best times and places to go. The interface prioritizes clarity, speed, and usability to reduce stress and save time during busy day.",
-      "tools": [
-        "Figma",
-        "React Native",
-        "TypeScript",
-        "Tailwind",
-        "CSS",
-        "Node.js",
-        "Express.js",
-        "Git"
-      ],
-      "links": {
-        "figmaDemo": "https://www.figma.com/design/GL6q2IfFhYaQcFMhyxDBhp/Crowd-Checker-Wireframes?node-id=165-2079&t=qtNJuC1QgOOSzG3e-1",
-        "pitchDeck": "https://docs.google.com/presentation/d/1sdTvt1KWxNMekcDI7Qesw2dEkGzAUCDhe_4tgGnVdEw/present",
-        "github": "https://github.com/Ashv2ley/CrowdChecker",
-        "caseStudy": ""
-      },
-      "duration": {
-        "start": "Mar 2025",
-        "end": "Jun 2025"
-      },
-      "images": [
-        "crowdy-1.png",
-        "crowdy-2.png",
-        "crowdy-3.png",
-        "crowdy-4.png"
-      ],
-      "color": "#E06666",
-      "desktop": false
     }
   ]
 }

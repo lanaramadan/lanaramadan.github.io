@@ -20,19 +20,21 @@ export default function Projects() {
 
   // get the each card's final position in the grid
   const getCardPosition = (index: number) => {
-    const cols = 3;
-    const row = Math.floor(index / cols);
-    const col = index % cols;
-
     const cardWidth = 340;
     const gap = 64;
 
-    const totalWidth = cols * cardWidth + (cols - 1) * gap;
+    const topRow = [0, 1, 2];
+    const bottomRow = [3, 4];
 
+    const isBottom = index >= 3;
+    const rowIndex = isBottom ? index - 3 : index;
+
+    const rowCount = isBottom ? bottomRow.length : topRow.length;
+    const totalWidth = rowCount * cardWidth + (rowCount - 1) * gap;
     const startX = -totalWidth / 2 + cardWidth / 2;
 
-    const x = startX + col * (cardWidth + gap);
-    const y = row * 350 - 170;
+    const x = startX + rowIndex * (cardWidth + gap);
+    const y = isBottom ? 180 : -170;
 
     return { x, y };
   };
@@ -53,7 +55,11 @@ export default function Projects() {
     /* eslint-disable react-hooks/rules-of-hooks */
     const x = useTransform(scrollYProgress, [0, 0.4], [0, finalX]);
     const y = useTransform(scrollYProgress, [0, 0.4], [0, finalY]);
-    const rotate = useTransform(scrollYProgress, [0, 0.4], [initialRotations[index], 0]);
+    const rotate = useTransform(
+      scrollYProgress,
+      [0, 0.4],
+      [initialRotations[index], 0]
+    );
     /* eslint-enable react-hooks/rules-of-hooks */
 
     return { x, y, rotate };

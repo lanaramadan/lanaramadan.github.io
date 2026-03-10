@@ -1,3 +1,5 @@
+import Subtitle from './subtitle'
+
 type DetailsProps = {
   title: string;
   overview: string;
@@ -31,11 +33,7 @@ export default function Details({
       >
         {/* Left: overview */}
         <div className={team.length > 0 ? "col-span-3" : "col-span-4"}>
-          <h2
-            className={`font-new-spirit-condensed ${textColor} text-3xl mb-2`}
-          >
-            Project Overview
-          </h2>
+          <Subtitle text="Project Overview" textColor={textColor} />
           <p className="font-ibm-plex-sans text-text text-lg leading-relaxed whitespace-pre-line">
             {overview}
           </p>
@@ -51,32 +49,20 @@ export default function Details({
         >
           {/* Timeline */}
           <div>
-            <h3
-              className={`font-new-spirit-condensed ${textColor} text-3xl mb-2`}
-            >
-              Timeline
-            </h3>
+            <Subtitle text="Timeline" textColor={textColor} />
             <p className="font-ibm-plex-sans text-text text-lg">{timeline}</p>
             <p className="font-ibm-plex-sans text-text text-lg">{duration}</p>
           </div>
 
           {/* Role */}
           <div>
-            <h3
-              className={`font-new-spirit-condensed ${textColor} text-3xl mb-2`}
-            >
-              Role
-            </h3>
+            <Subtitle text="Role" textColor={textColor} />
             <p className="font-ibm-plex-sans text-text text-lg">{role}</p>
           </div>
 
           {/* Tools */}
           <div>
-            <h3
-              className={`font-new-spirit-condensed ${textColor} text-3xl mb-2`}
-            >
-              Tools
-            </h3>
+            <Subtitle text="Tools" textColor={textColor} />
             {tools.map((tool) => (
               <p key={tool} className="font-ibm-plex-sans text-text text-lg">
                 {tool}
@@ -87,11 +73,7 @@ export default function Details({
           {/* Team — only if provided */}
           {team.length > 0 && (
             <div>
-              <h3
-                className={`font-new-spirit-condensed ${textColor} text-3xl mb-2`}
-              >
-                Team
-              </h3>
+              <Subtitle text="Team" textColor={textColor} />
               <p className="font-ibm-plex-sans text-text text-lg leading-relaxed">
                 {team.join(", ")}
               </p>

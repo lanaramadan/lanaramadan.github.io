@@ -1,4 +1,4 @@
-import Subtitle from './subtitle'
+import Subtitle from "./subtitle";
 
 type DetailsProps = {
   title: string;
@@ -8,6 +8,7 @@ type DetailsProps = {
   tools: string[];
   role: string;
   team?: string[];
+  outcome?: string;
   textColor: string;
 };
 
@@ -19,6 +20,7 @@ export default function Details({
   tools,
   role,
   team = [],
+  outcome = "",
   textColor,
 }: DetailsProps) {
   return (
@@ -28,10 +30,8 @@ export default function Details({
         {title}
       </h1>
 
-      <div
-        className="grid gap-16 grid-cols-5"
-      >
-        {/* Left: overview */}
+      <div className="grid gap-16 grid-cols-5">
+        {/* overview */}
         <div className={team.length > 0 ? "col-span-3" : "col-span-4"}>
           <Subtitle text="Project Overview" textColor={textColor} />
           <p className="font-ibm-plex-sans text-text text-lg leading-relaxed whitespace-pre-line">
@@ -39,44 +39,67 @@ export default function Details({
           </p>
         </div>
 
-        {/* Right: metadata */}
+        {/* metadata */}
         <div
-          className={`${team.length > 0 ? "col-span-2" : "col-span-1"} ${
-            team.length > 0
-              ? "grid grid-cols-2 gap-y-8 content-start"
-              : "flex flex-col gap-8"
-          } `}
+          className={`flex gap-16 ${
+            team.length > 0 ? "col-span-2" : "col-span-1"
+          }`}
         >
-          {/* Timeline */}
-          <div>
-            <Subtitle text="Timeline" textColor={textColor} />
-            <p className="font-ibm-plex-sans text-text text-lg">{timeline}</p>
-            <p className="font-ibm-plex-sans text-text text-lg">{duration}</p>
-          </div>
-
-          {/* Role */}
-          <div>
-            <Subtitle text="Role" textColor={textColor} />
-            <p className="font-ibm-plex-sans text-text text-lg">{role}</p>
-          </div>
-
-          {/* Tools */}
-          <div>
-            <Subtitle text="Tools" textColor={textColor} />
-            {tools.map((tool) => (
-              <p key={tool} className="font-ibm-plex-sans text-text text-lg">
-                {tool}
-              </p>
-            ))}
-          </div>
-
-          {/* Team — only if provided */}
-          {team.length > 0 && (
+          {/* left metadata */}
+          <div className="flex flex-col gap-4 flex-1">
+            {/* Timeline */}
             <div>
-              <Subtitle text="Team" textColor={textColor} />
-              <p className="font-ibm-plex-sans text-text text-lg leading-relaxed">
-                {team.join(", ")}
-              </p>
+              <Subtitle text="Timeline" textColor={textColor} />
+              <p className="font-ibm-plex-sans text-text text-lg">{timeline}</p>
+              <p className="font-ibm-plex-sans text-text text-lg">{duration}</p>
+            </div>
+
+            {/* Tools */}
+            <div>
+              <Subtitle text="Tools" textColor={textColor} />
+              {tools.map((tool) => (
+                <p key={tool} className="font-ibm-plex-sans text-text text-lg">
+                  {tool}
+                </p>
+              ))}
+            </div>
+
+            {/* display role if there is no team */}
+            { team.length === 0 && (
+                <div>
+                  <Subtitle text="Role" textColor={textColor} />
+                  <p className="font-ibm-plex-sans text-text text-lg">{role}</p>
+                </div>
+              )
+            }
+
+            {/* outcome — only if provided */}
+            {outcome && (
+              <div>
+                <Subtitle text="Outcome" textColor={textColor} />
+                <p className="font-ibm-plex-sans text-text text-lg">
+                  {outcome}
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* right metdata */}
+          {team.length > 0 && (
+            <div className="flex flex-col gap-4 flex-1">
+              {/* Role */}
+              <div>
+                <Subtitle text="Role" textColor={textColor} />
+                <p className="font-ibm-plex-sans text-text text-lg">{role}</p>
+              </div>
+
+              {/* Team — only if provided */}
+              <div>
+                <Subtitle text="Team" textColor={textColor} />
+                <p className="font-ibm-plex-sans text-text text-lg leading-relaxed">
+                  {team.join(", ")}
+                </p>
+              </div>
             </div>
           )}
         </div>

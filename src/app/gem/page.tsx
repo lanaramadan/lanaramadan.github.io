@@ -26,13 +26,14 @@ export default async function GemPage() {
             timeline="Jan 2023 – May 2023"
             duration="5 months"
             role="Product Designer"
-            tools={["Figma", "Figjam", "Airtable"]}
+            tools={["Figma", "Figjam", "Jira"]}
             team={[
               "Isabelle (Product Marketer)",
               "Justin (Product Manager)",
               "Gianna (Product Developer)",
               "Nicholas (Product Developer)",
             ]}
+            outcome="1st Place — Judged by industry professionals"
             textColor="text-[#065143]"
           />
         </div>
@@ -239,7 +240,6 @@ export default async function GemPage() {
         {/* Usability Testing */}
         <div className="px-4 md:px-32 py-8">
           <Subtitle text="Usability Testing" textColor="text-[#065143]" />
-          <Emphasis text="Key Design Decisions" />
           <p className="font-ibm-plex-sans text-text text-lg font-semibold">
             Round 1 — Mid-Fidelity
           </p>

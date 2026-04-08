@@ -150,7 +150,7 @@ export default function HomeTitle() {
       <div className="flex flex-col items-center justify-center text-center z-10 flex-1 gap-4">
         {/* Line 1: Name */}
         <HoverScaleText>
-          <h1 className="font-historia-sky text-text leading-none text-9xl">
+          <h1 className="font-historia-sky text-text leading-none text-7xl md:text-9xl">
             Lana Ramadan
           </h1>
         </HoverScaleText>
@@ -185,11 +185,11 @@ export default function HomeTitle() {
         </Link>
       </motion.div>
 
-      <div className="fixed bottom-4 right-4 z-40 font-ibm-plex-sans text-sm text-dark/50 text-right leading-relaxed">
+      {/* <div className="fixed bottom-4 right-4 z-40 font-ibm-plex-sans text-sm text-dark/50 text-right leading-relaxed">
         ⚠️ Site under construction,
         <br />
         apologies for any errors!
-      </div>
+      </div> */}
     </div>
   );
 }

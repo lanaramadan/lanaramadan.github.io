@@ -1,5 +1,4 @@
 export default function FilmStrip() {
-  const images = ["/matcha.png", "/matcha.png", "/matcha.png", "/matcha.png"];
   return (
     <svg
       width="1000"

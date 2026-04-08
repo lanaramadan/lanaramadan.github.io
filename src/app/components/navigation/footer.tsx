@@ -1,7 +1,6 @@
 "use client";
 
 import FilmStrip from "../filmStrip";
-import NewLetter from "../newLetter";
 
 type FooterProps = {
   mini?: boolean;
@@ -44,7 +43,8 @@ export default function Footer({
   }
 
   return (
-    <footer className={`sticky 
+    <footer
+      className={`sticky 
     top-0
     flex
     flex-col 
@@ -56,10 +56,11 @@ export default function Footer({
     gap-24
     bg-center
     bg-background
-    justify-center ${background} pt-12 pb-8 text-center ${color}`}>
+    justify-center ${background} pt-12 pb-8 text-center ${color}`}
+    >
       <div className="hidden md:block">
-  <FilmStrip />
-</div>
+        <FilmStrip />
+      </div>
       <div className="flex flex-col gap-0">
         <p className={`font-historia-sky mb-4 text-7xl font-medium`}>
           Thank you for stopping by!
@@ -83,7 +84,7 @@ export default function Footer({
             Linkedin ↗
           </a>
         </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
   );
 }

@@ -17,6 +17,7 @@ export default async function DinoDocsPage() {
           gradient="/case-studies/dino-docs/header-gradient.png"
           mockup="/case-studies/dino-docs/header-mockup.png"
           alt="Dino Docs app mockup"
+          desktop={true}
         />
 
         <div className="px-4 md:px-32">

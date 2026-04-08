@@ -185,7 +185,7 @@
     {
       "name": "Heirloom",
       "webpage": "heirloom",
-      "overview": "Cooking app that helps bridge generational gaps.",
+      "overview": "Designed a recipe-sharing app in 48 hours that bridges generational cooking traditions — Rice Design-A-Thon 2026",
       "description": "More information coming soon ✨",
       "tools": [
         "Figma"
@@ -200,7 +200,7 @@
     {
       "name": "Roam",
       "webpage": "roam",
-      "overview": "Scavenger-hunt style app that turns everyday outings into guided adventures.",
+      "overview": "Led a team of 5 to design a scavenger-hunt style app that turns everyday outings into guided adventures.",
       "description": "More information coming soon ✨",
       "tools": [
         "Figma",
@@ -217,7 +217,7 @@
     {
       "name": "Esri",
       "webpage": "esri",
-      "overview": "Application Developer Intern at Esri, collaborating on internal applications.",
+      "overview": "Collaborated on internal tooling as an Application Developer Intern, working across design and engineering.",
       "description": "As an Application Developer Intern at Esri, I improved usability and accessibility across internal tools. I conducted user interviews to uncover workflow pain points, redesigned interfaces in Figma with the Calcite Design System, and collaborated with engineers to deliver production-ready Angular interfaces.",
       "tools": [
         "Angular",
@@ -239,7 +239,7 @@
     {
       "name": "GEM",
       "webpage": "gem",
-      "overview": "Platform for young travelers to discover and explore hidden gems.",
+      "overview": "Sole designer on a fellowship-winning travel app; from research to hi-fi prototype, in 5 months.",
       "description": "GEM is a travel discovery app concept created during a Product Association fellowship. Designed with a cross-functional team, it won 1st place for helping users find unique destinations based on personal interests. The project emphasized collaborative problem-solving, user-centered design, and cross-team communication using tools like Figma and Jira.",
       "tools": ["Figma", "Jira"],
       "links": {
@@ -258,7 +258,7 @@
     {
       "name": "Dino Docs",
       "webpage": "dino-docs",
-      "overview": "A collaborative document editor designed to be safe and fun for kids.",
+      "overview": "Designed a collaborative document editor for kids that makes safety feel native, not restrictive",
       "description": "Dino Docs is a Google Docs-inspired platform tailored for children, blending collaborative writing with a playful, kid-friendly interface. Designed in Figma, it emphasizes simplicity, safety, and creativity—featuring colorful UI, helpful dinosaur mascots, and easy-to-use editing tools. The project explores how digital collaboration can be made engaging and accessible for younger users.",
       "tools": ["Figma"],
       "links": {

@@ -59,13 +59,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {name}
       </h3>
 
-      <div className="relative overflow-hidden p-3 bg-background rounded-3xl h-[18rem] md:h-[14rem]">
+      <div className="relative overflow-hidden p-3 bg-background rounded-3xl h-[18rem] md:h-[16rem]">
         <motion.div
           animate={{ opacity: revealed ? 0.3 : 1 }}
           transition={{ duration: 0.25 }}
           className="flex flex-col gap-2 h-full"
         >
-          <p className="h-20 md:h-12">{overview}</p>
+          <p className="h-20 md:h-16">{overview}</p>
 
           <div className="flex justify-center items-center flex-1">
             {desktop ? (

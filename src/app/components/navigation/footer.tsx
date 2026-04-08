@@ -1,5 +1,6 @@
 "use client";
 
+import FilmStrip from "../filmStrip";
 import NewLetter from "../newLetter";
 
 type FooterProps = {
@@ -43,10 +44,46 @@ export default function Footer({
   }
 
   return (
-    <div className="sticky top-0 text-dark bg-background overflow-hidden flex flex-col md:flex-row relative w-full h-screen justify-center items-center gap-4 md:gap-28 px-4 md:px-20">
-     <div className="absolute bottom-[-20%]">
-      <NewLetter scale={0.9} />
-    </div>
-      </div>
-  )
+    <footer className={`sticky 
+    top-0
+    flex
+    flex-col 
+    h-screen
+    w-full
+    px-0
+    md:px-48 
+    py-10 
+    gap-24
+    bg-center
+    bg-background
+    justify-center ${background} pt-12 pb-8 text-center ${color}`}>
+      <div className="hidden md:block">
+  <FilmStrip />
+</div>
+      <div className="flex flex-col gap-0">
+        <p className={`font-historia-sky mb-4 text-7xl font-medium`}>
+          Thank you for stopping by!
+        </p>
+        <div className="flex justify-center gap-10 mt-2 font-ibm-plex-sans text-2xl">
+          <a
+            href="mailto:lanamramadan@gmail.com"
+            aria-label="Email"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
+          >
+            Email ↗
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/lanamramadan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className={`hover:drop-shadow-[0_0_8px_currentColor]`}
+          >
+            Linkedin ↗
+          </a>
+        </div>
+        </div>
+      </footer>
+  );
 }

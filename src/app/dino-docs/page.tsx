@@ -331,8 +331,7 @@ export default async function DinoDocsPage() {
 
           {/* style guide */}
           <div className="px-4 md:px-32 py-8">
-            <Subtitle text="Design" textColor="text-[#80C079]" />
-            <Emphasis text="Style Guide" />
+            <Subtitle text="Branding & Style Guide" textColor="text-[#80C079]" />
             <p className="font-ibm-plex-sans text-text text-lg">
               The visual language had to strike a specific balance: playful and
               safe enough that kids feel at home, but structured and clean

@@ -49,14 +49,14 @@ export default function Skills() {
 
         {/* text */}
         <div className="font-ibm-plex-sans text-background text-2xl leading-relaxed">
-          <p className="mb-6 pt-36">
+          <p className="mb-6 pt-32 text-left">
             <span className="font-medium">Design Skills</span>
             <br />
             User Research · Usability Testing ·  Iterative Design · Journey
             Mapping · Persona Development · Competitive Analysis · Storyboarding
             · Information Architecture · Design Systems
           </p>
-          <p>
+          <p className="text-left">
             <span className="font-medium">Design Tools</span>
             <br />
             Figma · Adobe Creative Suite · HTML · CSS · JavaScript · TypeScript
